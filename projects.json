@@ -74,5 +74,20 @@
     ],
     "cover": "assets/architecture.svg",
     "demo": true
+  },
+  {
+    "id": "009",
+    "slug": "open-higgsfield",
+    "name": "OpenHiggsfield",
+    "summary": "调用外部生成 API 的图片／视频工作台，主要提供界面与参数适配，不含模型实现；仅作摘要留档，不继续深入研究。",
+    "repository": "https://github.com/wide-trace/open-higgsfield",
+    "status": "已完成",
+    "tags": [
+      "生成工作台",
+      "API 适配",
+      "摘要留档"
+    ],
+    "cover": null,
+    "demo": false
   }
 ]

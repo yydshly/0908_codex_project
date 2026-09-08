@@ -7,3 +7,5 @@
 - [006 · Signal Vaults（仅作思路参考）](006-signal-vaults/README.md)
 
 - [007 · 狗头军师资料留存与架构导读](007-goutoujunshi/README.md)
+
+- [009 · OpenHiggsfield（摘要留档，不继续深入研究）](009-open-higgsfield/README.md)

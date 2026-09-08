@@ -14,6 +14,7 @@
 | 005 | [AI Engineering from Scratch](projects/005-ai-engineering-from-scratch/README.md) | 六大能力全景图、20阶段与523节课程导航，配套术语词典、学习路线和详细手册；导览已整理，课程未逐一验证。 | 已完成 | [GitHub](https://github.com/rohitg00/ai-engineering-from-scratch) | [演示](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/) |
 | 006 | [Signal Vaults](projects/006-signal-vaults/README.md) | 微信群、公众号等信息的 AI 日报工具；无当前接入需求，仅参考多源信息提取、筛选与个人日报的思路。 | 已完成 | [GitHub](https://github.com/JackyCufe/signal-vaults) | — |
 | 007 | [狗头军师 · 资料留存与架构导读](projects/007-goutoujunshi/README.md) | 以整体架构图引导理解43份资料、模型应用与六个产品方向；保留模块详解和复用入口，后期按需参考。 | 已完成 | [GitHub](https://github.com/shengjidaguai-china/goutoujunshi) | [演示](https://yydshly.github.io/0908_codex_project/demos/007-goutoujunshi/) |
+| 009 | [OpenHiggsfield](projects/009-open-higgsfield/README.md) | 调用外部生成 API 的图片／视频工作台，主要提供界面与参数适配，不含模型实现；仅作摘要留档，不继续深入研究。 | 已完成 | [GitHub](https://github.com/wide-trace/open-higgsfield) | — |
 <!-- PROJECTS:END -->
 
 ## 架构导读 · 001 TeamAI CLI
