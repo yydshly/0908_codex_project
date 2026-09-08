@@ -121,5 +121,21 @@
     ],
     "cover": "assets/architecture.svg",
     "demo": false
+  },
+  {
+    "id": "011",
+    "slug": "screenshot-studio",
+    "name": "Screenshot Studio · 完整能力学习工作台",
+    "summary": "一张图看懂截图创作的输入、设计、表达与输出；主页提供 18 项练习、自检和学习笔记，附原版运行证据及真实成品。",
+    "repository": "https://github.com/opennookorg/screenshot-studio",
+    "status": "已完成",
+    "tags": [
+      "截图美化",
+      "效果演示",
+      "图像导出",
+      "实现原理"
+    ],
+    "cover": "assets/capability-map.png",
+    "demo": true
   }
 ]

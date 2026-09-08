@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" role="img" aria-labelledby="title desc">
+<title id="title">Screenshot Studio 能力全景</title>
+<desc id="desc">素材输入、展示设计、信息表达、成品输出四个环节，覆盖代码、网页、设备套壳、三维透视、图层标注、单图动画、多图视频与部署接口。</desc>
+<rect width="1800" height="1200" fill="#F5F7EF"/>
+<text x="70" y="45" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#6D856A">OPEN SOURCE / 011 / 能力引导</text>
+<text x="70" y="94" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="63" font-weight="700" fill="#25483B">Screenshot Studio 能力全景</text>
+<text x="73" y="181" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#61765D">把截图、代码和网页，变成可分享的视觉作品。</text>
+<rect x="1450" y="64" width="280" height="48" rx="24" fill="#E5EDD9"/>
+<text x="1479" y="76" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#456743">截图创作与展示工具</text>
+<rect x="70" y="272" width="400" height="573" rx="20" fill="#FFFFFF" stroke="#D8E1D1" stroke-width="2"/>
+<rect x="90" y="294" width="54" height="44" rx="12" fill="#E8EFE1"/>
+<text x="102" y="301" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#436948">01</text>
+<text x="161" y="298" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#436948">素材输入</text>
+<text x="94" y="358" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#6E7E67">先获得需要展示的内容</text>
+<polyline points="94,399 446,399" fill="none" stroke="#E5EADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="95" y="428" width="7" height="48" rx="3" fill="#436948"/>
+<text x="118" y="423" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">已有截图</text>
+<text x="118" y="468" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">上传图片，继续编辑</text>
+<rect x="95" y="528" width="7" height="48" rx="3" fill="#436948"/>
+<text x="118" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">代码转图</text>
+<text x="118" y="568" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">语法高亮、主题与行号</text>
+<rect x="95" y="628" width="7" height="48" rx="3" fill="#436948"/>
+<text x="118" y="623" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">网页截图</text>
+<text x="118" y="668" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">输入网址获取页面</text>
+<rect x="95" y="728" width="7" height="48" rx="3" fill="#436948"/>
+<text x="118" y="723" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">推文卡片</text>
+<text x="118" y="768" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">导入公开推文内容</text>
+<polyline points="473,556 487,556" fill="none" stroke="#809476" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="481,550 487,556 481,562" fill="none" stroke="#809476" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="490" y="272" width="400" height="573" rx="20" fill="#FFFFFF" stroke="#D8E1D1" stroke-width="2"/>
+<rect x="510" y="294" width="54" height="44" rx="12" fill="#E3EEEA"/>
+<text x="522" y="301" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#2B7162">02</text>
+<text x="581" y="298" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#2B7162">展示设计</text>
+<text x="514" y="358" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#6E7E67">把内容放入合适的视觉环境</text>
+<polyline points="514,399 866,399" fill="none" stroke="#E5EADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="515" y="428" width="7" height="48" rx="3" fill="#2B7162"/>
+<text x="538" y="423" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">背景与光影</text>
+<text x="538" y="468" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">渐变、材质、留白、阴影</text>
+<rect x="515" y="528" width="7" height="48" rx="3" fill="#2B7162"/>
+<text x="538" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">浏览器外框</text>
+<text x="538" y="568" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">Chrome、Safari 等样式</text>
+<rect x="515" y="628" width="7" height="48" rx="3" fill="#2B7162"/>
+<text x="538" y="623" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">设备套壳</text>
+<text x="538" y="668" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">手机、手表、电脑外壳</text>
+<rect x="515" y="728" width="7" height="48" rx="3" fill="#2B7162"/>
+<text x="538" y="723" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">三维透视</text>
+<text x="538" y="768" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">平面旋转、倾斜与缩放</text>
+<polyline points="893,556 907,556" fill="none" stroke="#809476" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="901,550 907,556 901,562" fill="none" stroke="#809476" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="910" y="272" width="400" height="573" rx="20" fill="#FFFFFF" stroke="#D8E1D1" stroke-width="2"/>
+<rect x="930" y="294" width="54" height="44" rx="12" fill="#F0EADC"/>
+<text x="942" y="301" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#8E7142">03</text>
+<text x="1001" y="298" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#8E7142">信息表达</text>
+<text x="934" y="358" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#6E7E67">说明重点，也让画面动起来</text>
+<polyline points="934,399 1286,399" fill="none" stroke="#E5EADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="935" y="428" width="7" height="48" rx="3" fill="#8E7142"/>
+<text x="958" y="423" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">图层组合</text>
+<text x="958" y="468" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">叠加图片、文字与装饰</text>
+<rect x="935" y="528" width="7" height="48" rx="3" fill="#8E7142"/>
+<text x="958" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">文字与标注</text>
+<text x="958" y="568" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">箭头、形状、局部模糊</text>
+<rect x="935" y="628" width="7" height="48" rx="3" fill="#8E7142"/>
+<text x="958" y="623" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">单图动画</text>
+<text x="958" y="668" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">淡入、翻转、漂浮等动效</text>
+<rect x="935" y="728" width="7" height="48" rx="3" fill="#8E7142"/>
+<text x="958" y="723" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">多图视频</text>
+<text x="958" y="768" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">多页截图按顺序展示</text>
+<polyline points="1313,556 1327,556" fill="none" stroke="#809476" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1321,550 1327,556 1321,562" fill="none" stroke="#809476" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1330" y="272" width="400" height="573" rx="20" fill="#FFFFFF" stroke="#D8E1D1" stroke-width="2"/>
+<rect x="1350" y="294" width="54" height="44" rx="12" fill="#E7E9F0"/>
+<text x="1362" y="301" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#606889">04</text>
+<text x="1421" y="298" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#606889">成品输出</text>
+<text x="1354" y="358" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#6E7E67">分享作品，并复用制作流程</text>
+<polyline points="1354,399 1706,399" fill="none" stroke="#E5EADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1355" y="428" width="7" height="48" rx="3" fill="#606889"/>
+<text x="1378" y="423" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">图片成品</text>
+<text x="1378" y="468" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">PNG / JPEG / WebP</text>
+<rect x="1355" y="528" width="7" height="48" rx="3" fill="#606889"/>
+<text x="1378" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">视频成品</text>
+<text x="1378" y="568" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">MP4 / WebM</text>
+<rect x="1355" y="628" width="7" height="48" rx="3" fill="#606889"/>
+<text x="1378" y="623" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">模板与草稿</text>
+<text x="1378" y="668" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">复用风格，继续编辑</text>
+<rect x="1355" y="728" width="7" height="48" rx="3" fill="#606889"/>
+<text x="1378" y="723" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2C4839">部署与接口</text>
+<text x="1378" y="768" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657760">自行运行，接入素材流程</text>
+<rect x="70" y="877" width="1660" height="167" rx="20" fill="#E8EFE0"/>
+<text x="99" y="902" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#365A37">从理解到掌握</text>
+<text x="99" y="944" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#6B7D61">先看效果，再完成自己的作品。</text>
+<rect x="575" y="913" width="42" height="42" rx="21" fill="#CADBBE"/>
+<text x="589" y="919" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3D633E">1</text>
+<text x="632" y="914" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#315835">看能力与样片</text>
+<text x="632" y="956" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#63785D">理解素材怎样变成成品</text>
+<rect x="950" y="913" width="42" height="42" rx="21" fill="#CADBBE"/>
+<text x="964" y="919" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3D633E">2</text>
+<text x="1007" y="914" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#315835">跟随 18 项练习</text>
+<text x="1007" y="956" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#63785D">按目标操作，用标准自检</text>
+<rect x="1325" y="913" width="42" height="42" rx="21" fill="#CADBBE"/>
+<text x="1339" y="919" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3D633E">3</text>
+<text x="1382" y="914" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#315835">用自己的素材复现</text>
+<text x="1382" y="956" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#63785D">记录问题，逐项独立完成</text>
+<text x="74" y="1080" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="700" fill="#486641">理解边界</text>
+<text x="195" y="1081" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#687962">不提供 AI 画质修复或三维模型重建；网页和推文获取依赖外部服务。</text>
+<text x="74" y="1131" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="700" fill="#496A48">单图动画 = 一张图随时间变化     ·     多图视频 = 多张图连续展示</text>
+<text x="1260" y="1134" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#8B9981">核对版本 7c7a38a  /  2026-09-09</text>
+</svg>

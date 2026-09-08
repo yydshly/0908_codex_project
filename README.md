@@ -17,6 +17,7 @@
 | 008 | [Splat.js · 视频到三维实测与扩展指南](projects/008-splat-js/README.md) | 已从独立鞋子视频完成本机三维重建，提供原视频与真实结果对照、官方样例、整体架构和商品／空间扩展方向；人体与自由漫游待验证。 | 已完成 | [GitHub](https://github.com/arrival-space/splat.js) | [演示](https://yydshly.github.io/0908_codex_project/demos/008-splat-js/) |
 | 009 | [OpenHiggsfield](projects/009-open-higgsfield/README.md) | 调用外部生成 API 的图片／视频工作台，主要提供界面与参数适配，不含模型实现；仅作摘要留档，不继续深入研究。 | 已完成 | [GitHub](https://github.com/wide-trace/open-higgsfield) | — |
 | 010 | [WeMM-Embedding](projects/010-wemm-embedding/README.md) | 用整体架构图理解多模态向量模型、素材检索流程与产品接入分工；附能力边界、穿搭素材应用及同类方案，尚未部署实测。 | 已完成 | [GitHub](https://github.com/Tencent/WeMM-Embedding) | — |
+| 011 | [Screenshot Studio · 完整能力学习工作台](projects/011-screenshot-studio/README.md) | 一张图看懂截图创作的输入、设计、表达与输出；主页提供 18 项练习、自检和学习笔记，附原版运行证据及真实成品。 | 已完成 | [GitHub](https://github.com/opennookorg/screenshot-studio) | [演示](https://yydshly.github.io/0908_codex_project/demos/011-screenshot-studio/) |
 <!-- PROJECTS:END -->
 
 ## 架构导读 · 001 TeamAI CLI
