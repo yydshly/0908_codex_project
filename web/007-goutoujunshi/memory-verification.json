@@ -1,0 +1,146 @@
+{
+  "commit": "4ced1d57561563f4b556f555ee1c8c91ffb16355",
+  "scope": "真实运行上游记忆脚本；全部输入为虚构数据；不启用个人记忆",
+  "checks": [
+    {
+      "name": "未启用时不创建档案",
+      "passed": true,
+      "result": {
+        "consent_enabled": false,
+        "exists": false,
+        "path": "C:\\Users\\yun68\\AppData\\Local\\Temp\\goutoujunshi-demo-bho4r3f_\\memory.sqlite3",
+        "paused": false,
+        "policy_version": "1"
+      }
+    },
+    {
+      "name": "启用需要明确确认",
+      "passed": true,
+      "result": {
+        "error": {
+          "code": "CONFIRMATION_REQUIRED",
+          "message": "需要 --confirm 表示用户已明确同意"
+        },
+        "ok": false
+      }
+    },
+    {
+      "name": "确认启用测试档案",
+      "passed": true,
+      "result": {
+        "consent_enabled": true,
+        "ok": true,
+        "paused": false
+      }
+    },
+    {
+      "name": "保存有来源的事实",
+      "passed": true,
+      "result": {
+        "memory": {
+          "confidence": "medium",
+          "created_at": "2026-09-08T14:36:42+00:00",
+          "field": "preference",
+          "id": "f65def843515441d8ebfebf1d9e25fa6",
+          "observed_at": "2026-09-08T14:36:42+00:00",
+          "occurred_at": null,
+          "scope": "object",
+          "source_ref": "虚构演示输入",
+          "source_type": "user_report",
+          "status": "active",
+          "subject_id": "demo-a",
+          "updated_at": "2026-09-08T14:36:42+00:00",
+          "value": "虚构对象A喜欢散步"
+        },
+        "ok": true,
+        "op_id": "f718926115f441d6b59d4244d5fa7f9f",
+        "pruned": 0
+      }
+    },
+    {
+      "name": "按对象召回精简档案",
+      "passed": true,
+      "result": {
+        "count": 1,
+        "max_chars": 4000,
+        "memories": [
+          {
+            "confidence": "medium",
+            "field": "preference",
+            "id": "f65def843515441d8ebfebf1d9e25fa6",
+            "observed_at": "2026-09-08T14:36:42+00:00",
+            "occurred_at": null,
+            "scope": "object",
+            "source_ref": "虚构演示输入",
+            "source_type": "user_report",
+            "subject_id": "demo-a",
+            "value": "虚构对象A喜欢散步"
+          }
+        ]
+      }
+    },
+    {
+      "name": "拒绝将模型推断写成对象事实",
+      "passed": true,
+      "result": {
+        "error": {
+          "code": "SOURCE_NOT_ELIGIBLE",
+          "message": "对象事实和关系快照只接受用户明确陈述或转述"
+        },
+        "ok": false
+      }
+    },
+    {
+      "name": "暂停记忆",
+      "passed": true,
+      "result": {
+        "ok": true,
+        "paused": true
+      }
+    },
+    {
+      "name": "暂停后阻止写入",
+      "passed": true,
+      "result": {
+        "error": {
+          "code": "MEMORY_PAUSED",
+          "message": "长期记忆当前已暂停"
+        },
+        "ok": false
+      }
+    },
+    {
+      "name": "恢复记忆",
+      "passed": true,
+      "result": {
+        "ok": true,
+        "paused": false
+      }
+    },
+    {
+      "name": "撤销最近一次写入",
+      "passed": true,
+      "result": {
+        "ok": true,
+        "undone_op_id": "f718926115f441d6b59d4244d5fa7f9f"
+      }
+    },
+    {
+      "name": "撤销后档案为空",
+      "passed": true,
+      "result": {
+        "count": 0,
+        "max_chars": 4000,
+        "memories": []
+      }
+    },
+    {
+      "name": "清除测试数据库",
+      "passed": true,
+      "result": {
+        "deleted": true,
+        "ok": true
+      }
+    }
+  ]
+}

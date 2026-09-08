@@ -59,5 +59,20 @@
     ],
     "cover": null,
     "demo": false
+  },
+  {
+    "id": "007",
+    "slug": "goutoujunshi",
+    "name": "狗头军师 · 资料留存与架构导读",
+    "summary": "以整体架构图引导理解43份资料、模型应用与六个产品方向；保留模块详解和复用入口，后期按需参考。",
+    "repository": "https://github.com/shengjidaguai-china/goutoujunshi",
+    "status": "已完成",
+    "tags": [
+      "资料留存",
+      "整体架构",
+      "按需复用"
+    ],
+    "cover": "assets/architecture.svg",
+    "demo": true
   }
 ]

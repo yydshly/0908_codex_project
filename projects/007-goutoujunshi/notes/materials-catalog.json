@@ -1,0 +1,661 @@
+{
+  "commit": "4ced1d57561563f4b556f555ee1c8c91ffb16355",
+  "note": "目录层级为上游原结构；阅读分组和简述为本次研究归纳，不是逐篇证据评分。",
+  "documents": [
+    {
+      "layer": "knowledge",
+      "category": "证据与索引",
+      "title": "01-证据分级与内容边界",
+      "summary": "区分证据强弱、常见推理错误，把承诺、尊重等概念转成行为问题。",
+      "path": "references/knowledge/01-证据分级与内容边界.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/01-%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%E4%B8%8E%E5%86%85%E5%AE%B9%E8%BE%B9%E7%95%8C.md",
+      "headings": [
+        "一、为什么恋爱建议尤其容易失真",
+        "二、建议采用的证据等级",
+        "三、四个常见推理错误",
+        "四、将抽象概念行为化",
+        "五、给未来内容系统的边界",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "关系与人格",
+      "title": "02-亲密关系心理学总论",
+      "summary": "综合吸引、回应性、社会交换、承诺、权力与压力，提供关系判断维度。",
+      "path": "references/knowledge/02-亲密关系心理学总论.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/02-%E4%BA%B2%E5%AF%86%E5%85%B3%E7%B3%BB%E5%BF%83%E7%90%86%E5%AD%A6%E6%80%BB%E8%AE%BA.md",
+      "headings": [
+        "一、把关系看成动态系统",
+        "二、相识、吸引与选择",
+        "三、亲密的核心：感知到的伴侣回应性",
+        "四、关系质量的五个高价值观察点",
+        "五、正向互动不是“夸奖配额”",
+        "六、交换、比较水平、承诺与权力",
+        "七、压力会进入关系",
+        "八、教学时可用的关系健康维度",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "关系与人格",
+      "title": "03-依恋理论与情绪调节",
+      "summary": "解释焦虑与回避循环，提供情绪调节方法，限制依恋标签的使用。",
+      "path": "references/knowledge/03-依恋理论与情绪调节.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/03-%E4%BE%9D%E6%81%8B%E7%90%86%E8%AE%BA%E4%B8%8E%E6%83%85%E7%BB%AA%E8%B0%83%E8%8A%82.md",
+      "headings": [
+        "一、不要把依恋变成四种人格",
+        "二、常见互动循环",
+        "三、情绪调节的关系版本",
+        "四、对焦虑方的建议",
+        "五、对回避方的建议",
+        "六、标签的禁用方式",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "关系与人格",
+      "title": "04-MBTI人格与匹配",
+      "summary": "讨论 MBTI 局限与 Big Five，将人格标签转成需求和协商问题。",
+      "path": "references/knowledge/04-MBTI人格与匹配.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/04-MBTI%E4%BA%BA%E6%A0%BC%E4%B8%8E%E5%8C%B9%E9%85%8D.md",
+      "headings": [
+        "一、MBTI 可以做什么",
+        "二、科学上的主要限制",
+        "三、Big Five 更适合怎样使用",
+        "四、把人格标签翻译成协商问题",
+        "五、评估匹配应优先看什么",
+        "六、未来内容的推荐话术",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "边界与风险",
+      "title": "05-PUA操控与伦理替代",
+      "summary": "拆解操控机制、风险信号及不操控的替代表达。",
+      "path": "references/knowledge/05-PUA操控与伦理替代.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/05-PUA%E6%93%8D%E6%8E%A7%E4%B8%8E%E4%BC%A6%E7%90%86%E6%9B%BF%E4%BB%A3.md",
+      "headings": [
+        "一、需要先拆分“PUA”的不同含义",
+        "二、常见操控技术及机制",
+        "三、几个容易伪装成技巧的危险信念",
+        "四、伦理替代：同样解决社交困难，不操控",
+        "五、识别自己是否正在被操控",
+        "六、教学红线",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "约会与沟通",
+      "title": "06-吸引约会与关系启动",
+      "summary": "整理吸引与关系启动过程、主动表达和互动判断。",
+      "path": "references/knowledge/06-吸引约会与关系启动.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/06-%E5%90%B8%E5%BC%95%E7%BA%A6%E4%BC%9A%E4%B8%8E%E5%85%B3%E7%B3%BB%E5%90%AF%E5%8A%A8.md",
+      "headings": [
+        "一、吸引不是单一排名",
+        "二、关系启动的四项基本能力",
+        "三、从认识到确定关系的建议节奏",
+        "四、互惠判断：看趋势而非单点",
+        "五、现代约会的实用原则",
+        "六、常见神话",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "约会与沟通",
+      "title": "07-沟通冲突与修复",
+      "summary": "提供冲突分流、对话结构、暂停与修复方法。",
+      "path": "references/knowledge/07-沟通冲突与修复.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/07-%E6%B2%9F%E9%80%9A%E5%86%B2%E7%AA%81%E4%B8%8E%E4%BF%AE%E5%A4%8D.md",
+      "headings": [
+        "一、目标不是零冲突",
+        "二、冲突前先分类",
+        "三、一个可复用的对话结构",
+        "四、情绪淹没和暂停",
+        "五、要求—撤退循环的改写",
+        "六、修复的构成",
+        "七、沟通技巧的限制",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "边界与风险",
+      "title": "08-同意边界性与亲密",
+      "summary": "整理持续同意、边界、亲密协商与性沟通的使用范围。",
+      "path": "references/knowledge/08-同意边界性与亲密.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/08-%E5%90%8C%E6%84%8F%E8%BE%B9%E7%95%8C%E6%80%A7%E4%B8%8E%E4%BA%B2%E5%AF%86.md",
+      "headings": [
+        "一、同意是持续过程",
+        "二、把同意做成自然对话",
+        "三、边界与控制的区别",
+        "四、性沟通的基本议题",
+        "五、性欲差异",
+        "六、研究能支持什么",
+        "七、高风险信号",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "约会与沟通",
+      "title": "09-在线约会与数字关系",
+      "summary": "覆盖线上展示、从聊天到见面、截图证据、数字边界与诈骗识别。",
+      "path": "references/knowledge/09-在线约会与数字关系.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/09-%E5%9C%A8%E7%BA%BF%E7%BA%A6%E4%BC%9A%E4%B8%8E%E6%95%B0%E5%AD%97%E5%85%B3%E7%B3%BB.md",
+      "headings": [
+        "一、平台扩大选择，也放大不确定",
+        "二、资料页原则：理想但真实",
+        "三、聊天到见面的转换",
+        "四、文字沟通的局限",
+        "五、聊天记录与截图分析",
+        "六、现代行为词汇：只作描述，不作诊断",
+        "七、数字边界",
+        "八、诈骗识别",
+        "九、使用强度与心理健康",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "家庭与人文",
+      "title": "10-恋爱哲学",
+      "summary": "借哲学传统讨论欲望、自由、承诺与他者，提供反思问题。",
+      "path": "references/knowledge/10-恋爱哲学.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/10-%E6%81%8B%E7%88%B1%E5%93%B2%E5%AD%A6.md",
+      "headings": [
+        "一、爱不是一个概念",
+        "二、几个可用于恋爱教育的哲学问题",
+        "三、中国思想资源",
+        "四、现代婚姻的哲学张力",
+        "五、可用于对话的十个问题",
+        "核心来源与延伸"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "家庭与人文",
+      "title": "11-婚姻家庭与生命周期",
+      "summary": "整理婚前议题、关系阶段、家庭系统和外部支持。",
+      "path": "references/knowledge/11-婚姻家庭与生命周期.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/11-%E5%A9%9A%E5%A7%BB%E5%AE%B6%E5%BA%AD%E4%B8%8E%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md",
+      "headings": [
+        "一、婚姻不是恋爱的自然毕业",
+        "二、婚前需要谈清的主题",
+        "三、关系阶段的常见任务",
+        "四、家庭系统视角",
+        "五、关系维护节奏",
+        "六、何时需要外部帮助",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "家庭与人文",
+      "title": "12-金钱家务育儿与双方家庭",
+      "summary": "把金钱、家务、照护、育儿和双方家庭转成协商事项。",
+      "path": "references/knowledge/12-金钱家务育儿与双方家庭.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/12-%E9%87%91%E9%92%B1%E5%AE%B6%E5%8A%A1%E8%82%B2%E5%84%BF%E4%B8%8E%E5%8F%8C%E6%96%B9%E5%AE%B6%E5%BA%AD.md",
+      "headings": [
+        "一、很多争吵表面谈钱，深层谈公平和责任",
+        "二、共同财务的四层结构",
+        "三、预算会议模板",
+        "四、家务不仅是“做了几件事”",
+        "五、家务协商工具",
+        "六、育儿不是母职加协助",
+        "七、双方家庭边界",
+        "八、公平的三种含义",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "家庭与人文",
+      "title": "13-现代婚姻变迁史",
+      "summary": "梳理现代婚姻制度与爱情观变化，提醒统计与历史语境限制。",
+      "path": "references/knowledge/13-现代婚姻变迁史.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/13-%E7%8E%B0%E4%BB%A3%E5%A9%9A%E5%A7%BB%E5%8F%98%E8%BF%81%E5%8F%B2.md",
+      "headings": [
+        "一、不要把现代浪漫婚姻当成人类常态",
+        "二、全球现代化的几条主线",
+        "三、中国婚姻制度时间线",
+        "四、现代婚姻为何更自由也更脆弱",
+        "五、阅读统计时的注意",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "家庭与人文",
+      "title": "14-社会发展与家庭变迁",
+      "summary": "从结构条件、人口与社会变化解释家庭和个人选择。",
+      "path": "references/knowledge/14-社会发展与家庭变迁.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/14-%E7%A4%BE%E4%BC%9A%E5%8F%91%E5%B1%95%E4%B8%8E%E5%AE%B6%E5%BA%AD%E5%8F%98%E8%BF%81.md",
+      "headings": [
+        "一、家庭变化是结构与选择共同作用",
+        "二、中国最新背景数据（截至 2026-07）",
+        "三、推动家庭变化的八个机制",
+        "四、国际比较中的共同趋势与差异",
+        "五、对恋爱教育的直接启示",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "修复与多元",
+      "title": "15-分手背叛与关系修复",
+      "summary": "区分分手、复合、背叛、原谅与修复条件。",
+      "path": "references/knowledge/15-分手背叛与关系修复.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/15-%E5%88%86%E6%89%8B%E8%83%8C%E5%8F%9B%E4%B8%8E%E5%85%B3%E7%B3%BB%E4%BF%AE%E5%A4%8D.md",
+      "headings": [
+        "一、分手是一种关系决定，不是法庭判决",
+        "二、体面分手的基本结构",
+        "三、失恋恢复",
+        "四、复合前的评估",
+        "五、什么算背叛",
+        "六、发现背叛后的三个阶段",
+        "七、宽恕、和解与继续关系是三件事",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "修复与多元",
+      "title": "16-多元关系与反刻板印象",
+      "summary": "覆盖性别身份、性取向、非单偶、异地与跨文化等关系校准。",
+      "path": "references/knowledge/16-多元关系与反刻板印象.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/16-%E5%A4%9A%E5%85%83%E5%85%B3%E7%B3%BB%E4%B8%8E%E5%8F%8D%E5%88%BB%E6%9D%BF%E5%8D%B0%E8%B1%A1.md",
+      "headings": [
+        "一、共同机制与特殊压力要同时看到",
+        "二、性少数伴侣关系",
+        "三、双方同意的非单偶关系",
+        "四、年龄与生命阶段",
+        "五、残障与慢性疾病",
+        "六、再婚、继亲与单亲",
+        "七、文化、阶层与地域",
+        "八、反刻板表达清单",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "边界与风险",
+      "title": "17-中国法律安全与危机转介",
+      "summary": "整理中国法律与安全处理入口、证据保存和危机转介；使用前需复核。",
+      "path": "references/knowledge/17-中国法律安全与危机转介.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/17-%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8D%B1%E6%9C%BA%E8%BD%AC%E4%BB%8B.md",
+      "headings": [
+        "一、先判断是否属于普通关系问题",
+        "二、中国反家暴法律基础",
+        "三、证据保存",
+        "四、即时安全计划",
+        "五、自伤或伤人威胁",
+        "六、婚姻财产与离婚基础提醒",
+        "七、婚恋诈骗",
+        "核心法律与官方来源"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "练习与方法",
+      "title": "18-实用练习与对话卡",
+      "summary": "12 组练习：事实拆分、价值排序、约会复盘、冲突暂停、婚前讨论等。",
+      "path": "references/knowledge/18-实用练习与对话卡.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/18-%E5%AE%9E%E7%94%A8%E7%BB%83%E4%B9%A0%E4%B8%8E%E5%AF%B9%E8%AF%9D%E5%8D%A1.md",
+      "headings": [
+        "练习 1：事实—解释—感受—行动",
+        "练习 2：关系价值排序",
+        "练习 3：绿黄红灯",
+        "练习 4：约会后复盘",
+        "练习 5：每周关系会议（30 分钟）",
+        "练习 6：倾听轮换",
+        "练习 7：冲突暂停协议",
+        "练习 8：修复清单",
+        "练习 9：婚前十题",
+        "练习 10：关系健康月检",
+        "练习 11：分手后的数字清理",
+        "练习 12：建议质量自检"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "证据与索引",
+      "title": "19-核心书单与论文索引",
+      "summary": "按领域列书目、论文和官方入口，附扩展检索式与资料记录要求。",
+      "path": "references/knowledge/19-核心书单与论文索引.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/19-%E6%A0%B8%E5%BF%83%E4%B9%A6%E5%8D%95%E4%B8%8E%E8%AE%BA%E6%96%87%E7%B4%A2%E5%BC%95.md",
+      "headings": [
+        "一、关系科学与心理学",
+        "二、伴侣沟通与治疗",
+        "三、人格与测量",
+        "四、爱与婚姻哲学",
+        "五、家庭社会学与现代性",
+        "六、中国婚姻、家庭与法律",
+        "七、在线约会、PUA 与数字安全",
+        "八、性、同意与多元关系",
+        "九、扩展材料的检索式建议"
+      ]
+    },
+    {
+      "layer": "knowledge",
+      "category": "练习与方法",
+      "title": "20-经典社交体系的机制、证据与风险边界",
+      "summary": "将 Blueprint、冷读、Mystery、自然流拆为机制、证据、风险与伦理转译。",
+      "path": "references/knowledge/20-经典社交体系的机制、证据与风险边界.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/knowledge/20-%E7%BB%8F%E5%85%B8%E7%A4%BE%E4%BA%A4%E4%BD%93%E7%B3%BB%E7%9A%84%E6%9C%BA%E5%88%B6%E3%80%81%E8%AF%81%E6%8D%AE%E4%B8%8E%E9%A3%8E%E9%99%A9%E8%BE%B9%E7%95%8C.md",
+      "headings": [
+        "导航",
+        "一、定位与证据等级",
+        "二、Blueprint：内在状态与自我价值",
+        "三、冷读：准确感从哪里来",
+        "四、Mystery：结构、素材与表达",
+        "五、自然流与结构化方法",
+        "六、可保留能力与禁止实现",
+        "七、分析检查表",
+        "八、来源入口"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "导读与工具",
+      "title": "00-导读与使用分级",
+      "summary": "区分直接框架、策略性使用和高风险方法，规定话术格式和主题选择。",
+      "path": "references/practical/00-导读与使用分级.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/00-%E5%AF%BC%E8%AF%BB%E4%B8%8E%E4%BD%BF%E7%94%A8%E5%88%86%E7%BA%A7.md",
+      "headings": [
+        "定位",
+        "使用分级",
+        "给用户方案的格式",
+        "本目录的主题指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "导读与工具",
+      "title": "ChatLab聊天记录分析适配",
+      "summary": "规定会话与说话人确认、导入预览、最小范围查询和证据编号使用。",
+      "path": "references/practical/ChatLab聊天记录分析适配.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/ChatLab%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E5%88%86%E6%9E%90%E9%80%82%E9%85%8D.md",
+      "headings": [
+        "定位",
+        "先锁定说话人",
+        "已经导入ChatLab",
+        "用户提供已导出文件",
+        "关系趋势与K线",
+        "回答与记忆边界"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "万能吵架技巧：理性冲突处理指南",
+      "summary": "按底层逻辑、技巧、场景话术组织理性冲突处理。",
+      "path": "references/practical/万能吵架技巧：理性冲突处理指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E4%B8%87%E8%83%BD%E5%90%B5%E6%9E%B6%E6%8A%80%E5%B7%A7%EF%BC%9A%E7%90%86%E6%80%A7%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "万能吵架技巧：理性冲突处理指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "万能夸人的话术技巧：真诚认可的实用指南",
+      "summary": "围绕具体、真实认可，整理夸奖方法与场景表达。",
+      "path": "references/practical/万能夸人的话术技巧：真诚认可的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E4%B8%87%E8%83%BD%E5%A4%B8%E4%BA%BA%E7%9A%84%E8%AF%9D%E6%9C%AF%E6%8A%80%E5%B7%A7%EF%BC%9A%E7%9C%9F%E8%AF%9A%E8%AE%A4%E5%8F%AF%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "万能夸人的话术技巧：真诚认可的实用指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "为他人提供情绪价值：温暖且有效的回应指南",
+      "summary": "把情绪支持拆为理解、回应和场景化表达，避免无效付出。",
+      "path": "references/practical/为他人提供情绪价值：温暖且有效的回应指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E4%B8%BA%E4%BB%96%E4%BA%BA%E6%8F%90%E4%BE%9B%E6%83%85%E7%BB%AA%E4%BB%B7%E5%80%BC%EF%BC%9A%E6%B8%A9%E6%9A%96%E4%B8%94%E6%9C%89%E6%95%88%E7%9A%84%E5%9B%9E%E5%BA%94%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "为他人提供情绪价值：温暖且有效的回应指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "关系推进",
+      "title": "主动表达、第一次见面与自然接触",
+      "summary": "整理主动档位、表达欣赏、第一次见面、自然接触及反馈调整。",
+      "path": "references/practical/主动表达、第一次见面与自然接触.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E4%B8%BB%E5%8A%A8%E8%A1%A8%E8%BE%BE%E3%80%81%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A7%81%E9%9D%A2%E4%B8%8E%E8%87%AA%E7%84%B6%E6%8E%A5%E8%A7%A6.md",
+      "headings": [
+        "定位",
+        "一、主动档位：默认向前一步",
+        "二、让喜欢变得明显",
+        "三、第一次见面需要做的事情",
+        "四、自然、低强度、可退出的肢体接触",
+        "五、含糊回应后的再次主动"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "经验转译",
+      "title": "公开表达案例的伦理转译",
+      "summary": "说明公开创作者来源边界，保留具体、幽默和行动感，过滤欺骗与施压。",
+      "path": "references/practical/公开表达案例的伦理转译.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E5%85%AC%E5%BC%80%E8%A1%A8%E8%BE%BE%E6%A1%88%E4%BE%8B%E7%9A%84%E4%BC%A6%E7%90%86%E8%BD%AC%E8%AF%91.md",
+      "headings": [
+        "来源定位",
+        "可以吸收的能力",
+        "必须过滤的部分",
+        "输出方法"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "关系推进",
+      "title": "关系投入失衡：互惠判断、降级投入与退出决策",
+      "summary": "四区判断、事实账、行动阶梯、事件观察窗口与不同关系校准。",
+      "path": "references/practical/关系投入失衡：互惠判断、降级投入与退出决策.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E5%85%B3%E7%B3%BB%E6%8A%95%E5%85%A5%E5%A4%B1%E8%A1%A1%EF%BC%9A%E4%BA%92%E6%83%A0%E5%88%A4%E6%96%AD%E3%80%81%E9%99%8D%E7%BA%A7%E6%8A%95%E5%85%A5%E4%B8%8E%E9%80%80%E5%87%BA%E5%86%B3%E7%AD%96.md",
+      "headings": [
+        "定位与证据边界",
+        "一、先分四个区域",
+        "二、建立一页事实账，不做情绪流水账",
+        "三、行动阶梯",
+        "四、可直接改写的话术",
+        "五、不同关系的校正项",
+        "核心来源"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "化解尴尬：轻松救场的实用指南",
+      "summary": "分析尴尬场景，组织救场方法和可改写表达。",
+      "path": "references/practical/化解尴尬：轻松救场的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E5%8C%96%E8%A7%A3%E5%B0%B4%E5%B0%AC%EF%BC%9A%E8%BD%BB%E6%9D%BE%E6%95%91%E5%9C%BA%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "化解尴尬：轻松救场的实用指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "关系推进",
+      "title": "场景感、松弛感与社交校准：从接话到关系推进",
+      "summary": "拆解真实展示、现场取材、接抛、轻松调情、分级推进与复盘。",
+      "path": "references/practical/场景感、松弛感与社交校准：从接话到关系推进.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E5%9C%BA%E6%99%AF%E6%84%9F%E3%80%81%E6%9D%BE%E5%BC%9B%E6%84%9F%E4%B8%8E%E7%A4%BE%E4%BA%A4%E6%A0%A1%E5%87%86%EF%BC%9A%E4%BB%8E%E6%8E%A5%E8%AF%9D%E5%88%B0%E5%85%B3%E7%B3%BB%E6%8E%A8%E8%BF%9B.md",
+      "headings": [
+        "定位与证据边界",
+        "八项可迁移能力",
+        "调用时的输出模板",
+        "参考入口"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "关系推进",
+      "title": "实战话术编排器：从一句回复到后续分支",
+      "summary": "七种主策略、三层表达、五项口吻校准、12 类话术场景与演练。",
+      "path": "references/practical/实战话术编排器：从一句回复到后续分支.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E5%AE%9E%E6%88%98%E8%AF%9D%E6%9C%AF%E7%BC%96%E6%8E%92%E5%99%A8%EF%BC%9A%E4%BB%8E%E4%B8%80%E5%8F%A5%E5%9B%9E%E5%A4%8D%E5%88%B0%E5%90%8E%E7%BB%AD%E5%88%86%E6%94%AF.md",
+      "headings": [
+        "定位",
+        "童锦程与梵公子项目中可用的五个原则",
+        "一句话的生成流程",
+        "常用话术库",
+        "话术演练模式"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "巧妙接话技巧：让沟通更流畅的实用指南",
+      "summary": "把接话整理为连接内容与情绪的方法，并给场景表达。",
+      "path": "references/practical/巧妙接话技巧：让沟通更流畅的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E5%B7%A7%E5%A6%99%E6%8E%A5%E8%AF%9D%E6%8A%80%E5%B7%A7%EF%BC%9A%E8%AE%A9%E6%B2%9F%E9%80%9A%E6%9B%B4%E6%B5%81%E7%95%85%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "巧妙接话技巧：让沟通更流畅的实用指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "废话文学回复指南：轻松应对各类场景",
+      "summary": "轻松娱乐式回复的逻辑、技巧和场景素材，按导读限制使用。",
+      "path": "references/practical/废话文学回复指南：轻松应对各类场景.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E5%BA%9F%E8%AF%9D%E6%96%87%E5%AD%A6%E5%9B%9E%E5%A4%8D%E6%8C%87%E5%8D%97%EF%BC%9A%E8%BD%BB%E6%9D%BE%E5%BA%94%E5%AF%B9%E5%90%84%E7%B1%BB%E5%9C%BA%E6%99%AF.md",
+      "headings": [
+        "废话文学回复指南：轻松应对各类场景"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "社交与职场",
+      "title": "托人办事的高效话术指南",
+      "summary": "请求协助的沟通逻辑、操作方法和场景话术。",
+      "path": "references/practical/托人办事的高效话术指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E6%89%98%E4%BA%BA%E5%8A%9E%E4%BA%8B%E7%9A%84%E9%AB%98%E6%95%88%E8%AF%9D%E6%9C%AF%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "托人办事的高效话术指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "提升表达逻辑性：从混乱到清晰的实用指南",
+      "summary": "将混乱表达整理为清楚的逻辑和场景化陈述。",
+      "path": "references/practical/提升表达逻辑性：从混乱到清晰的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E6%8F%90%E5%8D%87%E8%A1%A8%E8%BE%BE%E9%80%BB%E8%BE%91%E6%80%A7%EF%BC%9A%E4%BB%8E%E6%B7%B7%E4%B9%B1%E5%88%B0%E6%B8%85%E6%99%B0%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "提升表达逻辑性：从混乱到清晰的实用指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "社交与职场",
+      "title": "提高气场：从内到外的力量感塑造指南",
+      "summary": "整理自信、表达与行为表现的方法，区分力量感与虚张声势。",
+      "path": "references/practical/提高气场：从内到外的力量感塑造指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E6%8F%90%E9%AB%98%E6%B0%94%E5%9C%BA%EF%BC%9A%E4%BB%8E%E5%86%85%E5%88%B0%E5%A4%96%E7%9A%84%E5%8A%9B%E9%87%8F%E6%84%9F%E5%A1%91%E9%80%A0%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "提高气场：从内到外的力量感塑造指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "社交与职场",
+      "title": "有效拓展人脉：从建立到维护的实用指南",
+      "summary": "从建立连接到维护关系组织社交方法和表达。",
+      "path": "references/practical/有效拓展人脉：从建立到维护的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E6%9C%89%E6%95%88%E6%8B%93%E5%B1%95%E4%BA%BA%E8%84%89%EF%BC%9A%E4%BB%8E%E5%BB%BA%E7%AB%8B%E5%88%B0%E7%BB%B4%E6%8A%A4%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "有效拓展人脉：从建立到维护的实用指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "聊天化被动为主动：引导互动的实用指南",
+      "summary": "梳理被动聊天的原因、主动引导方法与场景话术。",
+      "path": "references/practical/聊天化被动为主动：引导互动的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E8%81%8A%E5%A4%A9%E5%8C%96%E8%A2%AB%E5%8A%A8%E4%B8%BA%E4%B8%BB%E5%8A%A8%EF%BC%9A%E5%BC%95%E5%AF%BC%E4%BA%92%E5%8A%A8%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "聊天化被动为主动：引导互动的实用指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "经验转译",
+      "title": "自然流、内在状态与结构化互动：伦理能力转译",
+      "summary": "将内在状态、观察表达邀请、开放假设和结构排错转成练习。",
+      "path": "references/practical/自然流、内在状态与结构化互动：伦理能力转译.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E8%87%AA%E7%84%B6%E6%B5%81%E3%80%81%E5%86%85%E5%9C%A8%E7%8A%B6%E6%80%81%E4%B8%8E%E7%BB%93%E6%9E%84%E5%8C%96%E4%BA%92%E5%8A%A8%EF%BC%9A%E4%BC%A6%E7%90%86%E8%83%BD%E5%8A%9B%E8%BD%AC%E8%AF%91.md",
+      "headings": [
+        "导航",
+        "定位",
+        "一、先诊断一个主问题",
+        "二、内在状态：不等完美感觉",
+        "三、自然流生成器",
+        "四、开放假设替代冷读",
+        "五、轻结构：不是升级漏斗",
+        "六、结构／素材／表达三层排错",
+        "七、反馈决定下一步",
+        "八、输出模板"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "社交与职场",
+      "title": "获得领导青睐：从价值匹配到信任建立的实用指南",
+      "summary": "以需求匹配、创造价值和信任为线索整理职场沟通。",
+      "path": "references/practical/获得领导青睐：从价值匹配到信任建立的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E8%8E%B7%E5%BE%97%E9%A2%86%E5%AF%BC%E9%9D%92%E7%9D%90%EF%BC%9A%E4%BB%8E%E4%BB%B7%E5%80%BC%E5%8C%B9%E9%85%8D%E5%88%B0%E4%BF%A1%E4%BB%BB%E5%BB%BA%E7%AB%8B%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "获得领导青睐：从价值匹配到信任建立的实用指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "社交与职场",
+      "title": "被孤立如何破局：从自我调适到建立连接的实用指南",
+      "summary": "从自我调适、建立连接到场景表达组织应对方法。",
+      "path": "references/practical/被孤立如何破局：从自我调适到建立连接的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E8%A2%AB%E5%AD%A4%E7%AB%8B%E5%A6%82%E4%BD%95%E7%A0%B4%E5%B1%80%EF%BC%9A%E4%BB%8E%E8%87%AA%E6%88%91%E8%B0%83%E9%80%82%E5%88%B0%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "被孤立如何破局：从自我调适到建立连接的实用指南"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "导读与工具",
+      "title": "长期记忆与关系档案",
+      "summary": "规定同意、五类记忆、来源、增量更新、压缩召回与用户控制。",
+      "path": "references/practical/长期记忆与关系档案.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86%E4%B8%8E%E5%85%B3%E7%B3%BB%E6%A1%A3%E6%A1%88.md",
+      "headings": [
+        "目标",
+        "首次同意",
+        "五类记忆",
+        "自动更新",
+        "读取与按需披露",
+        "用户控制",
+        "设计来源"
+      ]
+    },
+    {
+      "layer": "practical",
+      "category": "日常表达",
+      "title": "高情商拒绝他人：体面护边界的实用指南",
+      "summary": "整理清晰边界、拒绝技巧与场景话术。",
+      "path": "references/practical/高情商拒绝他人：体面护边界的实用指南.md",
+      "url": "https://github.com/shengjidaguai-china/goutoujunshi/blob/4ced1d57561563f4b556f555ee1c8c91ffb16355/references/practical/%E9%AB%98%E6%83%85%E5%95%86%E6%8B%92%E7%BB%9D%E4%BB%96%E4%BA%BA%EF%BC%9A%E4%BD%93%E9%9D%A2%E6%8A%A4%E8%BE%B9%E7%95%8C%E7%9A%84%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97.md",
+      "headings": [
+        "高情商拒绝他人：体面护边界的实用指南"
+      ]
+    }
+  ]
+}

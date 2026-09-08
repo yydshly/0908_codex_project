@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1430" viewBox="0 0 1440 1430" role="img" aria-labelledby="title desc">
+<title id="title">狗头军师整体架构与六个可扩展产品方向</title>
+<desc id="desc">上层是维护者按来源与证据整理知识和实用方法，再建立核心规则与路由。运行时用户提供情境，Codex中的大模型按需读取规则和一到三份参考，生成建议，由用户决定行动。可选的记忆脚本和ChatLab提供档案与聊天证据。资料整理不是自动清洗流水线，用户记忆不自动回流到公开知识。当前仅整理留存，供后期复用。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto-start-reverse"><path d="M1 1 L8 4.5 L1 8" fill="none" stroke="#557363" stroke-width="1.5"/></marker></defs>
+<rect width="1440" height="1430" rx="24" fill="#f5f4ee"/>
+<g font-family="'Microsoft YaHei','PingFang SC',sans-serif" fill="#243e33">
+<text x="42" y="47" font-size="15" letter-spacing="2" fill="#657a69">007 / GOUTOUJUNSHI · 整体架构导读</text>
+<text x="42" y="96" font-size="35" font-weight="700">先沉淀资料与方法，再由大模型结合情境应用</text>
+<text x="42" y="132" font-size="18" fill="#5e7363">当前结论：整理留存，后期按需复用；本图归纳仓库实现，不代表已验证咨询效果。</text>
+
+<text x="42" y="178" font-size="18" font-weight="700">一、内容维护：资料如何变成可用方法</text>
+<rect x="42" y="199" width="254" height="258" rx="14" fill="#ffffff" stroke="#d3dece"/>
+<text x="62" y="234" font-size="21" font-weight="700">来源资料</text>
+<text x="62" y="273" font-size="18">研究、教材与理论框架</text>
+<text x="62" y="306" font-size="18">社会学、哲学与官方资料</text>
+<text x="62" y="339" font-size="18">沟通经验与公开表达</text>
+<text x="62" y="382" font-size="16" fill="#6c7d6d">书目与链接提供来源入口</text>
+<text x="62" y="411" font-size="16" fill="#6c7d6d">不是完整原始资料包</text>
+<path d="M296 321 H340" stroke="#557363" stroke-width="2" marker-end="url(#arrow)"/>
+
+<rect x="350" y="199" width="340" height="258" rx="14" fill="#e7eddf" stroke="#cbd8c4"/>
+<text x="373" y="234" font-size="21" font-weight="700">维护者整理与转译</text>
+<text x="373" y="273" font-size="18">确认来源 → 标明证据与限制</text>
+<text x="373" y="306" font-size="18">按主题重组 → 概念转为行为</text>
+<text x="373" y="339" font-size="18">提炼策略 → 编排步骤与反馈</text>
+<text x="373" y="382" font-size="16" fill="#5e7363">依据：知识库治理、贡献规范</text>
+<text x="373" y="411" font-size="16" fill="#5e7363">文档描述的编辑方法，非自动流水线</text>
+<path d="M690 321 H731" stroke="#557363" stroke-width="2" marker-end="url(#arrow)"/>
+
+<rect x="742" y="199" width="656" height="258" rx="14" fill="#ffffff" stroke="#d3dece"/>
+<text x="765" y="234" font-size="21" font-weight="700">可复用的内容包</text>
+<rect x="762" y="252" width="616" height="51" rx="8" fill="#edf2e7"/>
+<text x="779" y="284" font-size="18"><tspan font-weight="700">knowledge · 20 份</tspan><tspan dx="22">判断依据、行为问题与证据边界</tspan></text>
+<rect x="762" y="312" width="616" height="51" rx="8" fill="#edf2e7"/>
+<text x="779" y="344" font-size="18"><tspan font-weight="700">practical · 23 份</tspan><tspan dx="32">方法步骤、话术、反馈及工具规则</tspan></text>
+<rect x="762" y="372" width="616" height="62" rx="8" fill="#e0ead6"/>
+<text x="779" y="399" font-size="18" font-weight="700">SKILL.md · 行为入口与资料路由</text>
+<text x="779" y="423" font-size="16" fill="#5e7363">定义分析顺序、问题到文档的映射、输出与停止条件</text>
+
+<text x="42" y="503" font-size="18" font-weight="700">二、运行过程：大模型怎样应用这些内容</text>
+<path d="M850 457 V543" stroke="#557363" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="873" y="496" font-size="16" fill="#5e7363">模型按需读取</text>
+<text x="873" y="521" font-size="16" fill="#5e7363">核心规则 ＋ 通常 1–3 份资料</text>
+
+<rect x="42" y="552" width="254" height="160" rx="14" fill="#ffffff" stroke="#d3dece"/>
+<text x="62" y="588" font-size="21" font-weight="700">用户提供具体情境</text>
+<text x="62" y="627" font-size="18">叙述、目标、偏好</text>
+<text x="62" y="658" font-size="18">截图或已取得的聊天记录</text>
+<text x="62" y="689" font-size="16" fill="#6c7d6d">不同于公开知识与方法资料</text>
+<path d="M296 631 H340" stroke="#557363" stroke-width="2" marker-end="url(#arrow)"/>
+
+<rect x="350" y="552" width="570" height="160" rx="14" fill="#294d38"/>
+<text x="374" y="588" font-size="23" font-weight="700" fill="#f2f5ea">Codex 中的大模型 · 实际执行者</text>
+<text x="374" y="626" font-size="18" fill="#e5eddc">整理情绪 → 区分事实／推测／未知 → 权衡</text>
+<text x="374" y="658" font-size="18" fill="#e5eddc">选择策略 → 结合用户口吻生成 → 看反馈调整</text>
+<text x="374" y="689" font-size="16" fill="#c5d8b9">这些步骤是模型引导，没有独立程序逐项强制审核</text>
+<path d="M920 631 H960" stroke="#557363" stroke-width="2" marker-end="url(#arrow)"/>
+
+<rect x="971" y="552" width="427" height="160" rx="14" fill="#ffffff" stroke="#d3dece"/>
+<text x="994" y="588" font-size="21" font-weight="700">建议与下一步</text>
+<text x="994" y="627" font-size="18">建议、理由、话术、观察窗口与停止条件</text>
+<text x="994" y="658" font-size="18">用户决定是否行动，并提供后续反馈</text>
+<text x="994" y="689" font-size="16" fill="#6c7d6d">不自动发送消息或替用户执行现实行动</text>
+
+<text x="42" y="796" font-size="18" font-weight="700">三、可选工具</text>
+<text x="42" y="827" font-size="16" fill="#6c7d6d">虚线表示可选调用与结果返回</text>
+<text x="42" y="856" font-size="16" fill="#6c7d6d">没有工具也能提供文本建议</text>
+<path d="M518 789 V723" stroke="#557363" stroke-width="2" stroke-dasharray="6 5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="536" y="758" font-size="16" fill="#5e7363">精简档案读写</text>
+<path d="M1047 789 V750 H788 V723" fill="none" stroke="#557363" stroke-width="2" stroke-dasharray="6 5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1100" y="758" font-size="16" fill="#5e7363">已有聊天的查询证据</text>
+
+<rect x="350" y="798" width="430" height="146" rx="14" fill="#fffaf0" stroke="#cdb998" stroke-dasharray="6 4"/>
+<text x="373" y="831" font-size="20" font-weight="700">memory_store.py ＋ SQLite</text>
+<text x="373" y="865" font-size="17">经同意保存事实、事件和假设；支持撤销</text>
+<text x="373" y="894" font-size="17">程序检查启用状态、来源类型与容量</text>
+<text x="373" y="922" font-size="16" fill="#7b725c">记忆不自动回流到公开知识库</text>
+<rect x="808" y="798" width="590" height="146" rx="14" fill="#fffaf0" stroke="#cdb998" stroke-dasharray="6 4"/>
+<text x="831" y="831" font-size="20" font-weight="700">ChatLab · 外部可选依赖</text>
+<text x="831" y="865" font-size="17">查询与统计已导入记录，返回消息证据</text>
+<text x="831" y="894" font-size="17">仓库提供适配说明，不负责直接导出或解密聊天软件</text>
+<text x="831" y="922" font-size="16" fill="#7b725c">本项目未联调；记忆模块的既有验证不等于咨询效果验证</text>
+
+<text x="42" y="989" font-size="20" font-weight="700">四、我们的可扩展产品方向</text>
+<text x="42" y="1018" font-size="17" fill="#5e7363">以下是基于资料的产品设想，尚未开发或验证需求；复用内容与方法，按方向补齐能力。</text>
+<rect x="42" y="1040" width="440" height="105" rx="12" fill="#e6ecde"/>
+<text x="62" y="1072" font-size="21" font-weight="700">个人评价与行动指导</text>
+<text x="62" y="1101" font-size="17">复用：人格解释、行为问题、练习</text>
+<text x="62" y="1128" font-size="16" fill="#5e7363">需补：适用量表、固定计分与测量验证</text>
+<rect x="500" y="1040" width="440" height="105" rx="12" fill="#e6ecde"/>
+<text x="520" y="1072" font-size="21" font-weight="700">日常沟通练习</text>
+<text x="520" y="1101" font-size="17">复用：表达步骤、场景话术、反馈分支</text>
+<text x="520" y="1128" font-size="16" fill="#5e7363">需补：演练场景、评价规则与效果验证</text>
+<rect x="958" y="1040" width="440" height="105" rx="12" fill="#e6ecde"/>
+<text x="978" y="1072" font-size="21" font-weight="700">个人事件与关系复盘</text>
+<text x="978" y="1101" font-size="17">复用：事实拆分、事件与假设分层</text>
+<text x="978" y="1128" font-size="16" fill="#5e7363">需补：日志、时间线与用户纠错</text>
+<rect x="42" y="1163" width="440" height="105" rx="12" fill="#ffffff" stroke="#d3dece"/>
+<text x="62" y="1195" font-size="21" font-weight="700">伴侣与家庭议题卡</text>
+<text x="62" y="1224" font-size="17">复用：价值、金钱家务与对话卡</text>
+<text x="62" y="1251" font-size="16" fill="#5e7363">需补：双人协作、约定与复盘记录</text>
+<rect x="500" y="1163" width="440" height="105" rx="12" fill="#ffffff" stroke="#d3dece"/>
+<text x="520" y="1195" font-size="21" font-weight="700">人格形象与分享卡</text>
+<text x="520" y="1224" font-size="17">复用：把人格标签转成具体偏好</text>
+<text x="520" y="1251" font-size="16" fill="#5e7363">需补：原创视觉、可编辑画像与分享控制</text>
+<rect x="958" y="1163" width="440" height="105" rx="12" fill="#ffffff" stroke="#d3dece"/>
+<text x="978" y="1195" font-size="21" font-weight="700">领域知识与指导平台</text>
+<text x="978" y="1224" font-size="17">复用：来源分级、方法转译与资料路由</text>
+<text x="978" y="1251" font-size="16" fill="#5e7363">需补：内容管理、溯源审核与回答评估</text>
+<rect x="42" y="1292" width="1356" height="84" rx="12" fill="#294d38"/>
+<text x="64" y="1325" font-size="20" font-weight="700" fill="#f2f5ea">当前处理：整理留存，后期按需复用；个人评价产品最贴近我们此前的设想</text>
+<text x="64" y="1355" font-size="17" fill="#e5eddc">评价与指导分工：程序按标准计分 → 模型结合资料解释 → 用户确认 → 日常练习与反馈；本库没有现成测评引擎。</text>
+<text x="42" y="1403" font-size="13" fill="#71816e">架构依据：SKILL.md、documentation/、memory_store.py · 上游版本 4ced1d5 · 产品方向为我们的规划归纳，详细来源见配套文档</text>
+</g></svg>

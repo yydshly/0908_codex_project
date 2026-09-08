@@ -13,6 +13,7 @@
 | 002 | [Mnemosyne](projects/002-mnemosyne/README.md) | AI 外部记忆的存储、检索与整理；暂不深入或接入，保留实现架构供开发类似能力时参考。 | 已完成 | [GitHub](https://github.com/mnemosyne-oss/mnemosyne) | — |
 | 005 | [AI Engineering from Scratch](projects/005-ai-engineering-from-scratch/README.md) | 六大能力全景图、20阶段与523节课程导航，配套术语词典、学习路线和详细手册；导览已整理，课程未逐一验证。 | 已完成 | [GitHub](https://github.com/rohitg00/ai-engineering-from-scratch) | [演示](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/) |
 | 006 | [Signal Vaults](projects/006-signal-vaults/README.md) | 微信群、公众号等信息的 AI 日报工具；无当前接入需求，仅参考多源信息提取、筛选与个人日报的思路。 | 已完成 | [GitHub](https://github.com/JackyCufe/signal-vaults) | — |
+| 007 | [狗头军师 · 资料留存与架构导读](projects/007-goutoujunshi/README.md) | 以整体架构图引导理解43份资料、模型应用与六个产品方向；保留模块详解和复用入口，后期按需参考。 | 已完成 | [GitHub](https://github.com/shengjidaguai-china/goutoujunshi) | [演示](https://yydshly.github.io/0908_codex_project/demos/007-goutoujunshi/) |
 <!-- PROJECTS:END -->
 
 ## 架构导读 · 001 TeamAI CLI
@@ -58,6 +59,19 @@
 
 [打开学习地图 →](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/) · [阅读完整手册 →](projects/005-ai-engineering-from-scratch/notes/learning-guide.md) · [研究说明 →](projects/005-ai-engineering-from-scratch/README.md)
 
+
+## 架构导读 · 007 狗头军师
+
+**资料整理完成，保留整体架构与资料索引，供后期按需复用；不继续深入研究或接入。**
+
+![狗头军师整体架构：资料经整理形成知识与方法，Codex中的模型结合用户情境按需应用，可选工具提供档案和聊天证据。](projects/007-goutoujunshi/assets/architecture.svg)
+
+- **内容沉淀：**20份核心知识、23份实用资料，以及指导模型选取和使用资料的核心规则。
+- **应用方式：**模型结合用户事实生成建议；记忆和ChatLab为可选工具，没有自动知识回流。
+- **产品设想：**个人评价与指导、沟通练习、事件复盘、家庭议题卡、人格形象分享、领域知识平台；图中列出各自可复用内容与缺口。
+- **复用入口：**先看图，再查模块、产品详情和资料来源；各方向尚未开发或验证需求。
+
+[查看资料与架构说明 →](projects/007-goutoujunshi/README.md)
 
 ## 阅读入口
 
