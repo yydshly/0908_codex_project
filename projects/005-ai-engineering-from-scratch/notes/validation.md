@@ -27,6 +27,12 @@
 
 ## 发布
 
-发布后以 GitHub Actions 成功结果和线上页面访问作为上线依据。仓库保持手动触发部署；普通推送只校验构建。
+- 首次内容提交：`79b0346ddf0f9631bb4b7e5b362f5d18d5f8b501`。
+- GitHub Pages 已设置为 GitHub Actions 发布并启用 HTTPS。
+- [部署工作流 34235192483](https://github.com/yydshly/0908_codex_project/actions/runs/34235192483) 的 build 和 deploy 均成功。
+- [总首页](https://yydshly.github.io/0908_codex_project/)已显示项目卡片，可以进入 [005 学习地图](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/)。
+- 在线页面显示 20 阶段、523 课程和 100 组术语；MCP 搜索返回一项；手册可以打开并返回导览。
+- 在线 HTML、课程数据、图片与下载文档进行内容比对。文本允许 Git 标准化行尾，图片按原始字节比对。
+- 仓库保持手动触发部署；普通推送只校验构建。后续纯研究记录更新无需重发相同网页。
 
 本记录仅评价本次导览网页和文档。上游 523 节课程未逐一运行，学习效果与真实业务能力未被本次验证覆盖。

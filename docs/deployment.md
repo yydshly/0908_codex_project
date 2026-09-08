@@ -12,6 +12,14 @@ https://yydshly.github.io/0908_codex_project/demos/002-another-project/
 
 ## 启用发布
 
+2026-09-08 已为本仓库启用 GitHub Actions 类型的 Pages，并完成首次发布：
+
+- [站点总首页](https://yydshly.github.io/0908_codex_project/)
+- [005 AI 工程学习地图](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/)
+- [首次成功部署记录](https://github.com/yydshly/0908_codex_project/actions/runs/34235192483)
+
+下面保留配置与维护步骤。站点只发布已提交到所选分支的项目，不包含工作区中其他尚未提交的研究。
+
 1. 将仓库推送至 GitHub 的 `main` 分支。
 2. 打开仓库 **Settings → Pages → Build and deployment**，将 **Source** 设置为 **GitHub Actions**。
 3. 在 **Actions → Deploy research site → Run workflow** 选择 `main` 手动发布。后续更新也通过此入口发布；普通推送和 PR 只校验构建。
