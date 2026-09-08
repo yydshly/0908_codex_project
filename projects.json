@@ -137,5 +137,22 @@
     ],
     "cover": "assets/capability-map.png",
     "demo": true
+  },
+  {
+    "id": "012",
+    "slug": "the-long-silence",
+    "name": "The Long Silence · 深空探索实验室",
+    "summary": "五组真实运行画面、14 星系生成实测与渲染原理；进一步提出太空社区、个人星球、互动航道及共创产品方向，社交功能尚未实现。",
+    "repository": "https://github.com/achimala/TheLongSilence",
+    "status": "已完成",
+    "tags": [
+      "太空探索",
+      "程序化生成",
+      "WebGL2",
+      "太空社区",
+      "产品构想"
+    ],
+    "cover": "assets/terran.png",
+    "demo": true
   }
 ]

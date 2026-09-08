@@ -1,0 +1,566 @@
+{
+  "date": "2026-09-09",
+  "revision": "69b3296b4b6ecb3ca75ed6193e4b785c4c791c0f",
+  "node": "v22.15.0",
+  "assertions": 5,
+  "passed": 5,
+  "seed": 20260725,
+  "systemCount": 14,
+  "planetCount": 78,
+  "moonCount": 102,
+  "types": [
+    "desert",
+    "terran",
+    "gas",
+    "barren",
+    "ice",
+    "toxic",
+    "iron"
+  ],
+  "galaxyHash": "87096fca9561f3570967d42c3248687cd3151d4975d491e28dd4dd73324745c1",
+  "generatedSystemHash": "1ce00f3a430c8ae578d5159a1ee7b27a5f34604a4f1647806adb9d984532f1e0",
+  "publicAssets": {
+    "count": 61,
+    "bytes": 65046157
+  },
+  "systems": [
+    {
+      "name": "Ithirka",
+      "planets": [
+        {
+          "name": "Ithirka I",
+          "type": "desert",
+          "rings": false,
+          "moons": 2
+        },
+        {
+          "name": "Ithirka II",
+          "type": "terran",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Ithirka III",
+          "type": "gas",
+          "rings": true,
+          "moons": 1
+        },
+        {
+          "name": "Ithirka IV",
+          "type": "gas",
+          "rings": true,
+          "moons": 3
+        },
+        {
+          "name": "Ithirka V",
+          "type": "gas",
+          "rings": true,
+          "moons": 3
+        },
+        {
+          "name": "Ithirka VI",
+          "type": "gas",
+          "rings": true,
+          "moons": 1
+        }
+      ]
+    },
+    {
+      "name": "Ishenmar",
+      "planets": [
+        {
+          "name": "Ishenmar I",
+          "type": "terran",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Ishenmar II",
+          "type": "barren",
+          "rings": true,
+          "moons": 0
+        },
+        {
+          "name": "Ishenmar III",
+          "type": "barren",
+          "rings": false,
+          "moons": 1
+        },
+        {
+          "name": "Ishenmar IV",
+          "type": "gas",
+          "rings": true,
+          "moons": 2
+        },
+        {
+          "name": "Ishenmar V",
+          "type": "gas",
+          "rings": true,
+          "moons": 4
+        },
+        {
+          "name": "Ishenmar VI",
+          "type": "barren",
+          "rings": false,
+          "moons": 2
+        }
+      ]
+    },
+    {
+      "name": "Kereth",
+      "planets": [
+        {
+          "name": "Kereth I",
+          "type": "barren",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Kereth II",
+          "type": "terran",
+          "rings": false,
+          "moons": 2
+        },
+        {
+          "name": "Kereth III",
+          "type": "gas",
+          "rings": true,
+          "moons": 2
+        },
+        {
+          "name": "Kereth IV",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Kereth V",
+          "type": "barren",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Kereth VI",
+          "type": "gas",
+          "rings": true,
+          "moons": 3
+        }
+      ]
+    },
+    {
+      "name": "Velaimar",
+      "planets": [
+        {
+          "name": "Velaimar I",
+          "type": "toxic",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Velaimar II",
+          "type": "barren",
+          "rings": false,
+          "moons": 2
+        },
+        {
+          "name": "Velaimar III",
+          "type": "ice",
+          "rings": false,
+          "moons": 2
+        },
+        {
+          "name": "Velaimar IV",
+          "type": "gas",
+          "rings": true,
+          "moons": 1
+        },
+        {
+          "name": "Velaimar V",
+          "type": "gas",
+          "rings": true,
+          "moons": 4
+        },
+        {
+          "name": "Velaimar VI",
+          "type": "gas",
+          "rings": true,
+          "moons": 2
+        }
+      ]
+    },
+    {
+      "name": "Aelenvek",
+      "planets": [
+        {
+          "name": "Aelenvek I",
+          "type": "barren",
+          "rings": true,
+          "moons": 0
+        },
+        {
+          "name": "Aelenvek II",
+          "type": "terran",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Aelenvek III",
+          "type": "gas",
+          "rings": true,
+          "moons": 4
+        }
+      ]
+    },
+    {
+      "name": "Veruxnis",
+      "planets": [
+        {
+          "name": "Veruxnis I",
+          "type": "terran",
+          "rings": false,
+          "moons": 1
+        },
+        {
+          "name": "Veruxnis II",
+          "type": "toxic",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Veruxnis III",
+          "type": "gas",
+          "rings": true,
+          "moons": 2
+        },
+        {
+          "name": "Veruxnis IV",
+          "type": "barren",
+          "rings": false,
+          "moons": 2
+        },
+        {
+          "name": "Veruxnis V",
+          "type": "ice",
+          "rings": true,
+          "moons": 0
+        },
+        {
+          "name": "Veruxnis VI",
+          "type": "barren",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Veruxnis VII",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        }
+      ]
+    },
+    {
+      "name": "Nyxen",
+      "planets": [
+        {
+          "name": "Nyxen I",
+          "type": "terran",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Nyxen II",
+          "type": "gas",
+          "rings": true,
+          "moons": 3
+        },
+        {
+          "name": "Nyxen III",
+          "type": "ice",
+          "rings": false,
+          "moons": 2
+        },
+        {
+          "name": "Nyxen IV",
+          "type": "barren",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Nyxen V",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        }
+      ]
+    },
+    {
+      "name": "Sarunmar",
+      "planets": [
+        {
+          "name": "Sarunmar I",
+          "type": "desert",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Sarunmar II",
+          "type": "barren",
+          "rings": true,
+          "moons": 0
+        },
+        {
+          "name": "Sarunmar III",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Sarunmar IV",
+          "type": "ice",
+          "rings": false,
+          "moons": 2
+        },
+        {
+          "name": "Sarunmar V",
+          "type": "barren",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Sarunmar VI",
+          "type": "ice",
+          "rings": false,
+          "moons": 1
+        }
+      ]
+    },
+    {
+      "name": "Kereanis",
+      "planets": [
+        {
+          "name": "Kereanis I",
+          "type": "terran",
+          "rings": false,
+          "moons": 1
+        },
+        {
+          "name": "Kereanis II",
+          "type": "gas",
+          "rings": false,
+          "moons": 1
+        },
+        {
+          "name": "Kereanis III",
+          "type": "gas",
+          "rings": true,
+          "moons": 4
+        },
+        {
+          "name": "Kereanis IV",
+          "type": "barren",
+          "rings": true,
+          "moons": 0
+        },
+        {
+          "name": "Kereanis V",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Kereanis VI",
+          "type": "gas",
+          "rings": true,
+          "moons": 4
+        },
+        {
+          "name": "Kereanis VII",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Kereanis VIII",
+          "type": "ice",
+          "rings": true,
+          "moons": 1
+        }
+      ]
+    },
+    {
+      "name": "Ornunsil",
+      "planets": [
+        {
+          "name": "Ornunsil I",
+          "type": "terran",
+          "rings": true,
+          "moons": 1
+        },
+        {
+          "name": "Ornunsil II",
+          "type": "gas",
+          "rings": true,
+          "moons": 1
+        },
+        {
+          "name": "Ornunsil III",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Ornunsil IV",
+          "type": "ice",
+          "rings": false,
+          "moons": 1
+        },
+        {
+          "name": "Ornunsil V",
+          "type": "gas",
+          "rings": true,
+          "moons": 3
+        },
+        {
+          "name": "Ornunsil VI",
+          "type": "gas",
+          "rings": true,
+          "moons": 2
+        },
+        {
+          "name": "Ornunsil VII",
+          "type": "gas",
+          "rings": true,
+          "moons": 3
+        }
+      ]
+    },
+    {
+      "name": "Ornurreth",
+      "planets": [
+        {
+          "name": "Ornurreth I",
+          "type": "iron",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Ornurreth II",
+          "type": "toxic",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Ornurreth III",
+          "type": "gas",
+          "rings": true,
+          "moons": 2
+        },
+        {
+          "name": "Ornurreth IV",
+          "type": "ice",
+          "rings": false,
+          "moons": 2
+        },
+        {
+          "name": "Ornurreth V",
+          "type": "gas",
+          "rings": true,
+          "moons": 4
+        },
+        {
+          "name": "Ornurreth VI",
+          "type": "gas",
+          "rings": true,
+          "moons": 4
+        }
+      ]
+    },
+    {
+      "name": "Ornyrreth",
+      "planets": [
+        {
+          "name": "Ornyrreth I",
+          "type": "toxic",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Ornyrreth II",
+          "type": "gas",
+          "rings": true,
+          "moons": 2
+        },
+        {
+          "name": "Ornyrreth III",
+          "type": "gas",
+          "rings": true,
+          "moons": 3
+        },
+        {
+          "name": "Ornyrreth IV",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Ornyrreth V",
+          "type": "barren",
+          "rings": false,
+          "moons": 1
+        }
+      ]
+    },
+    {
+      "name": "Velealyn",
+      "planets": [
+        {
+          "name": "Velealyn I",
+          "type": "terran",
+          "rings": false,
+          "moons": 1
+        },
+        {
+          "name": "Velealyn II",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Velealyn III",
+          "type": "ice",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Velealyn IV",
+          "type": "ice",
+          "rings": true,
+          "moons": 1
+        }
+      ]
+    },
+    {
+      "name": "Senuxvek",
+      "planets": [
+        {
+          "name": "Senuxvek I",
+          "type": "toxic",
+          "rings": false,
+          "moons": 0
+        },
+        {
+          "name": "Senuxvek II",
+          "type": "gas",
+          "rings": true,
+          "moons": 2
+        },
+        {
+          "name": "Senuxvek III",
+          "type": "gas",
+          "rings": true,
+          "moons": 4
+        }
+      ]
+    }
+  ]
+}

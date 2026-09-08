@@ -18,7 +18,23 @@
 | 009 | [OpenHiggsfield](projects/009-open-higgsfield/README.md) | 调用外部生成 API 的图片／视频工作台，主要提供界面与参数适配，不含模型实现；仅作摘要留档，不继续深入研究。 | 已完成 | [GitHub](https://github.com/wide-trace/open-higgsfield) | — |
 | 010 | [WeMM-Embedding](projects/010-wemm-embedding/README.md) | 用整体架构图理解多模态向量模型、素材检索流程与产品接入分工；附能力边界、穿搭素材应用及同类方案，尚未部署实测。 | 已完成 | [GitHub](https://github.com/Tencent/WeMM-Embedding) | — |
 | 011 | [Screenshot Studio · 完整能力学习工作台](projects/011-screenshot-studio/README.md) | 一张图看懂截图创作的输入、设计、表达与输出；主页提供 18 项练习、自检和学习笔记，附原版运行证据及真实成品。 | 已完成 | [GitHub](https://github.com/opennookorg/screenshot-studio) | [演示](https://yydshly.github.io/0908_codex_project/demos/011-screenshot-studio/) |
+| 012 | [The Long Silence · 深空探索实验室](projects/012-the-long-silence/README.md) | 五组真实运行画面、14 星系生成实测与渲染原理；进一步提出太空社区、个人星球、互动航道及共创产品方向，社交功能尚未实现。 | 已完成 | [GitHub](https://github.com/achimala/TheLongSilence) | [演示](https://yydshly.github.io/0908_codex_project/demos/012-the-long-silence/) |
 <!-- PROJECTS:END -->
+
+## 实测与产品导览 · 012 The Long Silence
+
+**从可运行的浏览器宇宙，理解“太空是社区、星球是个人、航道是交互”的产品方向。**
+
+[![The Long Silence 本机真实效果：类地行星、海洋与大气；点击进入五组场景展示](projects/012-the-long-silence/assets/terran.png)](https://yydshly.github.io/0908_codex_project/demos/012-the-long-silence/#showcase)
+
+图片来自本次原版实际渲染。公开导览直接展示驾驶舱、类地行星、星环、地表和星图，无需启动本机服务。
+
+- **已验证的能力：**固定种子生成 14 个星系、78 颗行星与 102 颗卫星；保留运行记录、中文快捷面板与渲染管线说明。
+- **我们的产品理解：**自转对应交流节奏，大气对应开放范围，卫星承载项目；双方建立航道，在共同空间站共创，用星星记录共同经历。
+- **可扩展方向：**创作者社区、个人数字空间、朋友／伴侣小宇宙、主题俱乐部、学习社区与团队共创；提供使用过程、首版范围和技术分工。
+- **交付边界：**社区功能仍为构想；完整游戏需本机启动。地表截图来自低画质直接着陆诊断，普通着陆交接问题尚未修复。
+
+[公开效果与技术导览 →](https://yydshly.github.io/0908_codex_project/demos/012-the-long-silence/) · [太空社区产品构想 →](https://yydshly.github.io/0908_codex_project/demos/012-the-long-silence/community.html) · [研究说明与本机运行 →](projects/012-the-long-silence/README.md)
 
 ## 架构导读 · 001 TeamAI CLI
 

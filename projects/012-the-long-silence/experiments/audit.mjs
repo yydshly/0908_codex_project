@@ -1,0 +1,22 @@
+import {pathToFileURL,fileURLToPath} from 'node:url';
+import {resolve,dirname} from 'node:path';
+import {readFileSync,writeFileSync,readdirSync,statSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'../../..');
+const upstream=resolve(root,'upstream/the-long-silence');
+const {generateGalaxy,generateSystem}=await import(pathToFileURL(resolve(upstream,'src/world/generate.js')));
+// Moon.parent is a back-reference, represented by parent name for stable JSON.
+const hash=x=>createHash('sha256').update(JSON.stringify(x,(k,v)=>k==='parent'?v?.name:v)).digest('hex');
+const a=generateGalaxy(20260725,14),b=generateGalaxy(20260725,14),c=generateGalaxy(20260726,14);
+assert.equal(hash(a),hash(b),'same seed repeats galaxy');
+assert.notEqual(hash(a),hash(c),'different seed changes galaxy');
+const systems=a.map(generateSystem),again=b.map(generateSystem);
+assert.equal(hash(systems),hash(again),'system generation deterministic');
+assert.equal(new Set(a.map(x=>x.name)).size,14,'system names unique');
+assert(systems[0].planets.some(p=>p.type==='terran'&&p.garden),'starting system has a garden world');
+const files=dir=>readdirSync(dir).flatMap(n=>{const p=resolve(dir,n);return statSync(p).isDirectory()?files(p):[p];});
+const assets=files(resolve(upstream,'public')).filter(p=>!p.endsWith('research-health.json'));
+const result={date:'2026-09-09',revision:'69b3296b4b6ecb3ca75ed6193e4b785c4c791c0f',node:process.version,assertions:5,passed:5,seed:20260725,systemCount:a.length,planetCount:systems.reduce((n,s)=>n+s.planets.length,0),moonCount:systems.reduce((n,s)=>n+s.planets.reduce((m,p)=>m+p.moons.length,0),0),types:[...new Set(systems.flatMap(s=>s.planets.map(p=>p.type)))],galaxyHash:hash(a),generatedSystemHash:hash(systems),publicAssets:{count:assets.length,bytes:assets.reduce((n,p)=>n+statSync(p).size,0)},systems:systems.map(s=>({name:s.star.name,planets:s.planets.map(p=>({name:p.name,type:p.type,rings:!!p.rings,moons:p.moons.length}))}))};
+writeFileSync(resolve(root,'projects/012-the-long-silence/notes/generation-audit.json'),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({...result,systems:undefined},null,2));

@@ -1,0 +1,32 @@
+星系 1/14 · Ithirka
+模式 exterior · 扫描 0
+速度 239998.7 km/s · 折叠 开
+帧率 228.2 · 像素比 1.00
+绘制 115 次 · ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+2026-09-08T18:05:47.551Z DIAGNOSTIC land({now:true}) skips descent/precompile wait
+2026-09-08T18:05:51.769Z OK ground
+2026-09-08T18:06:00.236Z OK foot
+2026-09-08T18:06:29.611Z OK fold
+2026-09-08T18:06:38.025Z OK archive
+
+THE LONG SILENCE
+DEEP SURVEY VESSEL PALE SEEKER · COMMISSION 1101
+SYSTEMS CHARTED
+1 / 14
+BODIES CATALOGUED
+0
+RESONANCE
+0 / 7
+CURRENT SYSTEM
+Ithirka
+STAR
+G · 5774 K
+HULL
+100 %
+
+Forty thousand years ago, nine hundred inhabited worlds fell silent inside a volume of space eighty light-years across. No debris. No radiation signature. No sign of violence at any scale we can measure.
+
+The Choir left their cities lit and their orbits tidy, and they left seven instruments — the Resonators — standing in seven systems.
+
+Chart what you can. Scan what you find. Attune what will let you.
