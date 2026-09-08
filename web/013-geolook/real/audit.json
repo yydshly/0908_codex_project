@@ -1,0 +1,781 @@
+{
+  "slug": "obsidian-real",
+  "audited_at": "2026-09-09T02:40:37+08:00",
+  "market": "global",
+  "site": {
+    "slug": "obsidian-real",
+    "root": "https://obsidian.md",
+    "crawled_at": "2026-09-09T02:40:37+08:00",
+    "has_robots": true,
+    "has_llms_txt": false,
+    "has_sitemap": false,
+    "sitemap_url_count": 0,
+    "robots_sitemap_declared": false,
+    "sitemap_noisy_urls": 0,
+    "sitemap_noisy_example": null,
+    "ai_bots_blocked": [],
+    "ai_bots_partial": [],
+    "ai_ua_probe": {
+      "GPTBot": 200,
+      "ClaudeBot": 200,
+      "PerplexityBot": 200,
+      "Bytespider": 200
+    },
+    "ai_ua_blocked": [],
+    "llms_txt_check": null,
+    "pages_crawled": 12,
+    "pages_ok": 12,
+    "ua_fallback_pages": 0
+  },
+  "language_coverage": {
+    "distribution": {
+      "en": 9,
+      "zh": 1
+    },
+    "zh_pages": 1,
+    "en_pages": 9,
+    "ja_pages": 0,
+    "content_pages": 10,
+    "hreflang_pages": 0,
+    "multilingual": true
+  },
+  "site_issues": [
+    "P0 没有 sitemap.xml，收录效率和覆盖面都会打折",
+    "P2 没有 /llms.txt，可以低成本给 AI 一份官方事实索引",
+    "P1 多语言站但只有 0/10 个内容页声明 hreflang，引擎会把各语言版本当重复内容或串错语言，跨市场检索时挂错页面"
+  ],
+  "layers": [
+    {
+      "key": "access",
+      "name": "访问",
+      "question": "抓取器能拿到内容吗",
+      "status": "warn",
+      "issues": [
+        "2 页疑似前端渲染空壳，抓取器读不到正文"
+      ]
+    },
+    {
+      "key": "orient",
+      "name": "定向",
+      "question": "抓取器找得到、认得清每个 URL 吗",
+      "status": "fail",
+      "issues": [
+        "没有 sitemap.xml",
+        "没有 /llms.txt",
+        "12 页缺 canonical",
+        "多语言站 hreflang 覆盖仅 0/10 页"
+      ]
+    },
+    {
+      "key": "understand",
+      "name": "理解",
+      "question": "机器读得懂这是什么实体吗",
+      "status": "fail",
+      "issues": [
+        "12 页没有任何 JSON-LD"
+      ],
+      "blocked_by": "定向"
+    },
+    {
+      "key": "quote",
+      "name": "可引用",
+      "question": "有值得引用的具体内容吗",
+      "status": "fail",
+      "issues": [
+        "页面均分 41.4（70 以下属「需要改造」）",
+        "5 页整页没有可独立引用的段落",
+        "「对比」块缺失 12/12 页",
+        "「数字事实」块缺失 11/12 页",
+        "「FAQ」块缺失 11/12 页"
+      ],
+      "blocked_by": "定向"
+    }
+  ],
+  "keywords_used": [
+    "Compare",
+    "Evernote",
+    "Is",
+    "Markdown",
+    "Publish",
+    "Sync",
+    "add",
+    "alternatives",
+    "apps",
+    "are",
+    "as",
+    "base",
+    "best",
+    "building",
+    "collaboration",
+    "commercial",
+    "databases",
+    "do",
+    "files",
+    "free",
+    "good",
+    "knowledge",
+    "local",
+    "main",
+    "needs",
+    "note",
+    "notes",
+    "offline",
+    "options",
+    "personal",
+    "project",
+    "real",
+    "shared",
+    "small",
+    "store",
+    "taking",
+    "team",
+    "that",
+    "time",
+    "to"
+  ],
+  "page_count": 12,
+  "avg_score": 41.4,
+  "grade_distribution": {
+    "A": 0,
+    "B": 0,
+    "C": 7,
+    "D": 5
+  },
+  "block_gap": [
+    {
+      "block": "对比",
+      "missing_pages": 12,
+      "total": 12
+    },
+    {
+      "block": "数字事实",
+      "missing_pages": 11,
+      "total": 12
+    },
+    {
+      "block": "FAQ",
+      "missing_pages": 11,
+      "total": 12
+    },
+    {
+      "block": "操作步骤",
+      "missing_pages": 10,
+      "total": 12
+    },
+    {
+      "block": "定义",
+      "missing_pages": 9,
+      "total": 12
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://obsidian.md/help/",
+      "title": "Home - Obsidian Help",
+      "word_count": 0,
+      "score": 10.0,
+      "grade": "D",
+      "dimensions": {
+        "可抓取性": 10.0,
+        "内容长度": 0.0,
+        "结构规范": 0.0,
+        "可抽取块": 0,
+        "权威信号": 0.0,
+        "对题性": 0.0
+      },
+      "sections_total": 0,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P0 静态 HTML 里几乎没有正文（疑似纯前端渲染），AI 抓取器读不到内容",
+        "P1 正文不足 1000 词门槛（高影响力页面平均 1,943 词，Bottom 四分位仅 170 词）",
+        "P1 H1 不是唯一一个（0 个或多个），主题信号混乱",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 列表密度过低，Top 四分位页面为 0.428；把要点改成 ul/ol 更易被抽取",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P2 几乎不引用外部来源，证据链偏弱",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "SPA_SHELL",
+        "SHORT_CONTENT",
+        "BAD_H1",
+        "FEW_H2",
+        "LOW_LIST_DENSITY",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_DATE",
+        "FEW_EXTERNAL_LINKS",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/ar/",
+      "title": "Obsidian - شحذ تفكيرك",
+      "word_count": 99,
+      "score": 28.1,
+      "grade": "D",
+      "dimensions": {
+        "可抓取性": 10.0,
+        "内容长度": 0.0,
+        "结构规范": 14.1,
+        "可抽取块": 0,
+        "权威信号": 4.0,
+        "对题性": 0.0
+      },
+      "sections_total": 4,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P0 静态 HTML 里几乎没有正文（疑似纯前端渲染），AI 抓取器读不到内容",
+        "P1 正文不足 1000 词门槛（高影响力页面平均 1,943 词，Bottom 四分位仅 170 词）",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "SPA_SHELL",
+        "SHORT_CONTENT",
+        "FEW_H2",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/bn/",
+      "title": "Obsidian - আপনার চিন্তাকে আরও ধারালো করুন",
+      "word_count": 122,
+      "score": 33.4,
+      "grade": "D",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 2.2,
+        "结构规范": 14.1,
+        "可抽取块": 0,
+        "权威信号": 4.0,
+        "对题性": 0.0
+      },
+      "sections_total": 4,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 正文不足 1000 词门槛（高影响力页面平均 1,943 词，Bottom 四分位仅 170 词）",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "SHORT_CONTENT",
+        "FEW_H2",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/about",
+      "title": "About - Obsidian",
+      "word_count": 426,
+      "score": 36.0,
+      "grade": "D",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 5.2,
+        "结构规范": 11.8,
+        "可抽取块": 0,
+        "权威信号": 6.0,
+        "对题性": 0.0
+      },
+      "sections_total": 1,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 正文不足 1000 词门槛（高影响力页面平均 1,943 词，Bottom 四分位仅 170 词）",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "SHORT_CONTENT",
+        "FEW_H2",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/blog",
+      "title": "Obsidian Blog - Obsidian",
+      "word_count": 874,
+      "score": 43.0,
+      "grade": "D",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 9.0,
+        "结构规范": 9.0,
+        "可抽取块": 6,
+        "权威信号": 6.0,
+        "对题性": 0.0
+      },
+      "sections_total": 0,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": true,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 正文不足 1000 词门槛（高影响力页面平均 1,943 词，Bottom 四分位仅 170 词）",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "SHORT_CONTENT",
+        "FEW_H2",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/de/",
+      "title": "Obsidian - Schärfe dein Denken",
+      "word_count": 1030,
+      "score": 46.9,
+      "grade": "C",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 12.8,
+        "结构规范": 14.1,
+        "可抽取块": 0,
+        "权威信号": 4.0,
+        "对题性": 3.0
+      },
+      "sections_total": 4,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 整页没有一个可独立引用的段落——每段要么太短、要么没有数字/定义/步骤等硬信息；检索是按段落选材的，先把 2–3 个核心段落改成自包含的证据段",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "FEW_H2",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_QUOTABLE_PASSAGE",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/es/",
+      "title": "Obsidian - Afila tu pensamiento",
+      "word_count": 1145,
+      "score": 46.9,
+      "grade": "C",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 12.8,
+        "结构规范": 14.1,
+        "可抽取块": 0,
+        "权威信号": 4.0,
+        "对题性": 3.0
+      },
+      "sections_total": 4,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 整页没有一个可独立引用的段落——每段要么太短、要么没有数字/定义/步骤等硬信息；检索是按段落选材的，先把 2–3 个核心段落改成自包含的证据段",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "FEW_H2",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_QUOTABLE_PASSAGE",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/fr/",
+      "title": "Obsidian - Affûtez votre pensée",
+      "word_count": 1246,
+      "score": 46.9,
+      "grade": "C",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 12.8,
+        "结构规范": 14.1,
+        "可抽取块": 0,
+        "权威信号": 4.0,
+        "对题性": 3.0
+      },
+      "sections_total": 4,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 整页没有一个可独立引用的段落——每段要么太短、要么没有数字/定义/步骤等硬信息；检索是按段落选材的，先把 2–3 个核心段落改成自包含的证据段",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "FEW_H2",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_QUOTABLE_PASSAGE",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/it/",
+      "title": "Obsidian - Affina il tuo pensiero",
+      "word_count": 1064,
+      "score": 46.9,
+      "grade": "C",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 12.8,
+        "结构规范": 14.1,
+        "可抽取块": 0,
+        "权威信号": 4.0,
+        "对题性": 3.0
+      },
+      "sections_total": 4,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 整页没有一个可独立引用的段落——每段要么太短、要么没有数字/定义/步骤等硬信息；检索是按段落选材的，先把 2–3 个核心段落改成自包含的证据段",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "FEW_H2",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_FAQ",
+        "NO_QUOTABLE_PASSAGE",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/pricing",
+      "title": "Pricing - Obsidian",
+      "word_count": 542,
+      "score": 48.8,
+      "grade": "C",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 5.2,
+        "结构规范": 9.6,
+        "可抽取块": 15,
+        "权威信号": 6.0,
+        "对题性": 0.0
+      },
+      "sections_total": 3,
+      "sections_quotable": 1,
+      "blocks": {
+        "定义": true,
+        "数字事实": true,
+        "对比": false,
+        "操作步骤": false,
+        "FAQ": true
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 正文不足 1000 词门槛（高影响力页面平均 1,943 词，Bottom 四分位仅 170 词）",
+        "P1 H1 不是唯一一个（0 个或多个），主题信号混乱",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「操作步骤」块，补上可显著提升被吸收概率",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "SHORT_CONTENT",
+        "BAD_H1",
+        "FEW_H2",
+        "NO_COMPARISON",
+        "NO_HOWTO",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md/zh",
+      "title": "Obsidian - 磨砺你的思维",
+      "word_count": 1046,
+      "score": 50.9,
+      "grade": "C",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 12.8,
+        "结构规范": 14.1,
+        "可抽取块": 5,
+        "权威信号": 6.0,
+        "对题性": 0.0
+      },
+      "sections_total": 4,
+      "sections_quotable": 0,
+      "blocks": {
+        "定义": false,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": true,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「定义」块，补上可显著提升被吸收概率",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 整页没有一个可独立引用的段落——每段要么太短、要么没有数字/定义/步骤等硬信息；检索是按段落选材的，先把 2–3 个核心段落改成自包含的证据段",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体",
+        "P1 标题体系几乎不含目标问题关键词，对题性是影响力最强的预测因子（r=0.432）"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "FEW_H2",
+        "NO_DEFINITION",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_FAQ",
+        "NO_QUOTABLE_PASSAGE",
+        "NO_DATE",
+        "NO_JSONLD",
+        "LOW_RELEVANCE"
+      ]
+    },
+    {
+      "url": "https://obsidian.md",
+      "title": "Obsidian - Sharpen your thinking",
+      "word_count": 993,
+      "score": 58.6,
+      "grade": "C",
+      "dimensions": {
+        "可抓取性": 13.0,
+        "内容长度": 9.0,
+        "结构规范": 14.1,
+        "可抽取块": 11,
+        "权威信号": 6.0,
+        "对题性": 5.5
+      },
+      "sections_total": 4,
+      "sections_quotable": 2,
+      "blocks": {
+        "定义": true,
+        "数字事实": false,
+        "对比": false,
+        "操作步骤": true,
+        "FAQ": false
+      },
+      "jsonld_types": [],
+      "issues": [
+        "P2 缺 canonical，重复内容会稀释信号",
+        "P1 正文不足 1000 词门槛（高影响力页面平均 1,943 词，Bottom 四分位仅 170 词）",
+        "P1 H2 小节不足 6 个，高影响力页面平均 10.59 个标题；建议拆到 6-10 节",
+        "P1 缺「数字事实」块，补上可显著提升被吸收概率",
+        "P1 缺「对比」块，补上可显著提升被吸收概率",
+        "P1 缺「FAQ」块，补上可显著提升被吸收概率",
+        "P1 正文没有可见的发布/更新日期，时效性无法判断",
+        "P0 没有任何结构化数据（JSON-LD），机器读不懂这页在讲什么实体"
+      ],
+      "issue_codes": [
+        "NO_CANONICAL",
+        "SHORT_CONTENT",
+        "FEW_H2",
+        "NO_NUMBERS",
+        "NO_COMPARISON",
+        "NO_FAQ",
+        "NO_DATE",
+        "NO_JSONLD"
+      ]
+    }
+  ]
+}

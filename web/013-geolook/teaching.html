@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="用山野咖啡的教学案例，体验 GeoLook 的采样、诊断、行动与复查流程。">
+  <title>GeoLook · 品牌被看见的过程</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./data.js"></script><script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#status"><span class="logo">g<span>↗</span></span><span>GeoLook<small>能力体验馆 / 013</small></span></a>
+    <div class="sidebar-label">一段品牌被看见的旅程</div>
+    <nav aria-label="体验步骤"><a href="./"><span>导览</span>先看整体引导图<i>↗</i></a>
+      <a href="./real.html"><span>实测</span>完整真实案例<i>↗</i></a>
+      <a href="#status" data-page="status"><span>01</span>看见现状<i>↗</i></a>
+      <a href="#diagnosis" data-page="diagnosis"><span>02</span>找到问题<i>↗</i></a>
+      <a href="#action" data-page="action"><span>03</span>着手改进<i>↗</i></a>
+      <a href="#review" data-page="review"><span>04</span>回来复查<i>↗</i></a>
+      <a href="#inside" data-page="inside"><span>05</span>原理与扩展<i>↗</i></a>
+    </nav>
+    <div class="sidebar-bottom"><span class="tiny-dot"></span> 无需账号，直接体验<p>开源项目研究集<br>中文交互导览 · 本地计算</p><a href="https://github.com/aigclink/geolook" target="_blank" rel="noopener">查看上游仓库 ↗</a></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>OPEN SOURCE FIELD NOTES <b>/</b> GEOLOOK</span><span class="sample-tag">● 教学模拟数据</span></header>
+    <main id="main" tabindex="-1">
+      <div class="live-banner" style="display:flex;align-items:center;justify-content:space-between;gap:15px;background:#e7efdc;border:1px solid #cbdcbc;padding:15px 18px;border-radius:10px;margin-bottom:24px"><div><strong>原版已实际跑通：Obsidian 完整案例</strong><p style="font-size:11px;margin:4px 0 0">12 页官网、4 条真实回答、任务与资产、本地修复验收、原版交付报告。</p></div><a class="button" href="./real.html">进入真实演示 →</a></div>
+      <div class="page-intro"><div><div class="eyebrow" id="eyebrow"></div><h1 id="page-title"></h1><p id="page-desc"></p></div><button class="button quiet" id="export">导出体验报告 ↗</button></div>
+      <div class="context"><span class="store-icon">山</span><div><strong>山野咖啡</strong><small>虚构品牌 · 杭州 · 安静办公 / 手冲咖啡</small></div><span class="context-note">目标：当用户问“去哪家”，答案里能有我。</span></div>
+      <section id="page-status" class="page" aria-label="看见现状">
+        <div class="hero"><div><div class="eyebrow">先认识它在做什么</div><h2>顾客开始问 AI，<br>它的答案里有你吗？</h2><p>GeoLook 帮你收集答案、找到信息缺口，<br>把营销分析变成可执行的改进清单。</p><a href="#diagnosis" class="button lime">跟着案例走一遍 <span>→</span></a></div><div class="conversation"><div class="conversation-label"><span class="tiny-dot"></span> 一个顾客可能会问的问题</div><div class="bubble user">杭州有哪些适合带电脑、安静办公的咖啡店？</div><div class="bubble answer">可以看看 <b>留白咖啡</b> 和 <b>河岸咖啡</b>，先确认插座与营业时间。<span class="annotation">这条示例答案里，没有山野咖啡。</span></div><small>虚构答案，用于解释“品牌缺席”的含义。</small></div></div>
+        <div class="section-heading"><div><h2>把“有没有我”变成数据</h2><p>基线轮 · 10 条未点名答案 + 2 条品牌验证答案</p></div><label class="select-label">样本组 <select id="engine"><option value="all">全部样本组</option><option value="A">网页样本组 A</option><option value="B">网页样本组 B</option></select></label></div>
+        <div class="metrics" id="metrics"></div>
+        <div class="section-heading"><div><h2>数字背后，是一条条回答</h2><p>点击问题，看原始答案和统计依据。</p></div><span class="pill">先看证据，再谈原因</span></div>
+        <div class="evidence-layout"><div id="question-list" class="question-list" aria-label="问题列表"></div><article id="answer-detail" class="panel answer-detail" aria-live="polite"></article></div>
+        <div class="note">这里的 A / B 是虚构网页样本组，不对应真实 AI 平台。提及率排除已经点名品牌的问题；所有比例由当前样本实时计算。</div>
+      </section>
+      <section id="page-diagnosis" class="page" aria-label="找到问题" hidden>
+        <div class="split-heading"><div><span class="eyebrow">从现象到待验证的解释</span><h2>数据告诉你缺席，<br>诊断帮你寻找原因。</h2></div><p>“AI 没提到我”是观察结果。<br>“因为官网缺少介绍”是可能原因。<br>二者不能直接画等号。</p></div>
+        <div class="diagnostic-grid"><article class="panel"><span class="badge green">样本中可以看到</span><h3>办公推荐问题中，山野缺席</h3><p>样本组 A 与 B 的基线答案都提到了其他店铺。引用来源中出现城市指南与办公地点清单。</p><a href="#status" class="text-link">返回答案样本 ↗</a></article><article class="panel"><span class="badge amber">下一步需要验证</span><h3>也许缺少可被找到的办公信息</h3><p>检查官网与第三方资料是否说明插座、Wi-Fi、噪声与久坐规则。需要真实证据，不能为了曝光编造。</p><a href="#action" class="text-link">把线索转成待办 ↗</a></article></div>
+        <div class="section-heading"><div><h2>网站体检，按四层顺序检查</h2><p>选择一层，看看它检查什么，以及结论的边界。</p></div><span class="pill">上游能力导览</span></div>
+        <div class="layer-layout"><div id="layers" class="layers"></div><article class="panel" id="layer-detail" aria-live="polite"></article></div>
+        <div class="section-heading"><div><h2>两个分数，要分开理解</h2><p>分数是整理线索的方法，真实答案才是外部表现。</p></div></div>
+        <div class="diagnostic-grid"><article class="panel"><h3>页面体检分</h3><p>检查网页的技术与内容条件。上游六项权重如下。</p><div id="weights"></div><small>按规则加分，不等于被 AI 引用的概率。</small></article><article class="panel"><h3>品牌健康分</h3><p>上游综合提及率、官网引用份额、渠道覆盖、内容承接和事实一致性。缺少数据时会重新分配权重。</p><div class="callout">同样是 80 分，可能测量的维度不同。<br><strong>比较时先看口径，再看数字。</strong></div><p>事实一致性依赖人工核对；负面词命中只是待复核线索。</p></article></div>
+      </section>
+      <section id="page-action" class="page" aria-label="着手改进" hidden>
+        <div class="section-heading"><div><h2>从“知道问题”到“有人去做”</h2><p>体验勾选任务。任务进度与曝光数据分别记录。</p></div><button class="button quiet" id="reset">重置体验</button></div>
+        <div class="progress-summary"><strong id="task-count">0 / 4</strong><div><b>示例任务已完成</b><div class="progress-track"><span id="task-progress"></span></div></div><small>勾选仅保存在当前浏览器<br>不会修改网站或调用外部服务</small></div>
+        <div class="task-grid" id="tasks"></div>
+        <div class="section-heading"><div><h2>内容工作台：把介绍写具体</h2><p>编辑文字，观察信息块检测的变化。这是教学规则，不是上游完整评分。</p></div><button class="button quiet" id="example">填入完整示例</button></div>
+        <div class="editor-layout"><div class="panel editor"><label for="draft">品牌介绍草稿</label><textarea id="draft" spellcheck="false">山野咖啡是一家位于杭州的社区咖啡店。我们希望提供舒适的咖啡体验。</textarea><div class="editor-footer"><small>店铺信息均为虚构；真实发布前必须核实。</small><button class="button" id="copy">复制草稿</button></div></div><div class="panel"><h3>让读者能直接获得答案</h3><div id="draft-checks" aria-live="polite"></div><div class="callout">检测到数字 ≠ 数字真实。<br>检测到定义 ≠ AI 一定会采纳。</div></div></div>
+        <div class="note">上游还可以生成文章大纲、JSON-LD、llms.txt，并对接发布渠道。这里演示编辑、信息块检测和本地导出；没有连接真实发布账号。</div>
+      </section>
+      <section id="page-review" class="page" aria-label="回来复查" hidden>
+        <div class="split-heading"><div><span class="eyebrow">完成动作之后，还要看结果</span><h2>做完了，<br>不等于有效了。</h2></div><p>网站修改可以重新抓取验收。<br>推荐表现需要新一轮答案采样。<br>订单增长还需要业务数据。</p></div>
+        <div class="review-toolbar"><div><h3>对比两轮示例样本</h3><p>相同问题 · 相同样本组 · 同样排除点名问题</p></div><label class="select-label">观察情境 <select id="outcome"><option value="improved">情境一：观察到增加</option><option value="flat">情境二：没有变化</option><option value="declined">情境三：观察到下降</option></select></label></div>
+        <div class="panel comparison"><div class="chart-key"><span>● 基线轮</span><span>● 复查轮（模拟）</span></div><div id="comparison-chart"></div><div class="review-verdict" id="review-verdict" aria-live="polite"></div></div>
+        <div class="section-heading"><div><h2>每个问题，具体发生了什么</h2><p>数字变化来自预置复查答案，与任务勾选无关。</p></div></div><div class="table-wrap"><table><thead><tr><th>未点名问题</th><th>基线提及</th><th>复查提及</th><th>观察结果</th></tr></thead><tbody id="delta-table"></tbody></table></div>
+        <div class="diagnostic-grid review-bottom"><article class="panel"><span class="badge green">工具能帮助验证</span><h3>动作有没有落实</h3><p>重新检查页面是否有正文、是否增加结构化数据、抓取限制是否解除。上游会将再次不达标的已完成任务重新打开。</p></article><article class="panel"><span class="badge amber">需要更多证据</span><h3>是不是这次改动带来的效果</h3><p>模型、搜索索引和竞争对手都可能变化。需要多轮采样、对照问题和事件记录，才能提高判断把握。</p></article></div>
+      </section>
+      <section id="page-inside" class="page" aria-label="原理与扩展" hidden>
+        <div class="skill-overview"><div class="section-heading"><div><h2>总共 1 个 Skill，包含 8 组执行能力</h2><p>唯一技能叫 geo。8 组是能力归纳，Python 模块和浏览器扩展不另算技能。</p></div><a class="button quiet" href="./assets/skill-map.svg" target="_blank" rel="noopener">打开整体图 ↗</a></div><a class="skill-map-link" href="./assets/skill-map.svg" target="_blank" rel="noopener" aria-label="打开 GeoLook 技能与整体能力大图"><img src="./assets/skill-map.svg" width="1500" height="1220" alt="GeoLook 只有一个正式技能 geo。AI 助手、网页、命令行共用 Python 程序，完成品牌题库、网站体检、答案采样、竞品分析、执行任务、内容生成、渠道分发、验收报告八组能力；数据存入本地文件。"></a><p class="note">点图可打开原始矢量图并放大。计数依据：研究版本 9492cb3 的完整文件树只有根目录 SKILL.md。</p></div>
+        <div class="panel principle"><div class="eyebrow">本质是营销监测与执行管理</div><h2>收集答案 → 分析缺口 → 安排改进 → 复查证据</h2><p>GeoLook 把这些工作串在一个界面里。它不会改变模型参数，也无法保证某个平台推荐某个品牌。</p></div>
+        <div class="section-heading"><div><h2>沿着数据，看代码如何工作</h2><p>点击模块查看实现、产物和适用边界。</p></div><span class="pill">研究版本 9492cb3</span></div>
+        <div class="module-tabs" id="modules"></div><article id="module-detail" class="panel" aria-live="polite"></article>
+        <div class="section-heading"><div><h2>适合哪些工作</h2></div></div><div class="scenario-grid"><article class="panel"><span class="scenario-number">01 / 品牌方</span><h3>让选型答案里有自己</h3><p>SaaS、消费品牌或服务商，观察推荐、价格、替代等问题。</p></article><article class="panel"><span class="scenario-number">02 / 内容团队</span><h3>知道下一篇写什么</h3><p>结合用户问题与引用来源，补充有证据的介绍、对比与场景说明。</p></article><article class="panel"><span class="scenario-number">03 / 营销服务商</span><h3>把咨询变成可交付的工作</h3><p>交付诊断、任务清单与阶段报告，持续跟踪实施情况。</p></article></div>
+        <div class="section-heading"><div><h2>还能往哪里扩展</h2><p>以下是二次开发建议，并非已经实现的功能。</p></div></div><div id="extensions" class="extension-grid"></div>
+        <details class="panel source-details"><summary>资料来源、原版运行方法与本演示边界</summary><p>上游：<a href="https://github.com/aigclink/geolook/tree/9492cb3a1952f1370cca0f66715f87165fd56e2c" target="_blank" rel="noopener">aigclink/geolook · MIT · 9492cb3 ↗</a></p><p>原版为 Python 本地工作台，数据保存在本机文件中。需 Python 3.9+ 与 requests、beautifulsoup4、lxml；Windows 需 WSL（上游使用 fcntl）。在克隆的上游目录运行：</p><pre>python3 scripts/geo.py ui</pre><p>API 密钥用于真实采样和 AI 生成；无密钥也可体检、管理任务和导入人工样本。多数 API 入口默认不联网，不能代表同名网页产品的搜索回答。</p><p>本页是独立编写的静态教学展示，不是原版 GeoLook 界面。未接入真实模型、爬虫和发布渠道；所有品牌、答案、域名、问题诊断与效果数字均为教学模拟。资料基于源码阅读，尚未完成上游端到端部署实测。</p></details>
+      </section>
+      <footer><span>GeoLook 能力体验馆 · 开源项目研究 013</span><span>观察现象，验证推测。</span></footer>
+    </main>
+  </div>
+  <dialog id="report-dialog" aria-labelledby="report-title"><div class="report-heading"><div><span class="eyebrow">可复制、可保存的教学记录</span><h2 id="report-title">体验报告</h2></div><button id="close-report" class="button quiet" aria-label="关闭报告">关闭 ×</button></div><p>包含当前任务、草稿、复查情境与基线答案。全部为教学模拟。</p><label for="report-text">报告全文（Markdown）</label><textarea id="report-text" readonly></textarea><div class="report-actions"><small>若浏览器未下载文件，可复制全文保存。</small><button id="copy-report" class="button quiet">复制全文</button><a id="download-report" class="button" download="geolook-教学体验报告.md">下载文件 ↓</a></div></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

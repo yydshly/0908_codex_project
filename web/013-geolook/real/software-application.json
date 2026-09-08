@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Obsidian",
+  "url": "https://obsidian.md",
+  "description": "Obsidian 是将笔记以本地 Markdown 文件保存、支持离线使用和笔记链接的笔记与个人知识管理应用。",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Obsidian"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "<填>",
+    "priceCurrency": "<填 CNY/HKD/USD>"
+  }
+}

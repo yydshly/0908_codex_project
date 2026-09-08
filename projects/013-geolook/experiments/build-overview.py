@@ -1,0 +1,42 @@
+"""Draw the public, source-controlled SVG guide with explicit text and arrows."""
+from pathlib import Path
+from html import escape
+ROOT=Path(__file__).resolve().parents[3]
+nodes=[
+ (70,195,'01','确定客户需求','你的团队准备',['产品事实 / 目标客户 / 竞品','选择客户真正会问的需求'],False),
+ (570,195,'02','模拟客户向 AI 提问','让问题贴近真实选型',['“有哪些适合离线使用的','笔记软件？”'],False),
+ (1070,195,'03','收集真实 AI 回答','API 调用或网页采集',['保存回答原文、引用来源','记录平台、时间与采样环境'],False),
+ (1070,505,'04','分析反馈与网站','GeoLook 整理指标与线索',['提到我们了吗？说得准确吗？','提到哪些竞品？引用了谁？'],False),
+ (570,505,'05','根据发现进行调整','团队判断，GeoLook 辅助执行',['筛选任务，核实事实后实施','补介绍 / 场景 / FAQ / 技术资料'],True),
+ (70,505,'06','再次提问，比较变化','用同组问题多轮复查',['保持采样条件尽量可比','观察变化，继续分析与调整'],True),
+]
+svg=['<svg xmlns="http://www.w3.org/2000/svg" width="1570" height="945" viewBox="0 0 1570 945" role="img" aria-labelledby="title desc">',
+ '<title id="title">GeoLook：模拟客户提问、调研分析、调整与复查</title>',
+ '<desc id="desc">从产品与客户需求开始，模拟客户向 AI 提问，采集真实回答，分析品牌与竞品、结合网站检查，人工判断调整内容，再用同组问题复查，形成循环。模拟的是场景，不是答案。</desc>',
+ '<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#7e956d"/></marker></defs>',
+ '<rect width="1570" height="945" fill="#fbfcf7"/>',
+ '<g font-family="Microsoft YaHei, Noto Sans SC, sans-serif">',
+ '<text x="70" y="61" font-size="16" letter-spacing="3" fill="#66834d">GEOLOOK / AI 营销调研与改进</text>',
+ '<text x="70" y="116" font-size="35" font-weight="700" fill="#203a30">模拟客户提问 → 分析真实反馈 → 调整内容 → 持续复查</text>',
+ '<text x="70" y="158" font-size="20" fill="#617268">目的：了解 AI 如何介绍与推荐你的产品，把发现变成可执行的改进工作。</text>',
+ '<g fill="none" stroke="#7e956d" stroke-width="3" marker-end="url(#arrow)">',
+ '<path d="M500 305H554"/><path d="M1000 305H1054"/><path d="M1285 425V489"/>',
+ '<path d="M1070 615H1016"/><path d="M570 615H516"/>',
+ '<path d="M70 615H30V305H54" stroke-dasharray="7 7"/></g>']
+for x,y,num,title,role,lines,human in nodes:
+    fill='#f1f5e7' if human else '#ffffff'
+    svg += [f'<g transform="translate({x} {y})"><rect width="430" height="230" rx="16" fill="{fill}" stroke="#d3dfcc"/>',
+      f'<rect x="23" y="23" width="45" height="34" rx="8" fill="#294e3e"/><text x="45" y="47" text-anchor="middle" font-size="19" font-weight="700" fill="#dce9a5">{num}</text>',
+      f'<text x="82" y="47" font-size="16" fill="#64775b">{escape(role)}</text>',
+      f'<text x="25" y="101" font-size="28" font-weight="700" fill="#203a30">{escape(title)}</text>']
+    for i,line in enumerate(lines):svg.append(f'<text x="25" y="{150+i*33}" font-size="21" fill="#55694e">{escape(line)}</text>')
+    svg.append('</g>')
+svg += ['<text x="1285" y="473" text-anchor="middle" fill="#6e8061" font-size="16">结合公开官网体检</text>',
+ '<rect x="70" y="780" width="1430" height="107" rx="13" fill="#e8efdc"/>',
+ '<text x="98" y="819" font-size="23" font-weight="700" fill="#34512c">模拟的是客户场景；回答来自真实 AI。分析提供线索，调整需要人工判断。</text>',
+ '<text x="98" y="857" font-size="20" fill="#617268">观察主动推荐时不点名产品；点名题单独分析。未提及不一定有问题，一次变化也不证明营销改善。</text>',
+ '<text x="70" y="920" font-size="16" fill="#7b8971">原版形态：1 个 geo Skill + Python 执行模块 + 本地工作台 / 浏览器辅助采样。它不会直接修改 AI 模型。</text>',
+ '</g></svg>']
+for path in [ROOT/'projects/013-geolook/assets/research-loop.svg',ROOT/'web/013-geolook/assets/research-loop.svg']:
+    path.write_text('\n'.join(svg),encoding='utf-8')
+print('Generated overview SVG in project and website assets.')

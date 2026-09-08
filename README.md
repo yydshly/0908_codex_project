@@ -19,6 +19,7 @@
 | 010 | [WeMM-Embedding](projects/010-wemm-embedding/README.md) | 用整体架构图理解多模态向量模型、素材检索流程与产品接入分工；附能力边界、穿搭素材应用及同类方案，尚未部署实测。 | 已完成 | [GitHub](https://github.com/Tencent/WeMM-Embedding) | — |
 | 011 | [Screenshot Studio · 完整能力学习工作台](projects/011-screenshot-studio/README.md) | 一张图看懂截图创作的输入、设计、表达与输出；主页提供 18 项练习、自检和学习笔记，附原版运行证据及真实成品。 | 已完成 | [GitHub](https://github.com/opennookorg/screenshot-studio) | [演示](https://yydshly.github.io/0908_codex_project/demos/011-screenshot-studio/) |
 | 012 | [The Long Silence · 深空探索实验室](projects/012-the-long-silence/README.md) | 五组真实运行画面、14 星系生成实测与渲染原理；进一步提出太空社区、个人星球、互动航道及共创产品方向，社交功能尚未实现。 | 已完成 | [GitHub](https://github.com/achimala/TheLongSilence) | [演示](https://yydshly.github.io/0908_codex_project/demos/012-the-long-silence/) |
+| 013 | [GeoLook · 原版实测与完整案例](projects/013-geolook/README.md) | 模拟客户向 AI 提问，分析真实回答中的产品提及、竞品与引用，再调整内容并复查；整体引导图与 Obsidian 原版实测展示完整调研方式。 | 已完成 | [GitHub](https://github.com/aigclink/geolook) | [演示](https://yydshly.github.io/0908_codex_project/demos/013-geolook/) |
 <!-- PROJECTS:END -->
 
 ## 实测与产品导览 · 012 The Long Silence

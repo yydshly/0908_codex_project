@@ -1,0 +1,20 @@
+{
+  "question_id": "q901",
+  "question": "Is Obsidian free for personal and commercial use, and what do Sync and Publish add?",
+  "answer": "ChatGPT 说：\n\nYes. Obsidian is free for both personal and commercial use. You can download and use the app without paying, without creating an account, and without buying a license. The optional paid offerings are mainly services and support options. \nO\nObsidian\n+1\n\nWhat the free version includes\n\nThe free Obsidian app gives you the core knowledge-management features:\n\nUnlimited notes (stored as local Markdown files)\nInternal links and backlinks\nGraph view\nPlugins and themes\nOffline use\nUse at work, in a business, school, nonprofit, or personal project \nO\nObsidian\n\nYour notes are stored locally on your device by default, rather than being stored in Obsidian’s cloud. \nO\nObsidian\n\nWhat Obsidian Sync adds\n\nObsidian Sync is an optional paid service for keeping your vaults synchronized across devices. \nO\nObsidian\n\nIt adds:\n\nAutomatic syncing between computers and mobile devices\nEnd-to-end encryption\nVersion history (restore older versions of notes)\nShared vault collaboration features\nPriority support \nO\nObsidian\n\nPricing listed by Obsidian is:\n\n$4 USD/user/month billed annually\n$5 USD/user/month billed monthly \nO\nObsidian\n\nYou do not need Sync to use Obsidian. Many people use alternatives such as their own cloud storage or file-sync tools, though those approaches may require more setup. \nO\nObsidian Forum\n\nWhat Obsidian Publish adds\n\nObsidian Publish lets you turn your notes into a website. \nO\nObsidian\n\nIt adds:\n\nPublishing notes to the web\nA hosted site (no server setup required)\nCustomizable themes\nGraph view and full-text search for visitors\nPriority support \nO\nObsidian\n\nPricing listed by Obsidian is:\n\n$8 USD/site/month billed annually\n$10 USD/site/month billed monthly \nO\nObsidian\nWhat about the Commercial license?\n\nThe old distinction has changed: a Commercial license is now optional. Organizations can use Obsidian for work without buying one. The optional Commercial license ($50/user/year) is mainly a way for companies to support Obsidian’s development and be recognized as supporters. \nO\nObsidian\n+1\n\nA simple way to think about it:\n\nFeature\tFree Obsidian\tSync\tPublish\nWrite and organize notes\t✅\t✅\t✅\nLocal Markdown files\t✅\t✅\t✅\nUse commercially\t✅\t✅\t✅\nSync devices automatically\t❌\t✅\t❌\nEncrypted Obsidian-managed sync\t❌\t✅\t❌\nPublish notes as a website\t❌\t❌\t✅\n\nFor most individual users, the free version is enough. Sync is mainly worth it if you want a seamless multi-device setup, and Publish is for people who want to turn their notes into a public knowledge base, documentation site, or personal wiki.\n\nO\nO\n来源",
+  "citations": [
+    {
+      "title": "O\nObsidian\nPricing - Obsidian",
+      "url": "https://obsidian.md/pricing?utm_source=chatgpt.com"
+    },
+    {
+      "title": "O\nObsidian Forum\nAbout Pricing aka why does Obsidian Service X cost so much or any money at all - #24 by kepano - Meta - Obsidian Forum",
+      "url": "https://forum.obsidian.md/t/about-pricing-aka-why-does-obsidian-service-x-cost-so-much-or-any-money-at-all/26329/24?utm_source=chatgpt.com"
+    }
+  ],
+  "page_url": "https://chatgpt.com/uc/6aa05863-c76c-83ea-a100-ce99475d44ac",
+  "collected_at": "2026-09-08T18:49:35.559Z",
+  "platform": "chatgpt",
+  "session_note": "网页端未登录新会话；未确认浏览器隐私模式；回答显示可见来源，具体模型未披露。",
+  "search_enabled": true
+}

@@ -154,5 +154,21 @@
     ],
     "cover": "assets/terran.png",
     "demo": true
+  },
+  {
+    "id": "013",
+    "slug": "geolook",
+    "name": "GeoLook · 原版实测与完整案例",
+    "summary": "模拟客户向 AI 提问，分析真实回答中的产品提及、竞品与引用，再调整内容并复查；整体引导图与 Obsidian 原版实测展示完整调研方式。",
+    "repository": "https://github.com/aigclink/geolook",
+    "status": "已完成",
+    "tags": [
+      "AI 营销",
+      "能力展示",
+      "证据与诊断",
+      "原版实测"
+    ],
+    "cover": "assets/research-loop.svg",
+    "demo": true
   }
 ]

@@ -1,0 +1,343 @@
+{
+  "phase": "regressed",
+  "timestamp": "2026-09-09T02:46:00+08:00",
+  "score": 31.9,
+  "site": {
+    "slug": "obsidian-lab",
+    "root": "http://127.0.0.1:8771",
+    "crawled_at": "2026-09-09T02:46:00+08:00",
+    "has_robots": true,
+    "has_llms_txt": false,
+    "has_sitemap": false,
+    "sitemap_url_count": 0,
+    "robots_sitemap_declared": false,
+    "sitemap_noisy_urls": 0,
+    "sitemap_noisy_example": null,
+    "ai_bots_blocked": [],
+    "ai_bots_partial": [],
+    "ai_ua_probe": {
+      "GPTBot": 200,
+      "ClaudeBot": 200,
+      "PerplexityBot": 200,
+      "Bytespider": 200
+    },
+    "ai_ua_blocked": [],
+    "llms_txt_check": null,
+    "pages_crawled": 1,
+    "pages_ok": 1,
+    "ua_fallback_pages": 0
+  },
+  "target_tasks": [
+    {
+      "id": "T-005",
+      "priority": "P0",
+      "package": "页面技术",
+      "market": "both",
+      "title": "补 sitemap.xml 并提交各搜索引擎",
+      "why": "无 sitemap，收录效率和覆盖面打折（method.md 可抓取性）",
+      "action": "生成 sitemap.xml，robots.txt 里声明，提交百度/必应/Google/夸克",
+      "owner": "开发",
+      "effort": "S",
+      "window": "30天",
+      "affected": [],
+      "acceptance": {
+        "type": "auto",
+        "check": "site.has_sitemap",
+        "desc": "重抓能取到 sitemap.xml"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:45:59+08:00",
+          "check": "site.has_sitemap",
+          "result": "fail",
+          "note": "sitemap 仍缺失"
+        },
+        {
+          "at": "2026-09-09T02:46:00+08:00",
+          "check": "site.has_sitemap",
+          "result": "pass",
+          "note": "sitemap 已上线（1 条 URL）"
+        },
+        {
+          "at": "2026-09-09T02:46:00+08:00",
+          "check": "site.has_sitemap",
+          "result": "fail",
+          "note": "sitemap 仍缺失"
+        }
+      ],
+      "closed_at": null,
+      "risk": "low"
+    },
+    {
+      "id": "T-006",
+      "priority": "P1",
+      "package": "知识库",
+      "market": "both",
+      "title": "上线 /llms.txt 官方事实索引",
+      "why": "低成本给 AI 一份人工整理的官方索引，国内很多站没做（content-patterns.md 第 7 节）",
+      "action": "用 `geo.py generate --asset llms` 产出后部署到网站根目录",
+      "owner": "开发",
+      "effort": "S",
+      "window": "60天",
+      "affected": [],
+      "acceptance": {
+        "type": "auto",
+        "check": "site.has_llms_txt",
+        "desc": "重抓能取到 /llms.txt"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:45:59+08:00",
+          "check": "site.has_llms_txt",
+          "result": "fail",
+          "note": "llms.txt 仍缺失"
+        },
+        {
+          "at": "2026-09-09T02:46:00+08:00",
+          "check": "site.has_llms_txt",
+          "result": "pass",
+          "note": "llms.txt 已上线"
+        },
+        {
+          "at": "2026-09-09T02:46:00+08:00",
+          "check": "site.has_llms_txt",
+          "result": "fail",
+          "note": "llms.txt 仍缺失"
+        }
+      ],
+      "closed_at": null,
+      "risk": "low"
+    },
+    {
+      "id": "T-007",
+      "priority": "P0",
+      "package": "页面技术",
+      "market": "both",
+      "title": "全站补 JSON-LD 结构化数据",
+      "why": "无结构化数据，机器读不懂这页在讲什么实体（method.md 权威信号）",
+      "action": "用 `geo.py generate --asset jsonld` 产出补丁，按页面类型挂 Organization / SoftwareApplication / Article / FAQPage / BreadcrumbList",
+      "owner": "开发",
+      "effort": "M",
+      "window": "30天",
+      "affected": [
+        "http://127.0.0.1:8771"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.has_jsonld",
+        "desc": "受影响页面重抓后含 JSON-LD"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:45:59+08:00",
+          "check": "pages.has_jsonld",
+          "result": "fail",
+          "note": "0/1 页已挂 JSON-LD"
+        },
+        {
+          "at": "2026-09-09T02:46:00+08:00",
+          "check": "pages.has_jsonld",
+          "result": "pass",
+          "note": "1/1 页已挂 JSON-LD"
+        },
+        {
+          "at": "2026-09-09T02:46:00+08:00",
+          "check": "pages.has_jsonld",
+          "result": "fail",
+          "note": "0/1 页已挂 JSON-LD"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 1,
+      "risk": "low",
+      "progress_first": {
+        "label": "未挂 JSON-LD 的页面",
+        "cur": 1,
+        "target": 0,
+        "op": "lte",
+        "base": 1,
+        "at": "2026-09-09T02:45:59+08:00"
+      },
+      "progress": {
+        "label": "未挂 JSON-LD 的页面",
+        "cur": 1,
+        "target": 0,
+        "op": "lte",
+        "base": 1,
+        "at": "2026-09-09T02:46:00+08:00"
+      }
+    }
+  ],
+  "verify": {
+    "slug": "obsidian-lab",
+    "verified_at": "2026-09-09T02:46:00+08:00",
+    "audit_avg_score": 31.9,
+    "metrics_date": null,
+    "changed": 3,
+    "summary": {
+      "total": 8,
+      "by_priority": {
+        "P0": 4,
+        "P1": 4,
+        "P2": 0
+      },
+      "by_status": {
+        "todo": 8,
+        "doing": 0,
+        "done": 0,
+        "blocked": 0,
+        "wontfix": 0
+      },
+      "by_package": {
+        "实体消歧": 1,
+        "页面技术": 3,
+        "知识库": 3,
+        "监测闭环": 1
+      },
+      "by_market": {
+        "cn": 0,
+        "global": 0,
+        "both": 8
+      },
+      "auto_verifiable": 4
+    },
+    "results": [
+      {
+        "id": "T-001",
+        "title": "统一一句话定义，四处逐字一致",
+        "priority": "P0",
+        "market": "both",
+        "package": "实体消歧",
+        "verdict": "待人工",
+        "note": "需人工确认",
+        "was": "todo",
+        "now": "todo",
+        "progress": null,
+        "progress_first": null
+      },
+      {
+        "id": "T-002",
+        "title": "建品牌事实卡并标注证据等级",
+        "priority": "P0",
+        "market": "both",
+        "package": "知识库",
+        "verdict": "待人工",
+        "note": "需人工确认",
+        "was": "todo",
+        "now": "todo",
+        "progress": null,
+        "progress_first": null
+      },
+      {
+        "id": "T-003",
+        "title": "百科词条（实体消歧地基）",
+        "priority": "P1",
+        "market": "both",
+        "package": "知识库",
+        "verdict": "待人工",
+        "note": "需人工确认",
+        "was": "todo",
+        "now": "todo",
+        "progress": null,
+        "progress_first": null
+      },
+      {
+        "id": "T-004",
+        "title": "接入 AI 流量归因（渠道组 + 日志 + 来源快照）",
+        "priority": "P1",
+        "market": "both",
+        "package": "监测闭环",
+        "verdict": "待人工",
+        "note": "需人工确认",
+        "was": "todo",
+        "now": "todo",
+        "progress": null,
+        "progress_first": null
+      },
+      {
+        "id": "T-005",
+        "title": "补 sitemap.xml 并提交各搜索引擎",
+        "priority": "P0",
+        "market": "both",
+        "package": "页面技术",
+        "verdict": "未达标",
+        "note": "sitemap 仍缺失",
+        "was": "done",
+        "now": "todo",
+        "progress": null,
+        "progress_first": null
+      },
+      {
+        "id": "T-006",
+        "title": "上线 /llms.txt 官方事实索引",
+        "priority": "P1",
+        "market": "both",
+        "package": "知识库",
+        "verdict": "未达标",
+        "note": "llms.txt 仍缺失",
+        "was": "done",
+        "now": "todo",
+        "progress": null,
+        "progress_first": null
+      },
+      {
+        "id": "T-007",
+        "title": "全站补 JSON-LD 结构化数据",
+        "priority": "P0",
+        "market": "both",
+        "package": "页面技术",
+        "verdict": "未达标",
+        "note": "0/1 页已挂 JSON-LD",
+        "was": "done",
+        "now": "todo",
+        "progress": {
+          "label": "未挂 JSON-LD 的页面",
+          "cur": 1,
+          "target": 0,
+          "op": "lte",
+          "base": 1,
+          "at": "2026-09-09T02:46:00+08:00"
+        },
+        "progress_first": {
+          "label": "未挂 JSON-LD 的页面",
+          "cur": 1,
+          "target": 0,
+          "op": "lte",
+          "base": 1,
+          "at": "2026-09-09T02:45:59+08:00"
+        }
+      },
+      {
+        "id": "T-008",
+        "title": "站点均分从 31.9 提到 70",
+        "priority": "P1",
+        "market": "both",
+        "package": "页面技术",
+        "verdict": "未达标",
+        "note": "当前均分 31.9 / 目标 70.0",
+        "was": "todo",
+        "now": "todo",
+        "progress": {
+          "label": "站点体检均分",
+          "cur": 31.9,
+          "target": 70.0,
+          "op": "gte",
+          "at": "2026-09-09T02:46:00+08:00"
+        },
+        "progress_first": {
+          "label": "站点体检均分",
+          "cur": 31.9,
+          "target": 70.0,
+          "op": "gte",
+          "at": "2026-09-09T02:45:59+08:00"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1083 @@
+{
+  "slug": "obsidian-real",
+  "generated_at": "2026-09-09T03:00:54+08:00",
+  "market": "global",
+  "baseline": {
+    "avg_score": 41.4,
+    "pages": 12,
+    "metrics_date": "2026-09-09"
+  },
+  "summary": {
+    "total": 18,
+    "by_priority": {
+      "P0": 5,
+      "P1": 13,
+      "P2": 0
+    },
+    "by_status": {
+      "todo": 18,
+      "doing": 0,
+      "done": 0,
+      "blocked": 0,
+      "wontfix": 0
+    },
+    "by_package": {
+      "实体消歧": 1,
+      "页面技术": 5,
+      "内容矩阵": 7,
+      "知识库": 3,
+      "外部证据": 1,
+      "监测闭环": 1
+    },
+    "by_market": {
+      "cn": 0,
+      "global": 1,
+      "both": 17
+    },
+    "auto_verifiable": 14
+  },
+  "tasks": [
+    {
+      "id": "T-001",
+      "priority": "P0",
+      "package": "实体消歧",
+      "market": "both",
+      "title": "统一一句话定义，四处逐字一致",
+      "why": "口径不一致是 AI 描述品牌漂移的头号原因（content-patterns.md 第 6 节）",
+      "action": "把「Obsidian」的定义句同步到：首页首屏、关于页、JSON-LD description、llms.txt。逐字相同",
+      "owner": "内容",
+      "effort": "S",
+      "window": "30天",
+      "affected": [],
+      "acceptance": {
+        "type": "manual",
+        "desc": "四处定义句文本完全一致（人工核对）"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        }
+      ],
+      "closed_at": null,
+      "risk": "watch"
+    },
+    {
+      "id": "T-002",
+      "priority": "P0",
+      "package": "知识库",
+      "market": "both",
+      "title": "建品牌事实卡并标注证据等级",
+      "why": "所有内容生产的事实底座；无来源的事实一律标待确认（method.md 采样纪律）",
+      "action": "填 content/facts.md：实体、别名、产品、关键数字、适用与不适用、禁用表达；每条标 A–E",
+      "owner": "GEO顾问",
+      "effort": "M",
+      "window": "30天",
+      "affected": [],
+      "acceptance": {
+        "type": "manual",
+        "desc": "facts.md 存在且每条事实有证据等级"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        }
+      ],
+      "closed_at": null,
+      "risk": "low"
+    },
+    {
+      "id": "T-003",
+      "priority": "P1",
+      "package": "知识库",
+      "market": "both",
+      "title": "百科词条（实体消歧地基）",
+      "why": "百科是品牌实体消歧的地基；baidu.com 同时是百度AI 37.7%、文心 29.0% 的引用来源",
+      "action": "提交百度百科；海外市场同步争取 Wikipedia（需第三方来源支撑）",
+      "owner": "市场",
+      "effort": "M",
+      "window": "60天",
+      "affected": [],
+      "acceptance": {
+        "type": "manual",
+        "desc": "词条通过审核并上线"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        }
+      ],
+      "closed_at": null,
+      "risk": "low"
+    },
+    {
+      "id": "T-004",
+      "priority": "P1",
+      "package": "监测闭环",
+      "market": "both",
+      "title": "接入 AI 流量归因（渠道组 + 日志 + 来源快照）",
+      "why": "只测「被引用」不测「带来转化」，监测就是汇报表演；AI 来源会话是可见性投入的业务对账单（references/attribution.md）",
+      "action": "用 `geo.py generate --asset attribution` 产出配置包：GA4 建「AI 引擎」渠道组、服务器日志跑统计脚本、转化事件保存来源快照。报告口径写「可归因 ≥ N」，不外推",
+      "owner": "开发",
+      "effort": "S",
+      "window": "60天",
+      "affected": [],
+      "acceptance": {
+        "type": "manual",
+        "desc": "渠道组已建、日志脚本可跑、转化事件带来源快照（人工确认）"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": null,
+          "result": "manual",
+          "note": "需人工确认"
+        }
+      ],
+      "closed_at": null,
+      "risk": "watch"
+    },
+    {
+      "id": "T-005",
+      "priority": "P0",
+      "package": "页面技术",
+      "market": "both",
+      "title": "补 sitemap.xml 并提交各搜索引擎",
+      "why": "无 sitemap，收录效率和覆盖面打折（method.md 可抓取性）",
+      "action": "生成 sitemap.xml，robots.txt 里声明，提交百度/必应/Google/夸克",
+      "owner": "开发",
+      "effort": "S",
+      "window": "30天",
+      "affected": [],
+      "acceptance": {
+        "type": "auto",
+        "check": "site.has_sitemap",
+        "desc": "重抓能取到 sitemap.xml"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "site.has_sitemap",
+          "result": "fail",
+          "note": "sitemap 仍缺失"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "site.has_sitemap",
+          "result": "fail",
+          "note": "sitemap 仍缺失"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "site.has_sitemap",
+          "result": "fail",
+          "note": "sitemap 仍缺失"
+        }
+      ],
+      "closed_at": null,
+      "risk": "low"
+    },
+    {
+      "id": "T-006",
+      "priority": "P1",
+      "package": "知识库",
+      "market": "both",
+      "title": "上线 /llms.txt 官方事实索引",
+      "why": "低成本给 AI 一份人工整理的官方索引，国内很多站没做（content-patterns.md 第 7 节）",
+      "action": "用 `geo.py generate --asset llms` 产出后部署到网站根目录",
+      "owner": "开发",
+      "effort": "S",
+      "window": "60天",
+      "affected": [],
+      "acceptance": {
+        "type": "auto",
+        "check": "site.has_llms_txt",
+        "desc": "重抓能取到 /llms.txt"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "site.has_llms_txt",
+          "result": "fail",
+          "note": "llms.txt 仍缺失"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "site.has_llms_txt",
+          "result": "fail",
+          "note": "llms.txt 仍缺失"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "site.has_llms_txt",
+          "result": "fail",
+          "note": "llms.txt 仍缺失"
+        }
+      ],
+      "closed_at": null,
+      "risk": "low"
+    },
+    {
+      "id": "T-007",
+      "priority": "P1",
+      "package": "页面技术",
+      "market": "both",
+      "title": "多语言页面补 hreflang 声明",
+      "why": "多语言站但只有 0/10 个内容页声明 hreflang，引擎会把各语言版本当重复内容，跨市场检索时挂错语言页面",
+      "action": "每个多语言页面加全套 `<link rel=\"alternate\" hreflang>` 互指（含 x-default），与 canonical 保持一致",
+      "owner": "开发",
+      "effort": "M",
+      "window": "60天",
+      "affected": [],
+      "acceptance": {
+        "type": "auto",
+        "check": "site.hreflang_gte:0.5",
+        "desc": "内容页 hreflang 覆盖率 ≥ 50%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "site.hreflang_gte:0.5",
+          "result": "fail",
+          "note": "hreflang 覆盖 0/10 页（0% / 目标 50%）"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "site.hreflang_gte:0.5",
+          "result": "fail",
+          "note": "hreflang 覆盖 0/10 页（0% / 目标 50%）"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "site.hreflang_gte:0.5",
+          "result": "fail",
+          "note": "hreflang 覆盖 0/10 页（0% / 目标 50%）"
+        }
+      ],
+      "closed_at": null,
+      "risk": "watch",
+      "progress_first": {
+        "label": "hreflang 覆盖率",
+        "cur": 0.0,
+        "target": 0.5,
+        "op": "gte",
+        "pct": true,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "hreflang 覆盖率",
+        "cur": 0.0,
+        "target": 0.5,
+        "op": "gte",
+        "pct": true,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-008",
+      "priority": "P0",
+      "package": "页面技术",
+      "market": "both",
+      "title": "修复前端渲染空壳页（SSR / 预渲染）",
+      "why": "静态 HTML 无正文，多数 AI 抓取器看到的是空白页——国内官网最常见致命伤（method.md 可抓取性）",
+      "action": "对受影响路由启用 SSR 或预渲染，确保 curl 拿到的 HTML 含完整正文",
+      "owner": "开发",
+      "effort": "M",
+      "window": "30天",
+      "affected": [
+        "https://obsidian.md/help/",
+        "https://obsidian.md/ar/"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.static_text",
+        "desc": "受影响页面重抓后正文词数 ≥ 120"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.static_text",
+          "result": "fail",
+          "note": "0/2 页已能抓到正文"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.static_text",
+          "result": "fail",
+          "note": "0/2 页已能抓到正文"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.static_text",
+          "result": "fail",
+          "note": "0/2 页已能抓到正文"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 2,
+      "risk": "high",
+      "progress_first": {
+        "label": "抓不到正文的页面",
+        "cur": 2,
+        "target": 0,
+        "op": "lte",
+        "base": 2,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "抓不到正文的页面",
+        "cur": 2,
+        "target": 0,
+        "op": "lte",
+        "base": 2,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-009",
+      "priority": "P0",
+      "package": "页面技术",
+      "market": "both",
+      "title": "全站补 JSON-LD 结构化数据",
+      "why": "无结构化数据，机器读不懂这页在讲什么实体（method.md 权威信号）",
+      "action": "用 `geo.py generate --asset jsonld` 产出补丁，按页面类型挂 Organization / SoftwareApplication / Article / FAQPage / BreadcrumbList",
+      "owner": "开发",
+      "effort": "M",
+      "window": "30天",
+      "affected": [
+        "https://obsidian.md/help/",
+        "https://obsidian.md/ar/",
+        "https://obsidian.md/bn/",
+        "https://obsidian.md/about",
+        "https://obsidian.md/blog",
+        "https://obsidian.md/de/",
+        "https://obsidian.md/es/",
+        "https://obsidian.md/fr/",
+        "https://obsidian.md/it/",
+        "https://obsidian.md/pricing",
+        "https://obsidian.md/zh",
+        "https://obsidian.md"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.has_jsonld",
+        "desc": "受影响页面重抓后含 JSON-LD"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.has_jsonld",
+          "result": "fail",
+          "note": "0/12 页已挂 JSON-LD"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.has_jsonld",
+          "result": "fail",
+          "note": "0/12 页已挂 JSON-LD"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.has_jsonld",
+          "result": "fail",
+          "note": "0/12 页已挂 JSON-LD"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 12,
+      "risk": "low",
+      "progress_first": {
+        "label": "未挂 JSON-LD 的页面",
+        "cur": 12,
+        "target": 0,
+        "op": "lte",
+        "base": 12,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "未挂 JSON-LD 的页面",
+        "cur": 12,
+        "target": 0,
+        "op": "lte",
+        "base": 12,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-010",
+      "priority": "P1",
+      "package": "内容矩阵",
+      "market": "both",
+      "title": "全站补「对比」抽取块",
+      "why": "12/12 页缺失；实测影响力增益 +55.3%（method.md 可抽取块）",
+      "action": "参照 content-patterns.md，在核心页补对比块；定义句需与事实卡逐字一致",
+      "owner": "内容",
+      "effort": "M",
+      "window": "60天",
+      "affected": [
+        "https://obsidian.md/help/",
+        "https://obsidian.md/ar/",
+        "https://obsidian.md/bn/",
+        "https://obsidian.md/about",
+        "https://obsidian.md/blog",
+        "https://obsidian.md/de/",
+        "https://obsidian.md/es/",
+        "https://obsidian.md/fr/",
+        "https://obsidian.md/it/",
+        "https://obsidian.md/pricing",
+        "https://obsidian.md/zh",
+        "https://obsidian.md"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.block:对比",
+        "desc": "缺「对比」的页面数下降 ≥ 50%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.block:对比",
+          "result": "fail",
+          "note": "缺「对比」页面 12（基线 12，目标 ≤6）"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.block:对比",
+          "result": "fail",
+          "note": "缺「对比」页面 12（基线 12，目标 ≤6）"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.block:对比",
+          "result": "fail",
+          "note": "缺「对比」页面 12（基线 12，目标 ≤6）"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 12,
+      "risk": "watch",
+      "progress_first": {
+        "label": "缺「对比」块的页面",
+        "cur": 12,
+        "target": 6,
+        "op": "lte",
+        "base": 12,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "缺「对比」块的页面",
+        "cur": 12,
+        "target": 6,
+        "op": "lte",
+        "base": 12,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-011",
+      "priority": "P1",
+      "package": "内容矩阵",
+      "market": "both",
+      "title": "全站补「数字事实」抽取块",
+      "why": "11/12 页缺失；实测影响力增益 +61.6%（method.md 可抽取块）",
+      "action": "参照 content-patterns.md，在核心页补数字事实块；定义句需与事实卡逐字一致",
+      "owner": "内容",
+      "effort": "M",
+      "window": "60天",
+      "affected": [
+        "https://obsidian.md/help/",
+        "https://obsidian.md/ar/",
+        "https://obsidian.md/bn/",
+        "https://obsidian.md/about",
+        "https://obsidian.md/blog",
+        "https://obsidian.md/de/",
+        "https://obsidian.md/es/",
+        "https://obsidian.md/fr/",
+        "https://obsidian.md/it/",
+        "https://obsidian.md/zh",
+        "https://obsidian.md"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.block:数字事实",
+        "desc": "缺「数字事实」的页面数下降 ≥ 50%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.block:数字事实",
+          "result": "fail",
+          "note": "缺「数字事实」页面 11（基线 11，目标 ≤5）"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.block:数字事实",
+          "result": "fail",
+          "note": "缺「数字事实」页面 11（基线 11，目标 ≤5）"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.block:数字事实",
+          "result": "fail",
+          "note": "缺「数字事实」页面 11（基线 11，目标 ≤5）"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 11,
+      "risk": "watch",
+      "progress_first": {
+        "label": "缺「数字事实」块的页面",
+        "cur": 11,
+        "target": 5,
+        "op": "lte",
+        "base": 11,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "缺「数字事实」块的页面",
+        "cur": 11,
+        "target": 5,
+        "op": "lte",
+        "base": 11,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-012",
+      "priority": "P1",
+      "package": "内容矩阵",
+      "market": "both",
+      "title": "全站补「FAQ」抽取块",
+      "why": "11/12 页缺失；实测影响力增益 利于问答召回（格式本身无增益）（method.md 可抽取块）",
+      "action": "参照 content-patterns.md，在核心页补FAQ块；定义句需与事实卡逐字一致",
+      "owner": "内容",
+      "effort": "M",
+      "window": "60天",
+      "affected": [
+        "https://obsidian.md/help/",
+        "https://obsidian.md/ar/",
+        "https://obsidian.md/bn/",
+        "https://obsidian.md/about",
+        "https://obsidian.md/blog",
+        "https://obsidian.md/de/",
+        "https://obsidian.md/es/",
+        "https://obsidian.md/fr/",
+        "https://obsidian.md/it/",
+        "https://obsidian.md/zh",
+        "https://obsidian.md"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.block:FAQ",
+        "desc": "缺「FAQ」的页面数下降 ≥ 50%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.block:FAQ",
+          "result": "fail",
+          "note": "缺「FAQ」页面 11（基线 11，目标 ≤5）"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.block:FAQ",
+          "result": "fail",
+          "note": "缺「FAQ」页面 11（基线 11，目标 ≤5）"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.block:FAQ",
+          "result": "fail",
+          "note": "缺「FAQ」页面 11（基线 11，目标 ≤5）"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 11,
+      "risk": "watch",
+      "progress_first": {
+        "label": "缺「FAQ」块的页面",
+        "cur": 11,
+        "target": 5,
+        "op": "lte",
+        "base": 11,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "缺「FAQ」块的页面",
+        "cur": 11,
+        "target": 5,
+        "op": "lte",
+        "base": 11,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-013",
+      "priority": "P1",
+      "package": "内容矩阵",
+      "market": "both",
+      "title": "全站补「操作步骤」抽取块",
+      "why": "10/12 页缺失；实测影响力增益 +41.2%（method.md 可抽取块）",
+      "action": "参照 content-patterns.md，在核心页补操作步骤块；定义句需与事实卡逐字一致",
+      "owner": "内容",
+      "effort": "M",
+      "window": "60天",
+      "affected": [
+        "https://obsidian.md/help/",
+        "https://obsidian.md/ar/",
+        "https://obsidian.md/bn/",
+        "https://obsidian.md/about",
+        "https://obsidian.md/blog",
+        "https://obsidian.md/de/",
+        "https://obsidian.md/es/",
+        "https://obsidian.md/fr/",
+        "https://obsidian.md/it/",
+        "https://obsidian.md/pricing"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.block:操作步骤",
+        "desc": "缺「操作步骤」的页面数下降 ≥ 50%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.block:操作步骤",
+          "result": "fail",
+          "note": "缺「操作步骤」页面 10（基线 10，目标 ≤5）"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.block:操作步骤",
+          "result": "fail",
+          "note": "缺「操作步骤」页面 10（基线 10，目标 ≤5）"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.block:操作步骤",
+          "result": "fail",
+          "note": "缺「操作步骤」页面 10（基线 10，目标 ≤5）"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 10,
+      "risk": "watch",
+      "progress_first": {
+        "label": "缺「操作步骤」块的页面",
+        "cur": 10,
+        "target": 5,
+        "op": "lte",
+        "base": 10,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "缺「操作步骤」块的页面",
+        "cur": 10,
+        "target": 5,
+        "op": "lte",
+        "base": 10,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-014",
+      "priority": "P1",
+      "package": "内容矩阵",
+      "market": "both",
+      "title": "全站补「定义」抽取块",
+      "why": "9/12 页缺失；实测影响力增益 +57.3%（method.md 可抽取块）",
+      "action": "参照 content-patterns.md，在核心页补定义块；定义句需与事实卡逐字一致",
+      "owner": "内容",
+      "effort": "M",
+      "window": "60天",
+      "affected": [
+        "https://obsidian.md/help/",
+        "https://obsidian.md/ar/",
+        "https://obsidian.md/bn/",
+        "https://obsidian.md/about",
+        "https://obsidian.md/de/",
+        "https://obsidian.md/es/",
+        "https://obsidian.md/fr/",
+        "https://obsidian.md/it/",
+        "https://obsidian.md/zh"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.block:定义",
+        "desc": "缺「定义」的页面数下降 ≥ 50%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.block:定义",
+          "result": "fail",
+          "note": "缺「定义」页面 9（基线 9，目标 ≤4）"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.block:定义",
+          "result": "fail",
+          "note": "缺「定义」页面 9（基线 9，目标 ≤4）"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.block:定义",
+          "result": "fail",
+          "note": "缺「定义」页面 9（基线 9，目标 ≤4）"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 9,
+      "risk": "watch",
+      "progress_first": {
+        "label": "缺「定义」块的页面",
+        "cur": 9,
+        "target": 4,
+        "op": "lte",
+        "base": 9,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "缺「定义」块的页面",
+        "cur": 9,
+        "target": 4,
+        "op": "lte",
+        "base": 9,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-015",
+      "priority": "P1",
+      "package": "内容矩阵",
+      "market": "both",
+      "title": "核心页改出可独立引用的证据段",
+      "why": "5 页正文不短但没有一段自包含可引——每段要么太短、要么没有数字/定义/步骤等硬信息。检索的最小单元是段落，不是页面（method.md 段落级可引）",
+      "action": "每页挑 2–3 个核心 H2 小节改成证据段：60 词以上、含具体数字或定义句或操作步骤，段落开头直接回答小节标题的问题",
+      "owner": "内容",
+      "effort": "M",
+      "window": "60天",
+      "affected": [
+        "https://obsidian.md/de/",
+        "https://obsidian.md/es/",
+        "https://obsidian.md/fr/",
+        "https://obsidian.md/it/",
+        "https://obsidian.md/zh"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.quotable",
+        "desc": "受影响页面「无可引段落」数下降 ≥ 50%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.quotable",
+          "result": "fail",
+          "note": "无可引段落的页面 5（基线 5，目标 ≤2）"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.quotable",
+          "result": "fail",
+          "note": "无可引段落的页面 5（基线 5，目标 ≤2）"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.quotable",
+          "result": "fail",
+          "note": "无可引段落的页面 5（基线 5，目标 ≤2）"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 5,
+      "risk": "watch",
+      "progress_first": {
+        "label": "无可引段落的页面",
+        "cur": 5,
+        "target": 2,
+        "op": "lte",
+        "base": 5,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "无可引段落的页面",
+        "cur": 5,
+        "target": 2,
+        "op": "lte",
+        "base": 5,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-016",
+      "priority": "P1",
+      "package": "内容矩阵",
+      "market": "both",
+      "title": "核心页正文扩到 1000+ 词",
+      "why": "高影响力页面平均 1,943 词，Bottom 四分位仅 170 词（method.md 内容长度）",
+      "action": "优先扩产品页、案例页、对比页；加定义、数字表、步骤、边界说明，不是灌水",
+      "owner": "内容",
+      "effort": "L",
+      "window": "60天",
+      "affected": [
+        "https://obsidian.md/bn/",
+        "https://obsidian.md/about",
+        "https://obsidian.md/blog",
+        "https://obsidian.md/pricing",
+        "https://obsidian.md"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "pages.wordcount_gte:1000",
+        "desc": "正文 <1000 词的页面数下降 ≥ 40%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "pages.wordcount_gte:1000",
+          "result": "fail",
+          "note": "正文 <1000 词的页面 5（基线 5，目标 ≤3）"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "pages.wordcount_gte:1000",
+          "result": "fail",
+          "note": "正文 <1000 词的页面 5（基线 5，目标 ≤3）"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "pages.wordcount_gte:1000",
+          "result": "fail",
+          "note": "正文 <1000 词的页面 5（基线 5，目标 ≤3）"
+        }
+      ],
+      "closed_at": null,
+      "baseline_count": 5,
+      "risk": "watch",
+      "progress_first": {
+        "label": "正文不足 1000 词的页面",
+        "cur": 5,
+        "target": 3,
+        "op": "lte",
+        "base": 5,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "正文不足 1000 词的页面",
+        "cur": 5,
+        "target": 3,
+        "op": "lte",
+        "base": 5,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-017",
+      "priority": "P1",
+      "package": "页面技术",
+      "market": "both",
+      "title": "站点均分从 41.4 提到 70",
+      "why": "均分低于 70 说明整体处于「需要改造」区间（method.md 评分口径）",
+      "action": "按 audit.json 里分数最低的 10 页逐页改：H1 唯一、H2 拆到 6–10 节、列表密度 ≥0.35、加更新日期",
+      "owner": "内容",
+      "effort": "L",
+      "window": "60天",
+      "affected": [
+        "https://obsidian.md/help/",
+        "https://obsidian.md/ar/",
+        "https://obsidian.md/bn/",
+        "https://obsidian.md/about",
+        "https://obsidian.md/blog",
+        "https://obsidian.md/de/",
+        "https://obsidian.md/es/",
+        "https://obsidian.md/fr/",
+        "https://obsidian.md/it/",
+        "https://obsidian.md/pricing"
+      ],
+      "acceptance": {
+        "type": "auto",
+        "check": "site.avg_score_gte:70",
+        "desc": "重跑 audit 均分 ≥ 70"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:41:34+08:00",
+          "check": "site.avg_score_gte:70",
+          "result": "fail",
+          "note": "当前均分 41.4 / 目标 70.0"
+        },
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "site.avg_score_gte:70",
+          "result": "fail",
+          "note": "当前均分 41.4 / 目标 70.0"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "site.avg_score_gte:70",
+          "result": "fail",
+          "note": "当前均分 41.4 / 目标 70.0"
+        }
+      ],
+      "closed_at": null,
+      "risk": "watch",
+      "progress_first": {
+        "label": "站点体检均分",
+        "cur": 41.4,
+        "target": 70.0,
+        "op": "gte",
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "站点体检均分",
+        "cur": 41.4,
+        "target": 70.0,
+        "op": "gte",
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    },
+    {
+      "id": "T-018",
+      "priority": "P1",
+      "package": "外部证据",
+      "market": "global",
+      "title": "海外让官网进得了 AI 的检索结果",
+      "why": "海外引用官网率 0%。官网内容再对，检索不到等于不存在",
+      "action": "提交各引擎收录；在高频被引域名上发带官网链接的内容；母品牌/关联站挂子产品入口",
+      "owner": "市场",
+      "effort": "M",
+      "window": "60天",
+      "affected": [],
+      "acceptance": {
+        "type": "auto",
+        "check": "metrics.own_cite_gte:global:0.1",
+        "desc": "海外引用官网率 ≥ 10%"
+      },
+      "status": "todo",
+      "assets": [],
+      "evidence": [
+        {
+          "at": "2026-09-09T02:49:48+08:00",
+          "check": "metrics.own_cite_gte:global:0.1",
+          "result": "fail",
+          "note": "global 引用官网率 0.0% / 目标 10%"
+        },
+        {
+          "at": "2026-09-09T03:00:55+08:00",
+          "check": "metrics.own_cite_gte:global:0.1",
+          "result": "fail",
+          "note": "global 引用官网率 0.0% / 目标 10%"
+        }
+      ],
+      "closed_at": null,
+      "risk": "low",
+      "progress_first": {
+        "label": "global 引用官网率",
+        "cur": 0.0,
+        "target": 0.1,
+        "op": "gte",
+        "pct": true,
+        "at": "2026-09-09T03:00:55+08:00"
+      },
+      "progress": {
+        "label": "global 引用官网率",
+        "cur": 0.0,
+        "target": 0.1,
+        "op": "gte",
+        "pct": true,
+        "at": "2026-09-09T03:00:55+08:00"
+      }
+    }
+  ]
+}
