@@ -10,6 +10,7 @@
 | 编号 | 项目 / 研究说明 | 摘要 | 状态 | 上游 | Web |
 | --- | --- | --- | --- | --- | --- |
 | 001 | [TeamAI CLI](projects/001-teamai-cli/README.md) | 为不同 AI 工具统一管理和分发团队规则、技能、资料与配置；先了解，按需使用。 | 已完成 | [GitHub](https://github.com/Tencent/teamai-cli) | — |
+| 002 | [Mnemosyne](projects/002-mnemosyne/README.md) | AI 外部记忆的存储、检索与整理；暂不深入或接入，保留实现架构供开发类似能力时参考。 | 已完成 | [GitHub](https://github.com/mnemosyne-oss/mnemosyne) | — |
 | 005 | [AI Engineering from Scratch](projects/005-ai-engineering-from-scratch/README.md) | 六大能力全景图、20阶段与523节课程导航，配套术语词典、学习路线和详细手册；导览已整理，课程未逐一验证。 | 已完成 | [GitHub](https://github.com/rohitg00/ai-engineering-from-scratch) | [演示](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/) |
 | 006 | [Signal Vaults](projects/006-signal-vaults/README.md) | 微信群、公众号等信息的 AI 日报工具；无当前接入需求，仅参考多源信息提取、筛选与个人日报的思路。 | 已完成 | [GitHub](https://github.com/JackyCufe/signal-vaults) | — |
 <!-- PROJECTS:END -->

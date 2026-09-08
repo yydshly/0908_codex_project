@@ -15,6 +15,21 @@
     "demo": false
   },
   {
+    "id": "002",
+    "slug": "mnemosyne",
+    "name": "Mnemosyne",
+    "summary": "AI 外部记忆的存储、检索与整理；暂不深入或接入，保留实现架构供开发类似能力时参考。",
+    "repository": "https://github.com/mnemosyne-oss/mnemosyne",
+    "status": "已完成",
+    "tags": [
+      "AI 记忆",
+      "SQLite",
+      "实现架构参考"
+    ],
+    "cover": "assets/architecture.svg",
+    "demo": false
+  },
+  {
     "id": "005",
     "slug": "ai-engineering-from-scratch",
     "name": "AI Engineering from Scratch",

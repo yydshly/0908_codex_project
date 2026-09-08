@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Mnemosyne 实现架构原理图</title>
+  <desc id="desc">宿主通过 MCP、SDK 或命令行触发写入、检索与整理。写入保存正文和索引；检索从 SQLite 读取候选并返回宿主；整理读取近期记录，生成长期摘要并保留原文。向量、事实提取和同步均为可选能力。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#526779"/></marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#193247} .title{font-size:30px;font-weight:700} .sub{font-size:17px;fill:#526779} .head{font-size:22px;font-weight:700} .body{font-size:18px} .small{font-size:16px;fill:#526779} .box{fill:#fff;stroke:#c5d2dc;stroke-width:1.5} .flow{fill:none;stroke:#526779;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="1100" fill="#f5f8fb"/>
+  <text x="40" y="52" class="title">Mnemosyne · 实现架构原理图</text>
+  <text x="40" y="82" class="sub">开发类似能力时参考：宿主触发 → 外部记忆服务 → 本地存储 → 按需返回上下文</text>
+  <rect x="40" y="108" width="1120" height="85" rx="12" fill="#193247"/>
+  <text x="62" y="141" class="head" style="fill:white">宿主：AI 助手 / 自己的应用</text>
+  <text x="62" y="172" class="body" style="fill:#dce8f2">用户明确要求 · AI 根据规则调用 · 程序事件触发（自动保存与调度由具体集成负责）</text>
+  <path d="M600 193V219" class="flow"/>
+  <rect x="40" y="224" width="1120" height="62" rx="10" class="box"/>
+  <text x="62" y="263" class="head">接入层</text>
+  <text x="170" y="263" class="body">MCP：mcp_server / mcp_tools　　Python：memory / BeamMemory　　CLI</text>
+  <path d="M220 286V327" class="flow"/>
+  <path d="M600 286V327" class="flow"/>
+  <path d="M980 286V327" class="flow"/>
+  <rect x="40" y="333" width="360" height="391" rx="12" fill="#e7f3ed"/>
+  <rect x="420" y="333" width="360" height="391" rx="12" fill="#e8f0fb"/>
+  <rect x="800" y="333" width="360" height="391" rx="12" fill="#fbf0df"/>
+  <text x="60" y="370" class="head">A · 写入 remember()</text>
+  <text x="440" y="370" class="head">B · 检索 recall()</text>
+  <text x="820" y="370" class="head">C · 整理 sleep()</text>
+  <rect x="60" y="391" width="320" height="76" rx="8" class="box"/>
+  <text x="76" y="421" class="body">正文 + 来源 + 会话 / 范围</text>
+  <text x="76" y="450" class="small">重要性、有效期、类型、附加信息</text>
+  <path d="M220 467V491" class="flow"/>
+  <rect x="60" y="497" width="320" height="80" rx="8" class="box"/>
+  <text x="76" y="528" class="body">清理 → 分类 → 精确重复检查</text>
+  <text x="76" y="557" class="small">可选：实体 / 事实提取</text>
+  <path d="M220 577V601" class="flow"/>
+  <rect x="60" y="607" width="320" height="91" rx="8" class="box"/>
+  <text x="76" y="638" class="body">保存近期正文 + 建立全文索引</text>
+  <text x="76" y="668" class="small">可选 embedding：生成语义向量</text>
+  <rect x="440" y="391" width="320" height="76" rx="8" class="box"/>
+  <text x="456" y="421" class="body">问题 + 范围 → 读取候选</text>
+  <text x="456" y="450" class="small">关键词检索 + 可选向量检索</text>
+  <path d="M600 467V491" class="flow"/>
+  <rect x="440" y="497" width="320" height="80" rx="8" class="box"/>
+  <text x="456" y="528" class="body">合并、去重、排序</text>
+  <text x="456" y="557" class="small">相关性、重要性、时间、可信度等</text>
+  <path d="M600 577V601" class="flow"/>
+  <rect x="440" y="607" width="320" height="91" rx="8" class="box"/>
+  <text x="456" y="638" class="body">结果返回宿主 → 模型上下文</text>
+  <text x="456" y="668" class="small">热上下文另有 get_context() 接口</text>
+  <rect x="820" y="391" width="320" height="76" rx="8" class="box"/>
+  <text x="836" y="421" class="body">读取符合整理条件的近期记录</text>
+  <text x="836" y="450" class="small">按时间等条件选择；可手动强制</text>
+  <path d="M980 467V491" class="flow"/>
+  <rect x="820" y="497" width="320" height="80" rx="8" class="box"/>
+  <text x="836" y="528" class="body">分组 → 摘要</text>
+  <text x="836" y="557" class="small">配置的模型 / 关键词回退</text>
+  <path d="M980 577V601" class="flow"/>
+  <rect x="820" y="607" width="320" height="91" rx="8" class="box"/>
+  <text x="836" y="638" class="body">写长期摘要，标记原文已整理</text>
+  <text x="836" y="668" class="small">保留原文；核心同步执行，宿主调度</text>
+  <path d="M220 724V783" class="flow"/>
+  <text x="236" y="760" class="small">写入</text>
+  <path d="M600 785V730" class="flow"/>
+  <text x="616" y="760" class="small">读取候选</text>
+  <path d="M980 730V783" class="flow" marker-start="url(#arrow)"/>
+  <text x="996" y="760" class="small">读取 / 写回</text>
+  <rect x="40" y="789" width="1120" height="158" rx="12" class="box"/>
+  <text x="62" y="823" class="head">SQLite · bank 级本地持久存储</text>
+  <text x="62" y="857" class="body">正文：working_memory / episodic_memory　　全文：fts_working / fts_episodes</text>
+  <text x="62" y="889" class="body">可选向量：vec_working / vec_episodes，或 memory_embeddings 备用向量表</text>
+  <text x="62" y="921" class="body">可选结构化信息：facts / triples 等　　辅助：scratchpad、缓存、审计与同步事件</text>
+  <text x="40" y="984" class="body">范围边界：session / global 由调用配置；命名 bank 使用独立数据库，不能等同完整权限系统。</text>
+  <text x="40" y="1017" class="body">扩展能力：多路召回、时间图谱、跨设备同步按需接入；SHMR / Persona 不作为默认闭环。</text>
+  <text x="40" y="1063" class="small">原创归纳 · 上游 mnemosyne-oss/mnemosyne · commit 3d8c51a · 4.0.0b1 · 2026-09-08 · 未运行性能测试</text>
+</svg>
