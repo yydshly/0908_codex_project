@@ -29,5 +29,20 @@
     ],
     "cover": "assets/capability-map.png",
     "demo": true
+  },
+  {
+    "id": "006",
+    "slug": "signal-vaults",
+    "name": "Signal Vaults",
+    "summary": "微信群、公众号等信息的 AI 日报工具；无当前接入需求，仅参考多源信息提取、筛选与个人日报的思路。",
+    "repository": "https://github.com/JackyCufe/signal-vaults",
+    "status": "已完成",
+    "tags": [
+      "个人日报",
+      "信息聚合",
+      "思路参考"
+    ],
+    "cover": null,
+    "demo": false
   }
 ]
