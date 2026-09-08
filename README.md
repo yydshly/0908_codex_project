@@ -15,6 +15,7 @@
 | 006 | [Signal Vaults](projects/006-signal-vaults/README.md) | 微信群、公众号等信息的 AI 日报工具；无当前接入需求，仅参考多源信息提取、筛选与个人日报的思路。 | 已完成 | [GitHub](https://github.com/JackyCufe/signal-vaults) | — |
 | 007 | [狗头军师 · 资料留存与架构导读](projects/007-goutoujunshi/README.md) | 以整体架构图引导理解43份资料、模型应用与六个产品方向；保留模块详解和复用入口，后期按需参考。 | 已完成 | [GitHub](https://github.com/shengjidaguai-china/goutoujunshi) | [演示](https://yydshly.github.io/0908_codex_project/demos/007-goutoujunshi/) |
 | 009 | [OpenHiggsfield](projects/009-open-higgsfield/README.md) | 调用外部生成 API 的图片／视频工作台，主要提供界面与参数适配，不含模型实现；仅作摘要留档，不继续深入研究。 | 已完成 | [GitHub](https://github.com/wide-trace/open-higgsfield) | — |
+| 010 | [WeMM-Embedding](projects/010-wemm-embedding/README.md) | 用整体架构图理解多模态向量模型、素材检索流程与产品接入分工；附能力边界、穿搭素材应用及同类方案，尚未部署实测。 | 已完成 | [GitHub](https://github.com/Tencent/WeMM-Embedding) | — |
 <!-- PROJECTS:END -->
 
 ## 架构导读 · 001 TeamAI CLI
@@ -60,7 +61,6 @@
 
 [打开学习地图 →](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/) · [阅读完整手册 →](projects/005-ai-engineering-from-scratch/notes/learning-guide.md) · [研究说明 →](projects/005-ai-engineering-from-scratch/README.md)
 
-
 ## 架构导读 · 007 狗头军师
 
 **资料整理完成，保留整体架构与资料索引，供后期按需复用；不继续深入研究或接入。**
@@ -73,6 +73,20 @@
 - **复用入口：**先看图，再查模块、产品详情和资料来源；各方向尚未开发或验证需求。
 
 [查看资料与架构说明 →](projects/007-goutoujunshi/README.md)
+
+## 架构导读 · 010 WeMM-Embedding
+
+**把已有内容变成可比较的向量，为自己的素材库增加按内容搜索与匹配的能力。**
+
+![WeMM-Embedding 整体架构：输入素材与查询，经模型编码为向量，由应用完成索引、检索、筛选和展示。](projects/010-wemm-embedding/assets/architecture.svg)
+
+- **模型提供：**文字、图片、视频、文档页面与组合输入的向量表示，可自行部署。
+- **产品补充：**素材管理、检索索引、业务过滤与预览；片段定位需要分段及时间戳。
+- **应用方向：**文字搜素材、以图搜图、图文组合查询和资料检索，帮助查找参考与复用资产。
+
+当前已完成能力与架构整理，尚未部署或验证业务效果。
+
+[查看能力边界、接入建议与同类方案 →](projects/010-wemm-embedding/README.md)
 
 ## 阅读入口
 

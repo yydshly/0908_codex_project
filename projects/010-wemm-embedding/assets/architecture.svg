@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1250" viewBox="0 0 1440 1250" role="img" aria-labelledby="title desc">
+  <title id="title">WeMM-Embedding 整体能力架构</title>
+  <desc id="desc">已有素材和用户查询分别经 WeMM 编码成向量。应用建立素材索引，执行相似度检索、业务筛选与结果展示。模型支持文字、图片、视频、文档页面及组合输入；不直接生成素材，不支持音频。图中蓝色为模型能力，绿色为应用需要建设的部分。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#64748b"/></marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#182e42}
+      .title{font-size:36px;font-weight:700}.h{font-size:24px;font-weight:700}.b{font-size:20px}.s{font-size:18px;fill:#526477}.label{font-size:17px;font-weight:700;letter-spacing:1px}
+      .arrow{fill:none;stroke:#64748b;stroke-width:2.5;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1440" height="1250" fill="#f4f7fb"/>
+  <text x="48" y="64" class="title">WeMM-Embedding · 整体能力架构</text>
+  <text x="48" y="104" class="b">把已有内容变成可比较的向量，让自己的素材库能够“按内容找东西”。</text>
+  <rect x="48" y="132" width="1344" height="78" rx="14" fill="#182e42"/>
+  <text x="72" y="164" class="b" style="fill:#fff;font-weight:700">核心定位：可自行部署的多模态向量模型</text>
+  <text x="72" y="194" class="s" style="fill:#d6e3f0">腾讯微信视觉团队发布 · 基于 Qwen3.5 · 运行于自己的机器或服务器 · 输出向量，供应用检索与匹配</text>
+
+  <text x="48" y="254" class="label" style="fill:#526477">01 / 输入内容</text>
+  <text x="480" y="254" class="label" style="fill:#245ccd">02 / 仓库提供的模型能力</text>
+  <text x="962" y="254" class="label" style="fill:#16715d">03 / 应用需要建设的部分</text>
+
+  <rect x="48" y="276" width="380" height="228" rx="14" fill="#fff" stroke="#d4deea"/>
+  <text x="72" y="314" class="h">提前入库：已有素材</text>
+  <text x="72" y="356" class="b">文字 · 图片 · 视频 · 文档页面</text>
+  <text x="72" y="390" class="b">也支持图文交错等组合输入</text>
+  <path d="M72 411H404" stroke="#e0e7ef"/>
+  <text x="72" y="444" class="s">例：穿搭图、商品图、首帧、视频</text>
+  <text x="72" y="478" class="s">素材由自己的系统收集与管理</text>
+
+  <rect x="48" y="538" width="380" height="222" rx="14" fill="#fff" stroke="#d4deea"/>
+  <text x="72" y="576" class="h">发起搜索：用户查询</text>
+  <text x="72" y="618" class="b">文字描述 · 参考图 · 图文组合</text>
+  <text x="72" y="660" class="s">例：“米白长裙、全身、灰白背景”</text>
+  <text x="72" y="696" class="s">或：参考裙子图 + “找蓝色相似款”</text>
+  <text x="72" y="732" class="s">在已有素材中找候选</text>
+
+  <rect x="480" y="276" width="430" height="484" rx="14" fill="#eaf1ff" stroke="#95b4ef" stroke-width="2"/>
+  <text x="506" y="315" class="h" style="fill:#245ccd">WeMM-Embedding 编码</text>
+  <text x="506" y="347" class="s">素材与查询分别编码，使用对应输入约定</text>
+  <rect x="506" y="370" width="378" height="64" rx="10" fill="#fff"/>
+  <text x="695" y="410" class="b" text-anchor="middle">多模态模型推理</text>
+  <path d="M695 434V458" class="arrow"/>
+  <rect x="506" y="466" width="378" height="68" rx="10" fill="#fff"/>
+  <text x="695" y="494" class="b" text-anchor="middle">提取 &lt;embedding&gt; 位置表示</text>
+  <text x="695" y="520" class="s" text-anchor="middle">L2 归一化 → 可比较的向量</text>
+  <rect x="506" y="556" width="174" height="57" rx="10" fill="#245ccd"/>
+  <rect x="710" y="556" width="174" height="57" rx="10" fill="#245ccd"/>
+  <text x="593" y="592" class="b" text-anchor="middle" style="fill:white">素材向量</text>
+  <text x="797" y="592" class="b" text-anchor="middle" style="fill:white">查询向量</text>
+  <text x="506" y="653" class="b">2B / 4B / 9B 权重 · 可选向量维度</text>
+  <text x="506" y="688" class="s">推理：Transformers / Sentence Transformers</text>
+  <text x="506" y="719" class="s">服务化：vLLM / SGLang</text>
+  <text x="506" y="748" class="s">另提供 MMEB-v3 评测代码</text>
+  <path d="M428 392H470" class="arrow"/>
+  <path d="M428 649H470" class="arrow"/>
+
+  <rect x="962" y="276" width="430" height="134" rx="14" fill="#eaf6f0" stroke="#9bcabb"/>
+  <text x="986" y="314" class="h">保存素材向量 → 建立索引</text>
+  <text x="986" y="351" class="b">关联原文件、标题、标签等信息</text>
+  <text x="986" y="385" class="s">文档关联页码；视频片段关联时间段</text>
+  <rect x="962" y="457" width="430" height="126" rx="14" fill="#eaf6f0" stroke="#9bcabb"/>
+  <text x="986" y="496" class="h">查询向量 → 相似度检索</text>
+  <text x="986" y="533" class="b">在索引中寻找相关候选</text>
+  <text x="986" y="565" class="s">相似度用于排序，不代表完全满足条件</text>
+  <rect x="962" y="630" width="430" height="130" rx="14" fill="#eaf6f0" stroke="#9bcabb"/>
+  <text x="986" y="669" class="h">业务筛选 → 展示结果</text>
+  <text x="986" y="707" class="b">颜色、尺码、库存等字段过滤</text>
+  <text x="986" y="740" class="s">可另接重排序模型；展示预览与来源</text>
+  <path d="M910 391H935V340H952" class="arrow"/>
+  <path d="M910 550H935V520H952" class="arrow"/>
+  <path d="M1177 410V447" class="arrow"/>
+  <path d="M1177 583V620" class="arrow"/>
+
+  <text x="48" y="813" class="label" style="fill:#16715d">04 / 在这套基础上可以构建什么</text>
+  <rect x="48" y="834" width="1344" height="130" rx="14" fill="#fff" stroke="#d4deea"/>
+  <path d="M384 858V940M720 858V940M1056 858V940" stroke="#d4deea"/>
+  <text x="72" y="876" class="h">文字搜素材</text>
+  <text x="72" y="913" class="b">按描述找图片、视频</text>
+  <text x="72" y="943" class="s">找回过去保存或生成的资产</text>
+  <text x="408" y="876" class="h">相似素材匹配</text>
+  <text x="408" y="913" class="b">以图搜图、参考款查找</text>
+  <text x="408" y="943" class="s">辅助选素材与复用结果</text>
+  <text x="744" y="876" class="h">图文组合搜索</text>
+  <text x="744" y="913" class="b">参考图 + 文字条件</text>
+  <text x="744" y="943" class="s">在候选库中寻找相关内容</text>
+  <text x="1080" y="876" class="h">文本与页面检索</text>
+  <text x="1080" y="913" class="b">按问题找段落或页面</text>
+  <text x="1080" y="943" class="s">定位资料、辅助后续阅读</text>
+
+  <rect x="48" y="990" width="1344" height="160" rx="14" fill="#fff4e5"/>
+  <text x="72" y="1030" class="h" style="fill:#905e20">记住边界，避免高估能力</text>
+  <text x="72" y="1070" class="b">输出向量，不生成或编辑图片视频；当前不支持音频，也不会自动上网收集素材。</text>
+  <text x="72" y="1106" class="b">视频精确片段检索需要补充分段与时间戳；对白需要另行转写；业务命中率要用真实素材测试。</text>
+  <text x="72" y="1136" class="s">蓝色：模型与仓库交付　绿色：产品集成工作　应用方向为设计设想，当前未部署或实测</text>
+  <text x="48" y="1191" class="s">阅读顺序：输入 → 模型编码 → 应用检索 → 可构建的能力。检索流程为概念设计，不是仓库已有的成品系统。</text>
+  <text x="48" y="1222" class="s">依据：Tencent/WeMM-Embedding 官方 README 与模型卡 · 整理日期：2026-09-09 · 详细来源见项目研究说明</text>
+</svg>

@@ -89,5 +89,21 @@
     ],
     "cover": null,
     "demo": false
+  },
+  {
+    "id": "010",
+    "slug": "wemm-embedding",
+    "name": "WeMM-Embedding",
+    "summary": "用整体架构图理解多模态向量模型、素材检索流程与产品接入分工；附能力边界、穿搭素材应用及同类方案，尚未部署实测。",
+    "repository": "https://github.com/Tencent/WeMM-Embedding",
+    "status": "已完成",
+    "tags": [
+      "多模态检索",
+      "向量模型",
+      "素材管理",
+      "方案对比"
+    ],
+    "cover": "assets/architecture.svg",
+    "demo": false
   }
 ]
