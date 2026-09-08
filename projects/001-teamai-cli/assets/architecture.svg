@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">TeamAI：把团队工作方法交给不同的 AI 工具</title>
+  <desc id="desc">团队在 Git 仓库保存规则、技能、资料和配置。TeamAI 管理、适配并分发这些内容。Codex、Claude 等工具读取内容并执行用户任务。新经验经整理和发布后回到共享仓库。文字规则不保证强制执行。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#527166" stroke-width="1.6"/></marker>
+  </defs>
+  <rect width="1200" height="720" rx="22" fill="#f4f6f3"/>
+  <g font-family="'Microsoft YaHei','PingFang SC',sans-serif" fill="#172b32">
+    <text x="48" y="56" font-size="16" fill="#476257">001 / TEAMAI CLI · 作用示意</text>
+    <text x="48" y="104" font-size="32" font-weight="700">统一团队工作方法，让不同 AI 工具都能用</text>
+    <text x="48" y="142" font-size="19" fill="#526269">团队定义内容 → TeamAI 管理与分发 → AI 工具执行任务</text>
+
+    <rect x="48" y="216" width="300" height="266" rx="16" fill="#fff" stroke="#ced8d1"/>
+    <text x="72" y="255" font-size="23" font-weight="700">团队共享仓库</text>
+    <text x="72" y="284" font-size="16" fill="#526269">由团队制定，用 Git 保存</text>
+    <text x="72" y="325" font-size="19">规则：开发要遵守什么</text>
+    <text x="72" y="363" font-size="19">技能：一类任务怎么做</text>
+    <text x="72" y="401" font-size="19">资料：背景与历史经验</text>
+    <text x="72" y="439" font-size="19">配置：连接哪些工具</text>
+
+    <path d="M348 350 H427" stroke="#527166" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="388" y="327" text-anchor="middle" font-size="16" fill="#526269">同步</text>
+
+    <rect x="440" y="216" width="300" height="266" rx="16" fill="#e4f1e9" stroke="#77a58d" stroke-width="2"/>
+    <text x="464" y="257" font-size="27" font-weight="700">TeamAI</text>
+    <text x="464" y="287" font-size="17" fill="#345d49">团队资源的管理与适配层</text>
+    <text x="464" y="332" font-size="19">管理更新、筛选所需内容</text>
+    <text x="464" y="372" font-size="19">转换为各工具支持的格式</text>
+    <text x="464" y="412" font-size="19">分发配置、支持知识检索</text>
+    <text x="464" y="454" font-size="16" fill="#345d49">帮助 AI 获得团队上下文</text>
+
+    <path d="M740 350 H819" stroke="#527166" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="780" y="327" text-anchor="middle" font-size="16" fill="#526269">分发</text>
+
+    <rect x="832" y="216" width="320" height="266" rx="16" fill="#fff" stroke="#ced8d1"/>
+    <text x="856" y="255" font-size="23" font-weight="700">Codex / Claude 等</text>
+    <text x="856" y="284" font-size="16" fill="#526269">成员使用的 AI 工具</text>
+    <text x="856" y="329" font-size="19">读取规则、技能和相关资料</text>
+    <text x="856" y="369" font-size="19">理解用户需求</text>
+    <text x="856" y="409" font-size="19">写代码、修 Bug、运行测试</text>
+    <text x="856" y="454" font-size="16" fill="#345d49">实际开发工作在这里完成</text>
+
+    <path d="M992 482 V548 H198 V493" fill="none" stroke="#527166" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+    <rect x="368" y="526" width="454" height="44" rx="12" fill="#f4f6f3"/>
+    <text x="595" y="554" text-anchor="middle" font-size="19" fill="#476257">新经验 → 提炼、检查并发布 → 以后复用</text>
+
+    <rect x="48" y="603" width="1104" height="76" rx="12" fill="#e9ede7"/>
+    <text x="72" y="634" font-size="18">边界：文字规则是指导；硬性要求仍需测试、CI 和合并限制。</text>
+    <text x="72" y="661" font-size="16" fill="#526269">我们的选择：先了解，有多人、多工具的同步需求时再使用。此图为概念说明。</text>
+  </g>
+</svg>

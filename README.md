@@ -7,7 +7,9 @@
 ## 项目索引
 
 <!-- PROJECTS:START -->
-暂无研究项目。首个项目从 **001** 开始。
+| 编号 | 项目 / 研究说明 | 摘要 | 状态 | 上游 | Web |
+| --- | --- | --- | --- | --- | --- |
+| 001 | [TeamAI CLI](projects/001-teamai-cli/README.md) | 为不同 AI 工具统一管理和分发团队规则、技能、资料与配置；先了解，按需使用。 | 已完成 | [GitHub](https://github.com/Tencent/teamai-cli) | — |
 <!-- PROJECTS:END -->
 
 ## 阅读入口
