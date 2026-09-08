@@ -23,7 +23,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate and build
-        run: python scripts/build.py --check
+        run: |
+          python projects/005-ai-engineering-from-scratch/experiments/validate_guide.py
+          python scripts/build.py --check
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name == 'workflow_dispatch'
         with:

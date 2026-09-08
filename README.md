@@ -10,6 +10,7 @@
 | 编号 | 项目 / 研究说明 | 摘要 | 状态 | 上游 | Web |
 | --- | --- | --- | --- | --- | --- |
 | 001 | [TeamAI CLI](projects/001-teamai-cli/README.md) | 为不同 AI 工具统一管理和分发团队规则、技能、资料与配置；先了解，按需使用。 | 已完成 | [GitHub](https://github.com/Tencent/teamai-cli) | — |
+| 005 | [AI Engineering from Scratch](projects/005-ai-engineering-from-scratch/README.md) | 六大能力全景图、20阶段与523节课程导航，配套术语词典、学习路线和详细手册；导览已整理，课程未逐一验证。 | 已完成 | [GitHub](https://github.com/rohitg00/ai-engineering-from-scratch) | [演示](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/) |
 <!-- PROJECTS:END -->
 
 ## 架构导读 · 001 TeamAI CLI
@@ -28,6 +29,19 @@
 **我们的结论：先了解，按需使用。** 当多人、多项目或多种 AI 工具需要共享同一套工作方法时，再考虑接入。
 
 [查看能力介绍、使用场景与来源 →](projects/001-teamai-cli/README.md)
+
+## 能力导览 · 005 AI Engineering from Scratch
+
+**用一张全景图理解 AI 工程范围，再按目标查术语、选课程、做验证。** 当前完成知识导航与研究材料整理，暂不启动完整课程。
+
+![AI 工程能力全景图：六大能力领域，涵盖 P00 至 P19、典型应用和学习入口。](projects/005-ai-engineering-from-scratch/assets/capability-map.png)
+
+- **全景范围：**基础与训练、感知与生成、模型与决策、应用与连接、智能体与协作、生产与交付。
+- **后期学习：**20 个阶段导读、523 节课程索引、技术名词释义、八条目标路线和实践记录模板。
+- **研究边界：**课程与参考实现集合；目录已整理不代表课程已学完，教学模拟也不代表业务验证通过。
+
+[打开学习地图 →](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/) · [阅读完整手册 →](projects/005-ai-engineering-from-scratch/notes/learning-guide.md) · [研究说明 →](projects/005-ai-engineering-from-scratch/README.md)
+
 
 ## 阅读入口
 

@@ -6,8 +6,28 @@
     "summary": "为不同 AI 工具统一管理和分发团队规则、技能、资料与配置；先了解，按需使用。",
     "repository": "https://github.com/Tencent/teamai-cli",
     "status": "已完成",
-    "tags": ["AI 工具", "团队协作", "规则与知识同步"],
+    "tags": [
+      "AI 工具",
+      "团队协作",
+      "规则与知识同步"
+    ],
     "cover": "assets/architecture.svg",
     "demo": false
+  },
+  {
+    "id": "005",
+    "slug": "ai-engineering-from-scratch",
+    "name": "AI Engineering from Scratch",
+    "summary": "六大能力全景图、20阶段与523节课程导航，配套术语词典、学习路线和详细手册；导览已整理，课程未逐一验证。",
+    "repository": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "status": "已完成",
+    "tags": [
+      "AI 学习",
+      "工程原理",
+      "技术词典",
+      "实践路线"
+    ],
+    "cover": "assets/capability-map.png",
+    "demo": true
   }
 ]
