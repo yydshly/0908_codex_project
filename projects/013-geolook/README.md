@@ -1,19 +1,25 @@
 # 013 · GeoLook 原版实测与完整案例
 
+GeoLook 帮营销团队模拟客户向 AI 提问，观察自己的产品是否被提及、如何被介绍，再根据发现安排改进和复查。
+
+**确定客户需求 → 模拟客户向 AI 提问 → 收集真实回答 → 分析提及、竞品和引用 → 调整内容与网站 → 再次提问复查**
+
+[![GeoLook 整体调研与调整引导图](assets/research-loop.svg)](https://yydshly.github.io/0908_codex_project/demos/013-geolook/)
+
+**模拟的是客户场景，AI 回答是真实采集的；分析提供线索，调整需要人工判断。**
+
+具体分析产品提及、竞品、描述准确性和引用来源，结合官网检查形成待验证的问题。团队筛选任务、核实事实并调整公开内容，再用同组问题多轮复查。未提及可能来自需求不匹配、信息缺口或回答波动，不能直接归因于网站问题。
+
+## 演示与研究来源
+
 用真实 Obsidian 官网与实际 AI 网页回答，展示「提出营销问题 → 采样 → 体检 → 任务 → 资产 → 技术验收 → 交付」。原版程序已实际运行；中文导览将证据串成七步。
 
 - **[公开整体引导页](https://yydshly.github.io/0908_codex_project/demos/013-geolook/)**
 - [完整真实案例](https://yydshly.github.io/0908_codex_project/demos/013-geolook/real.html)
-- [原版工作台](http://127.0.0.1:8765/)：在设置中进入 **Obsidian**；**Obsidian 研究副本**是本地技术实验。
-- [旧版教学沙盘与架构](http://127.0.0.1:8013/#inside)
+- [原版工作台（仅本机启动后可用）](http://127.0.0.1:8765/)：在设置中进入 **Obsidian**；**Obsidian 研究副本**是本地技术实验。
+- [旧版教学沙盘与架构](https://yydshly.github.io/0908_codex_project/demos/013-geolook/teaching.html#inside)
 - 上游：[aigclink/geolook](https://github.com/aigclink/geolook)，MIT；固定版本 [9492cb3](https://github.com/aigclink/geolook/tree/9492cb3a1952f1370cca0f66715f87165fd56e2c)，提交日期 2026-08-10。
 - 实测日期：2026-09-09，Asia/Shanghai。本案例不是 Obsidian 委托或认可的营销项目。
-
-## 我们形成的理解
-
-GeoLook 帮营销团队模拟客户向 AI 提问，收集真实回答，查看产品提及、竞品、描述准确性和引用来源。结合网站检查形成待验证的问题，团队筛选任务并调整公开内容，再用同一组问题多轮复查。模拟的是客户场景，回答来自真实 AI；未提及不一定说明网站有问题。
-
-![整体调研与调整引导图](assets/research-loop.svg)
 
 公开网站展示引导与保存的实测证据，GitHub Pages 不执行 Python、采样或后台发布。需要新一轮数据时自行运行原版。
 

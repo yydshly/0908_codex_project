@@ -22,6 +22,20 @@
 | 013 | [GeoLook · 原版实测与完整案例](projects/013-geolook/README.md) | 模拟客户向 AI 提问，分析真实回答中的产品提及、竞品与引用，再调整内容并复查；整体引导图与 Obsidian 原版实测展示完整调研方式。 | 已完成 | [GitHub](https://github.com/aigclink/geolook) | [演示](https://yydshly.github.io/0908_codex_project/demos/013-geolook/) |
 <!-- PROJECTS:END -->
 
+## 整体引导 · 013 GeoLook
+
+**GeoLook 帮营销团队了解：客户向 AI 咨询和选型时，自己的产品是否被提及、如何被介绍，以及接下来可以改进什么。**
+
+**确定客户需求 → 模拟客户向 AI 提问 → 收集真实回答 → 分析提及、竞品和引用 → 调整内容与网站 → 再次提问复查**
+
+[![GeoLook 整体引导图：模拟客户向 AI 提问，分析真实反馈，调整内容与网站，再次提问复查](projects/013-geolook/assets/research-loop.svg)](https://yydshly.github.io/0908_codex_project/demos/013-geolook/)
+
+**模拟的是客户场景，AI 回答是真实采集的；分析提供线索，调整需要人工判断。**
+
+观察 AI 是否提到自己的产品、同时提到哪些竞品、描述是否准确、引用了哪些来源，再结合官网检查筛选改进任务。团队核实并调整后，用相同问题、尽量可比的条件多轮复查；未被提及不一定说明网站有问题，一次变化也不证明营销改善。
+
+[打开整体引导与完整演示 →](https://yydshly.github.io/0908_codex_project/demos/013-geolook/) · [查看实测记录与研究说明 →](projects/013-geolook/README.md)
+
 ## 实测与产品导览 · 012 The Long Silence
 
 **从可运行的浏览器宇宙，理解“太空是社区、星球是个人、航道是交互”的产品方向。**
