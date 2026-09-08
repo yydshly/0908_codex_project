@@ -10,14 +10,14 @@
 | 上游许可证 | Apache-2.0 |
 | 研究状态 | 已运行原版完整应用，提供 18 项体验路线与真实导出样片；保留独立入门演示 |
 | 原版工具 | [在线编辑器](https://www.screenshot-studio.com/) · [代码卡片](https://www.screenshot-studio.com/code) |
-| 本地展示源码 | [Web 子项目](../../web/011-screenshot-studio/index.html) |
+| 在线体验 | [打开学习工作台](https://yydshly.github.io/0908_codex_project/demos/011-screenshot-studio/) · [查看网页源码](../../web/011-screenshot-studio/index.html) |
 | 技术栈 | 上游：Next.js、React、TypeScript、Zustand、modern-screenshot、WebCodecs、FFmpeg WASM；本页：HTML/CSS/JavaScript、modern-screenshot |
 
 ## 一张图理解这个库
 
 ![Screenshot Studio 能力全景：素材输入、展示设计、信息表达、成品输出，以及从理解到掌握的练习路线。](assets/capability-map.png)
 
-[下载高清 PNG](assets/capability-map.png) · [查看可编辑 SVG](assets/capability-map.svg) · [主页源码](../../web/011-screenshot-studio/index.html)
+[下载高清 PNG](assets/capability-map.png) · [查看可编辑 SVG](assets/capability-map.svg) · [在线查看引导图](https://yydshly.github.io/0908_codex_project/demos/011-screenshot-studio/#capability-map)
 
 **它是一套截图与内容展示创作工具。** 除了基础图片处理、多图视频，还包含代码转图、网页获取、推文卡片、设备套壳、三维透视、多图层、教程标注、单图动画、模板复用与自行部署。
 
@@ -32,9 +32,11 @@
 
 ## 在主页看全能力并练习
 
-[打开完整体验路线](http://127.0.0.1:8011/index.html#journey) · [原版截图编辑器](http://127.0.0.1:3011/) · [原版代码卡片](http://127.0.0.1:3011/code)
+[打开完整体验路线](https://yydshly.github.io/0908_codex_project/demos/011-screenshot-studio/#journey) · [官方截图编辑器](https://www.screenshot-studio.com/) · [官方代码卡片](https://www.screenshot-studio.com/code)
 
-原版已在本机运行。主页直接展示 18 项能力、操作路径、练习目标、完成标准、常见问题、个人学习进度与笔记，附原版 JPEG / PNG / MP4 输出样例。涵盖输入、背景、外框、设备、三维、图层、标注、滤镜、时间轴、多页、代码、导出、模板和接口。
+在线主页直接展示 18 项能力、操作路径、练习目标、完成标准、常见问题、个人学习进度与笔记，附本机运行原版时实际导出的 JPEG / PNG / MP4 样例。涵盖输入、背景、外框、设备、三维、图层、标注、滤镜、时间轴、多页、代码、导出、模板和接口。
+
+公网主页为静态学习工作台，完整编辑操作链接到官方工具。自行启动项目后，也可访问[本地学习工作台](http://127.0.0.1:8011/index.html#journey)、[本地原版编辑器](http://127.0.0.1:3011/)和[本地代码卡片](http://127.0.0.1:3011/code)；这些本机地址不作为外部访问入口。
 
 [原版运行与验证详情](notes/original-app.md) · [播放实际导出的 3 秒动画](assets/original-animation.mp4) · [查看原版代码卡片](assets/original-code.png)
 

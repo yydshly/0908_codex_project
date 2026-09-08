@@ -104,6 +104,16 @@
 
 [查看能力边界、接入建议与同类方案 →](projects/010-wemm-embedding/README.md)
 
+## 能力导读 · 011 Screenshot Studio
+
+**从截图、代码和网页素材出发，完成展示设计、信息标注，再输出图片或动画。**
+
+![Screenshot Studio 能力引导图：素材输入 → 展示设计 → 信息表达 → 成品输出。](projects/011-screenshot-studio/assets/capability-map.png)
+
+[打开在线学习工作台 →](https://yydshly.github.io/0908_codex_project/demos/011-screenshot-studio/) · [查看高清引导图](projects/011-screenshot-studio/assets/capability-map.png) · [阅读能力汇总与验证记录](projects/011-screenshot-studio/README.md)
+
+主页包含 18 项能力练习、自检与学习笔记，以及原版实际导出的图片和动画。核心是截图创作与展示，不包含 AI 画质修复。
+
 ## 阅读入口
 
 - [研究目录](projects/)：按固定编号组织的子项目。
