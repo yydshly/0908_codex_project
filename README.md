@@ -14,6 +14,7 @@
 | 005 | [AI Engineering from Scratch](projects/005-ai-engineering-from-scratch/README.md) | 六大能力全景图、20阶段与523节课程导航，配套术语词典、学习路线和详细手册；导览已整理，课程未逐一验证。 | 已完成 | [GitHub](https://github.com/rohitg00/ai-engineering-from-scratch) | [演示](https://yydshly.github.io/0908_codex_project/demos/005-ai-engineering-from-scratch/) |
 | 006 | [Signal Vaults](projects/006-signal-vaults/README.md) | 微信群、公众号等信息的 AI 日报工具；无当前接入需求，仅参考多源信息提取、筛选与个人日报的思路。 | 已完成 | [GitHub](https://github.com/JackyCufe/signal-vaults) | — |
 | 007 | [狗头军师 · 资料留存与架构导读](projects/007-goutoujunshi/README.md) | 以整体架构图引导理解43份资料、模型应用与六个产品方向；保留模块详解和复用入口，后期按需参考。 | 已完成 | [GitHub](https://github.com/shengjidaguai-china/goutoujunshi) | [演示](https://yydshly.github.io/0908_codex_project/demos/007-goutoujunshi/) |
+| 008 | [Splat.js · 视频到三维实测与扩展指南](projects/008-splat-js/README.md) | 已从独立鞋子视频完成本机三维重建，提供原视频与真实结果对照、官方样例、整体架构和商品／空间扩展方向；人体与自由漫游待验证。 | 已完成 | [GitHub](https://github.com/arrival-space/splat.js) | [演示](https://yydshly.github.io/0908_codex_project/demos/008-splat-js/) |
 | 009 | [OpenHiggsfield](projects/009-open-higgsfield/README.md) | 调用外部生成 API 的图片／视频工作台，主要提供界面与参数适配，不含模型实现；仅作摘要留档，不继续深入研究。 | 已完成 | [GitHub](https://github.com/wide-trace/open-higgsfield) | — |
 | 010 | [WeMM-Embedding](projects/010-wemm-embedding/README.md) | 用整体架构图理解多模态向量模型、素材检索流程与产品接入分工；附能力边界、穿搭素材应用及同类方案，尚未部署实测。 | 已完成 | [GitHub](https://github.com/Tencent/WeMM-Embedding) | — |
 <!-- PROJECTS:END -->
@@ -73,6 +74,20 @@
 - **复用入口：**先看图，再查模块、产品详情和资料来源；各方向尚未开发或验证需求。
 
 [查看资料与架构说明 →](projects/007-goutoujunshi/README.md)
+
+## 真实效果导览 · 008 Splat.js
+
+**65.5 秒绕鞋视频，已在本机浏览器中重建成可以拖动、缩放的三维外观。**
+
+[![本项目实际训练的鞋子三维模型渲染效果](projects/008-splat-js/assets/result-cover.webp)](https://yydshly.github.io/0908_codex_project/demos/008-splat-js/#real)
+
+封面来自本次生成的三维模型实时渲染，不是输入照片。README 提供静态预览，点击图片进入交互网页。
+
+- **实测：**223/223 视角定位、10,015 次训练、3.8 MB SOG；保留原视频和真实结果对照。
+- **扩展：**商品热点与快捷视角、门店／房源导览、视觉留档与内容制作。
+- **边界：**输出为三维高斯；网格、准确尺寸、碰撞、人体动作和换装需要额外能力。
+
+[查看总结与架构 →](projects/008-splat-js/README.md) · [原视频 / 结果对照 →](https://yydshly.github.io/0908_codex_project/demos/008-splat-js/video-test.html#result)
 
 ## 架构导读 · 010 WeMM-Embedding
 

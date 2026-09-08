@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>一段鞋子视频，变成立体展示 · Splat.js 实测</title>
+  <link rel="stylesheet" href="video-test.css">
+</head>
+<body>
+  <header><a href="./">← 返回能力展示</a><span>独立视频 · 本机重建实验</span></header>
+  <main>
+    <p class="eyebrow">从一段真实视频开始</p>
+    <h1>绕鞋拍一圈，<br>换个角度看。</h1>
+    <p class="intro">输入是网上公开的一段运动鞋拍摄视频。我们用 Splat.js 在本机重新计算，让你对照原视频与生成的三维效果。</p>
+    <div class="comparison">
+      <section class="input">
+        <div class="panel-title"><h2>① 原始视频</h2><span>65.5 秒 · 4K · 60 fps</span></div>
+        <video controls playsinline preload="metadata" poster="video-assets/source-poster.jpg" aria-label="围绕运动鞋拍摄的原始视频"></video>
+        <p>相机围绕静止的鞋子移动，覆盖不同方向和高度。</p>
+        <a href="https://nickesc.github.io/PhotogrammetryVideoInstructions/" target="_blank" rel="noopener">素材：N. Escobar / nickesc ↗</a>
+      </section>
+      <section class="output" id="result">
+        <div class="panel-title"><h2>② 本次三维结果</h2><a id="full-view" href="./engine/app/index.html?model=../../video-assets/model.sog&amp;recon=../../video-assets/recon.json" target="_blank" rel="noopener">独立窗口 ↗</a></div>
+        <div id="result-area"><iframe title="本次从公开视频重建的运动鞋三维模型" src="./engine/app/index.html?model=../../video-assets/model.sog&amp;recon=../../video-assets/recon.json" allowfullscreen></iframe></div>
+        <p><strong>左键拖动旋转 · 滚轮缩放 · Shift + 拖动平移</strong><br>右侧通过三维模型实时渲染；可从拍摄路径以外的角度观察。</p>
+      </section>
+    </div>
+    <section class="evidence"><h2>这次实际做了什么</h2><p id="run-summary">下载独立作者的原始 MP4 → 从 3,931 帧中自动选出 223 帧 → 全部视角成功定位 → 本机完成训练 → 保存为 3.8 MB 的三维文件。现在打开右侧结果，无需重新训练。</p><div id="metrics" class="metrics"><div class="metric"><b>223 / 223</b><span>成功定位的拍摄视角</span></div><div class="metric"><b>10,015</b><span>实际训练次数</span></div><div class="metric"><b>350,000</b><span>训练结束时的三维高斯</span></div><div class="metric"><b>3.8 MB</b><span>压缩后的三维文件</span></div></div><p id="limits">这是 480 px 草稿训练结果：可以观察鞋子的立体外观，但细纹理和背景仍有模糊。鞋底被凳面遮挡，未还原完整鞋底。输出为三维高斯，不是可编辑网格。视频解码、空间求解和训练合计约 27 分钟；纯外观训练约 1 分钟，本次设备为 RTX 4070 Laptop GPU。</p></section>
+    <div class="actions"><a class="button" href="./engine/app/index.html?videoDemo=nickesc" target="_blank" rel="noopener">用这段视频重新训练 ↗</a><a href="./engine/app/index.html" target="_blank" rel="noopener">选择自己的视频 ↗</a></div>
+    <footer>原视频来自独立拍摄教程，与 Splat.js 官方样例无关。本页仅展示本次本机实验，未上传至建模平台。</footer>
+  </main>
+<script type="module">import { videoSourceUrl } from './video-source.js'; document.querySelector('video').src = videoSourceUrl;</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1280" viewBox="0 0 1600 1280" role="img" aria-labelledby="title desc"><title id="title">Splat.js 整体架构引导图</title><desc id="desc">照片或视频经本机选帧、空间求解和高斯训练，输出可交互三维外观；应用扩展与额外算法研发分别标注。</desc><rect width="1600" height="1280" fill="#101b21"/>
+<text x="64" y="38" fill="#e6efec" font-size="43" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">Splat.js：从拍摄到可交互三维</text>
+<text x="66" y="101" fill="#b8cac6" font-size="23" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">读图顺序：输入真实素材 → 本机重建 → 保存与查看 → 扩展产品体验</text>
+<text x="66" y="162" fill="#8adcb7" font-size="24" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">01  输入层</text>
+<rect x="64" y="207" width="470" height="130" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="64" y="207" width="5" height="130" rx="2" fill="#8adcb7" stroke="#8adcb7" stroke-width="2"/>
+<text x="86" y="225" fill="#8adcb7" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">多角度照片</text>
+<text x="86" y="268" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">同一个静态对象；连续视角与重叠</text>
+<text x="86" y="297" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">物体绕拍 / 房间内移动拍摄</text>
+<rect x="565" y="207" width="470" height="130" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="565" y="207" width="5" height="130" rx="2" fill="#8adcb7" stroke="#8adcb7" stroke-width="2"/>
+<text x="587" y="225" fill="#8adcb7" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">视频 → 清晰帧</text>
+<text x="587" y="268" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">浏览器逐帧分析并自动选择照片</text>
+<text x="587" y="297" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">已实测：65.5 秒 → 223 帧</text>
+<rect x="1066" y="207" width="470" height="130" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="1066" y="207" width="5" height="130" rx="2" fill="#8adcb7" stroke="#8adcb7" stroke-width="2"/>
+<text x="1088" y="225" fill="#8adcb7" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">多位置 360° 全景</text>
+<text x="1088" y="268" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">应用切分为相机组后求解</text>
+<text x="1088" y="297" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">Bar 成品已查看；未本机复训</text>
+<path d="M800 344 L800 383" fill="none" stroke="#8adcb7" stroke-width="3"/><polygon points="800,383 794,373 806,373" fill="#8adcb7"/>
+<text x="66" y="386" fill="#8adcb7" font-size="24" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">02  核心计算层 · 在本机浏览器执行</text>
+<rect x="64" y="434" width="445" height="145" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="64" y="434" width="5" height="145" rx="2" fill="#8adcb7" stroke="#8adcb7" stroke-width="2"/>
+<text x="86" y="452" fill="#8adcb7" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">找相同细节</text>
+<text x="86" y="495" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">SIFT 特征 / CPU 与 Workers</text>
+<text x="86" y="524" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">跨照片匹配 / WebGPU</text>
+<path d="M516 505 L548 505" fill="none" stroke="#8adcb7" stroke-width="3"/><polygon points="548,505 538,499 538,511" fill="#8adcb7"/>
+<rect x="561" y="434" width="445" height="145" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="561" y="434" width="5" height="145" rx="2" fill="#8adcb7" stroke="#8adcb7" stroke-width="2"/>
+<text x="583" y="452" fill="#8adcb7" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">恢复拍摄位置与空间</text>
+<text x="583" y="495" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">相机位置 + 镜头参数 + 稀疏点</text>
+<text x="583" y="524" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">SfM / 联合校正误差</text>
+<path d="M1013 505 L1045 505" fill="none" stroke="#8adcb7" stroke-width="3"/><polygon points="1045,505 1035,499 1035,511" fill="#8adcb7"/>
+<rect x="1058" y="434" width="478" height="145" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="1058" y="434" width="5" height="145" rx="2" fill="#8adcb7" stroke="#8adcb7" stroke-width="2"/>
+<text x="1080" y="452" fill="#8adcb7" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">训练三维高斯</text>
+<text x="1080" y="495" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">渲染 → 对比原照片 → 优化参数</text>
+<text x="1080" y="524" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">位置、方向、尺度、颜色、透明度</text>
+<rect x="64" y="596" width="1472" height="53" rx="18" fill="#203d36" stroke="#203d36" stroke-width="2"/>
+<text x="87" y="608" fill="#bfefcf" font-size="22" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">理解关键：已有算法的浏览器实现；核心重建不依赖后台建模平台。网络用于素材获取、托管或主动分享。</text>
+<path d="M800 656 L800 692" fill="none" stroke="#8adcb7" stroke-width="3"/><polygon points="800,692 794,682 806,682" fill="#8adcb7"/>
+<text x="66" y="697" fill="#8adcb7" font-size="24" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">03  输出与查看层</text>
+<rect x="64" y="744" width="695" height="135" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="64" y="744" width="5" height="135" rx="2" fill="#8adcb7" stroke="#8adcb7" stroke-width="2"/>
+<text x="86" y="762" fill="#8adcb7" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">可保存的三维外观</text>
+<text x="86" y="805" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">3DGS PLY / 压缩 SOG + 相机与素材关联</text>
+<text x="86" y="834" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">高斯是真实三维数据，但没有天然连通的三角网格</text>
+<path d="M770 811 L810 811" fill="none" stroke="#8adcb7" stroke-width="3"/><polygon points="810,811 800,805 800,817" fill="#8adcb7"/>
+<rect x="825" y="744" width="711" height="135" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="825" y="744" width="5" height="135" rx="2" fill="#8adcb7" stroke="#8adcb7" stroke-width="2"/>
+<text x="847" y="762" fill="#8adcb7" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">可改变视角的网页体验</text>
+<text x="847" y="805" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">拖动旋转 / 滚轮缩放 / 拍摄路径游览</text>
+<text x="847" y="834" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">本项目：WebGPU 训练；PlayCanvas / WebGL2 查看 SOG</text>
+<path d="M800 886 L800 922" fill="none" stroke="#8adcb7" stroke-width="3"/><polygon points="800,922 794,912 806,912" fill="#8adcb7"/>
+<text x="66" y="925" fill="#a7c6ff" font-size="24" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">04  产品扩展层 · 以下需另行设计与开发</text>
+<rect x="64" y="973" width="470" height="125" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="64" y="973" width="5" height="125" rx="2" fill="#a7c6ff" stroke="#a7c6ff" stroke-width="2"/>
+<text x="86" y="991" fill="#a7c6ff" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">商品与内容</text>
+<text x="86" y="1034" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">细节热点 / 快捷视角 / 商品资料</text>
+<text x="86" y="1063" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">收藏记录 / 镜头路线与视频输出</text>
+<rect x="565" y="973" width="470" height="125" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="565" y="973" width="5" height="125" rx="2" fill="#a7c6ff" stroke="#a7c6ff" stroke-width="2"/>
+<text x="587" y="991" fill="#a7c6ff" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">空间与导览</text>
+<text x="587" y="1034" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">房间切换 / 导览讲解 / 版本对照</text>
+<text x="587" y="1063" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">自由移动需控制与导航，防穿墙需碰撞</text>
+<rect x="1066" y="973" width="470" height="125" rx="18" fill="#1a2b33" stroke="#35515b" stroke-width="2"/>
+<rect x="1066" y="973" width="5" height="125" rx="2" fill="#edc693" stroke="#edc693" stroke-width="2"/>
+<text x="1088" y="991" fill="#edc693" font-size="26" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">人体与更深层能力</text>
+<text x="1088" y="1034" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">固定穿搭：尚待人体素材验证</text>
+<text x="1088" y="1063" fill="#bbcbc9" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">网格、骨骼、换装、动态三维需额外技术</text>
+<rect x="64" y="1124" width="1472" height="102" rx="18" fill="#2d2925" stroke="#665642" stroke-width="2"/>
+<text x="86" y="1140" fill="#f0d2ac" font-size="25" font-weight="700" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">边界：没拍到 ≠ 已还原；看起来真实 ≠ 精确尺寸；能转动 ≠ 能换装或做骨骼动画。</text>
+<text x="86" y="1181" fill="#d3c2b0" font-size="21" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">已实测：Truck 照片重建 + 独立运动鞋视频完整流程。人体、普通房间视频与自由漫游尚未完成本机验证。</text>
+<text x="67" y="1245" fill="#95a9ad" font-size="18" font-weight="400" font-family="Microsoft YaHei,Arial,sans-serif" dominant-baseline="text-before-edge">研究快照 128438ac803a · 2026-09-09 · 能力总结与真实实验记录</text>
+</svg>

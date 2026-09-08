@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>真实三维结果 · 封面取景</title><style>body{background:#101b21;color:#e6efec;font:16px sans-serif;margin:24px}canvas{width:100%;max-width:1000px;display:block;margin:20px 0}button,input{padding:10px;margin:5px}a{color:#a3edc9}</style><h1>从本次真实三维结果导出封面</h1><p>画面由已保存的 model.sog 实时渲染。选取实际相机视角后导出，不使用原照片代替。</p><label>拍摄视角 <input id="angle" type="number" min="0" max="222" value="53"></label><button id="show">查看该视角</button><button id="save">保存当前三维画面</button><span id="status">加载中</span><canvas id="cover" width="1280" height="960"></canvas><a href="./">返回指南</a><script type="module">
+import {createSogView} from './engine/app/js/pcview.js';
+const status=document.getElementById('status'),canvas=document.getElementById('cover');
+const recon=await (await fetch('./video-assets/recon.json')).json();
+const cams=recon.cams.filter(c=>c.R);
+const view=await createSogView('./video-assets/model.sog');
+view.view.attach(canvas);await view._boot;
+function show(){const c=cams[Math.max(0,Math.min(cams.length-1,+document.getElementById('angle').value))];const frame=recon.frames[c.imgIdx];view.view.setCamera({...c,w:canvas.width,h:canvas.height,cx:canvas.width/2,cy:canvas.height/2,f:c.f*canvas.height/(frame.h||c.cy*2)});status.textContent='真实 SOG 渲染已加载';}
+document.getElementById('show').onclick=show;show();
+document.getElementById('save').onclick=()=>view.app.once('postrender',()=>canvas.toBlob(async blob=>{
+  if(!blob){status.textContent='截图失败';return;}
+  if(location.hostname==='localhost'){
+    try{const r=await fetch('http://127.0.0.1:8028/export/result-cover.webp',{method:'POST',headers:{'Content-Type':'image/webp','X-Splat-Experiment':'nickesc-shoe-video'},body:blob});if(!r.ok)throw Error(r.status);status.textContent='已保存真实渲染封面';return;}catch(e){status.textContent='本地接收器未启动，改为下载';}
+  }
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='result-cover.webp';a.click();
+},'image/webp',.94));
+</script></html>

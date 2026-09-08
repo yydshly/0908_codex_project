@@ -76,6 +76,22 @@
     "demo": true
   },
   {
+    "id": "008",
+    "slug": "splat-js",
+    "name": "Splat.js · 视频到三维实测与扩展指南",
+    "summary": "已从独立鞋子视频完成本机三维重建，提供原视频与真实结果对照、官方样例、整体架构和商品／空间扩展方向；人体与自由漫游待验证。",
+    "repository": "https://github.com/arrival-space/splat.js",
+    "status": "已完成",
+    "tags": [
+      "视频转三维",
+      "真实效果",
+      "WebGPU",
+      "扩展场景"
+    ],
+    "cover": "assets/result-cover.webp",
+    "demo": true
+  },
+  {
     "id": "009",
     "slug": "open-higgsfield",
     "name": "OpenHiggsfield",
